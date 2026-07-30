@@ -187,7 +187,7 @@ Exceptions to this law are permitted only under the following conditions:
 | X02 | Legacy identifier that cannot be migrated | AEL Digital Studio |
 | X03 | Industry-standard term that violates a rule (e.g., `3d`) | AEL Digital Studio |
 
-All exceptions must be recorded in a file named `EXCEPTIONS.md` within the applicable directory, listing the identifier, the rule violated, the reason, and the approval date.
+All exceptions are governed by the **Override \& Exception Policy** (`Override-Exception-Policy.md`), which is the sole authority for exception documentation, approval, expiry, and storage. This section does not define an independent exception process.
 
 ---
 
