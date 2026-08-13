@@ -2,6 +2,25 @@
 
 ---
 
+## v1.0 — AEL Master Operating Protocol (Active)
+
+**Status:** Active
+
+### Summary
+
+Formalized the AEL Master Operating Protocol as an enforceable governance artifact. Transformed a behavioral prompt into an engineering-executable protocol with normative language, rule identifiers, a lifecycle state machine, and an automated validator.
+
+### Changes
+
+- **Protocol document** — `03-Operational-Laws/AEL-Operating-Protocol.md` v1.0
+- **RFC 2119 keywords** — every rule carries `MUST` / `MUST NOT` / `SHOULD` / `SHOULD NOT` / `MAY`
+- **Rule IDs** — 142 rule identifiers (DEC, SYS, ENG, FSD, DOC, IMP, VAL, KNO, CON, VIS, COL, LOGO, NAM, VER, MEM, NOD, RES, LANG, SCP, SOT, CHG, RLV, RSH, SEC, STP, OFM, PRS, CMP, FRC, ADR, NAD, NSE, NUA, NED, NOE, NFP, NAC, CWR, NFC, NPN, NQL, NRP, NCL, UIP, EDD, RCR, STM, PRC, CVR)
+- **State machine** — PLANNED → IN PROGRESS → IMPLEMENTED → VERIFIED → COMPLETE, with BLOCKED pause and explicit transition table
+- **Precedence hierarchy** — 8-tier conflict resolution across all rules
+- **Automated validator** — `scripts/validate-operating-protocol.js` enforces ID uniqueness, keyword presence, version consistency, and state machine integrity (zero dependencies, Node stdlib only)
+
+---
+
 ## v0.2.2 — Brand Color Alignment (Unreleased)
 
 **Status:** In Progress

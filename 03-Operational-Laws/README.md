@@ -4,6 +4,6 @@
 
 **Scope:** Procedural and structural rules derived from the Constitution.
 
-**Belongs here:** One document per law (Dependency-Hierarchy-Law.md, Naming-Convention-Law.md, Override-Exception-Policy.md, etc.).
+**Belongs here:** One document per law (Dependency-Hierarchy-Law.md, Naming-Convention-Law.md, Override-Exception-Policy.md, AEL-Operating-Protocol.md, etc.).
 
 **Does NOT belong here:** Standards, Specifications, or Implementation files.
