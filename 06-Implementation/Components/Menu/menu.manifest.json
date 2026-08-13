@@ -1,0 +1,19 @@
+{
+  "id": "CMP-menu", "name": "Menu", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "specifiedBy": "SP-Menu v1.0",
+  "category": "navigation", "lifecycleStage": "Implementation",
+  "description": "Vertical list of actions or navigation items with icons and dividers.",
+  "states": ["Default", "Hover", "Focus", "Active", "Disabled"],
+  "tokenDependencies": [
+    "TK-color-primary", "TK-color-border-focus", "TK-color-border",
+    "TK-color-text-primary", "TK-color-text-secondary", "TK-color-gray-100", "TK-color-gray-600",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-size-caption",
+    "TK-typography-weight-medium", "TK-typography-weight-bold",
+    "TK-typography-letterspacing-wide",
+    "TK-icon-size-md", "TK-spacing-xs", "TK-spacing-sm", "TK-spacing-md", "TK-spacing-5xl",
+    "TK-border-width-sm", "TK-border-width-md",
+    "TK-motion-duration-fast", "TK-opacity-disabled"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Menu/menu.css" }],
+  "tags": ["navigation", "menu", "dropdown", "ui"], "wcag": "AA", "weight": 2, "complexity": "medium", "estimatedEffort": "S"
+}

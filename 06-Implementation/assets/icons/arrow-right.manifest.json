@@ -1,0 +1,18 @@
+{
+  "id": "AS-icon-arrow-right",
+  "category": "icon",
+  "name": "Arrow Right",
+  "version": "1.0",
+  "status": "Active",
+  "governedBy": "S-Icon",
+  "specifiedBy": "SP-Icon",
+  "source": "arrow-right.svg",
+  "description": "Right-pointing arrow icon for forward navigation",
+  "variants": {
+    "sizes": [16, 20, 24, 32, 48],
+    "styles": ["outline"]
+  },
+  "platforms": ["html", "css", "react", "swiftui", "flutter", "figma", "canva"],
+  "tags": ["ui", "navigation"],
+  "relatedTokens": ["TK-color-primary", "TK-icon-stroke-width-md"]
+}

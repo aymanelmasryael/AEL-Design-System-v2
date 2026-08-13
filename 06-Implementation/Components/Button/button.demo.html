@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AEL Button — Component Preview</title>
+<link rel="stylesheet" href="button.css">
+</head>
+<body>
+
+<h1>AEL Button Component</h1>
+
+<section>
+<h2>Variants (MD size)</h2>
+
+<button class="ael-button ael-button--primary ael-button--md">Primary</button>
+<button class="ael-button ael-button--secondary ael-button--md">Secondary</button>
+<button class="ael-button ael-button--outline ael-button--md">Outline</button>
+<button class="ael-button ael-button--ghost ael-button--md">Ghost</button>
+<button class="ael-button ael-button--text ael-button--md">Text</button>
+<button class="ael-button ael-button--danger ael-button--md">Danger</button>
+<button class="ael-button ael-button--success ael-button--md">Success</button>
+</section>
+
+<section>
+<h2>Sizes (Primary variant)</h2>
+
+<button class="ael-button ael-button--primary ael-button--xs">Extra Small</button>
+<button class="ael-button ael-button--primary ael-button--sm">Small</button>
+<button class="ael-button ael-button--primary ael-button--md">Medium</button>
+<button class="ael-button ael-button--primary ael-button--lg">Large</button>
+<button class="ael-button ael-button--primary ael-button--xl">Extra Large</button>
+</section>
+
+<section>
+<h2>States (Primary, MD)</h2>
+
+<button class="ael-button ael-button--primary ael-button--md">Default</button>
+<button class="ael-button ael-button--primary ael-button--md" disabled>Disabled</button>
+<button class="ael-button ael-button--primary ael-button--md ael-button--loading" aria-busy="true" disabled>
+  <span class="ael-button__spinner"></span>
+  <span class="ael-button__label">Loading...</span>
+</button>
+</section>
+
+<section>
+<h2>With Icons (MD size)</h2>
+
+<button class="ael-button ael-button--primary ael-button--md">
+  <svg class="ael-button__icon ael-button__icon--leading" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+  </svg>
+  Add Item
+</button>
+
+<button class="ael-button ael-button--outline ael-button--md">
+  Download
+  <svg class="ael-button__icon ael-button__icon--trailing" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+  </svg>
+</button>
+
+<button class="ael-button ael-button--ghost ael-button--md ael-button--icon-only" aria-label="Search">
+  <svg class="ael-button__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+  </svg>
+</button>
+</section>
+
+</body>
+</html>

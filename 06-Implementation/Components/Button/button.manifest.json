@@ -1,0 +1,70 @@
+{
+  "id": "CMP-button",
+  "name": "Button",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Component v0.3",
+  "specifiedBy": "SP-Button v1.0",
+  "category": "foundation",
+  "description": "Primary interactive control for triggering user actions — submit, navigate, confirm, delete.",
+  "lifecycleStage": "Implementation",
+  "anatomy": [
+    { "part": "Container", "required": true, "type": "Root", "description": "Clickable/tappable surface" },
+    { "part": "Label", "required": true, "type": "Text Slot", "description": "Button text content or accessible name" },
+    { "part": "LeadingIcon", "required": false, "type": "Icon Slot", "description": "Icon before label text" },
+    { "part": "TrailingIcon", "required": false, "type": "Icon Slot", "description": "Icon after label text" },
+    { "part": "LoadingIndicator", "required": false, "type": "Indicator Slot", "description": "Spinner shown during loading" }
+  ],
+  "variants": [
+    { "name": "Primary", "category": "Role", "tokenBinding": "TK-color-primary", "description": "Default CTA. Highest emphasis." },
+    { "name": "Secondary", "category": "Role", "tokenBinding": "TK-color-secondary", "description": "Supporting action." },
+    { "name": "Outline", "category": "Style", "tokenBinding": "TK-color-border", "description": "Bordered. Medium emphasis." },
+    { "name": "Ghost", "category": "Style", "tokenBinding": null, "description": "No border or background until hover. Text color via TK-color-text-primary." },
+    { "name": "Text", "category": "Style", "tokenBinding": "TK-color-primary (text only)", "description": "Inline with text. Minimal." },
+    { "name": "Danger", "category": "Role", "tokenBinding": "TK-color-error", "description": "Destructive action." },
+    { "name": "Success", "category": "Role", "tokenBinding": "TK-color-success", "description": "Confirmation action." }
+  ],
+  "states": ["Default", "Hover", "Focus", "Active", "Disabled", "Loading"],
+  "tokenDependencies": [
+    "TK-color-primary", "TK-color-primary-hover", "TK-color-primary-active",
+    "TK-color-secondary", "TK-color-error", "TK-color-success",
+    "TK-color-text-inverse", "TK-color-text-primary", "TK-color-text-disabled",
+    "TK-color-border", "TK-color-border-focus", "TK-color-gray-200", "TK-color-gray-500",
+    "TK-border-width-md", "TK-radius-md",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-weight-medium",
+    "TK-spacing-lg", "TK-spacing-sm", "TK-spacing-xs",
+    "TK-icon-size-md", "TK-size-button-md", "TK-size-button-xs", "TK-size-button-sm",
+    "TK-size-button-lg", "TK-size-button-xl",
+    "TK-shadow-sm", "TK-shadow-md",
+    "TK-opacity-hover", "TK-opacity-pressed", "TK-opacity-disabled",
+    "TK-motion-duration-fast", "TK-motion-easing-default"
+  ],
+  "assetDependencies": [],
+  "componentDependencies": [],
+  "platforms": [
+    { "name": "html-css", "status": "Supported", "path": "Components/Button/button.css" },
+    { "name": "react", "status": "Planned", "path": "Components/Button/Button.tsx" },
+    { "name": "vue", "status": "Planned", "path": "Components/Button/Button.vue" },
+    { "name": "swiftui", "status": "Planned", "path": "Components/Button/Button.swift" },
+    { "name": "flutter", "status": "Planned", "path": "Components/Button/button.dart" },
+    { "name": "android", "status": "Planned", "path": "Components/Button/Button.kt" },
+    { "name": "figma", "status": "Planned", "path": "platforms/figma/" },
+    { "name": "canva", "status": "Planned", "path": "platforms/canva/" }
+  ],
+  "accessibility": {
+    "role": "button",
+    "accessibleNameSource": "Label slot text or aria-label attribute",
+    "keyboard": "Tab to reach, Enter or Space to activate. Disabled and loading removed from tab order.",
+    "screenReader": "Announces label text. Announces loading via aria-busy. Announces disabled via aria-disabled.",
+    "contrastRequirements": "WCAG 2.1 AA — 4.5:1 normal text, 3:1 large text"
+  },
+  "tags": ["interactive", "action", "form", "ui"],
+  "documentation": "Components/Button/button.html",
+  "playground": null,
+  "examples": "Components/Button/button.html",
+  "coverage": "html-css",
+  "wcag": "AA",
+  "weight": 1,
+  "complexity": "low",
+  "estimatedEffort": "S"
+}

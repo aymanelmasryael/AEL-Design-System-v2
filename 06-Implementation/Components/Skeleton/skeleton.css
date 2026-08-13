@@ -1,0 +1,19 @@
+/* AEL Skeleton — CMP-skeleton v1.0 — Zero hardcoded design values. */
+
+.ael-skeleton {
+  background: linear-gradient(90deg, var(--ael-color-gray-100) 25%, var(--ael-color-gray-200) 50%, var(--ael-color-gray-100) 75%);
+  background-size: 200% 100%;
+  animation: ael-skeleton-shimmer 1.5s ease-in-out infinite;
+  border-radius: var(--ael-radius-sm);
+}
+
+.ael-skeleton--text { height: var(--ael-typography-size-body); width: 100%; }
+.ael-skeleton--heading { height: var(--ael-typography-size-h3); width: 60%; }
+.ael-skeleton--avatar { width: var(--ael-size-avatar-md); height: var(--ael-size-avatar-md); border-radius: 50%; }
+.ael-skeleton--button { height: var(--ael-size-button-md); width: var(--ael-spacing-5xl); border-radius: var(--ael-radius-md); }
+.ael-skeleton--card { height: var(--ael-spacing-6xl); width: 100%; border-radius: var(--ael-radius-md); }
+
+@keyframes ael-skeleton-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}

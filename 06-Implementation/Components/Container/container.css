@@ -1,0 +1,26 @@
+/* AEL Layout — Container v1.0 — Zero hardcoded design values. */
+
+.ael-container {
+  width: 100%;
+  max-width: var(--ael-grid-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--ael-grid-margin-mobile);
+  padding-right: var(--ael-grid-margin-mobile);
+}
+
+@media (min-width: 768px) {
+  .ael-container {
+    padding-left: var(--ael-grid-margin-tablet);
+    padding-right: var(--ael-grid-margin-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .ael-container {
+    padding-left: var(--ael-grid-margin-desktop);
+    padding-right: var(--ael-grid-margin-desktop);
+  }
+}
+
+.ael-container--fluid { max-width: none; }

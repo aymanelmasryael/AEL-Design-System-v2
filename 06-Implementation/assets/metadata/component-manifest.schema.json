@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ael-design-system/component-manifest.schema.json",
+  "title": "AEL Component Manifest",
+  "type": "object",
+  "required": ["id", "name", "version", "status", "governedBy", "specifiedBy", "category", "platforms"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^CMP-[a-z0-9-]+$",
+      "description": "Unique component identifier per Naming Convention Law §4.5"
+    },
+    "name": { "type": "string", "description": "Human-readable component name" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "status": { "type": "string", "enum": ["Draft", "Active", "Deprecated", "Archived"] },
+    "governedBy": { "type": "string", "description": "Governing standard, e.g., S-Component v0.3" },
+    "specifiedBy": { "type": "string", "description": "Specification document, e.g., SP-Button v1.0" },
+    "category": {
+      "type": "string",
+      "enum": ["foundation", "selection", "navigation", "container", "overlay", "feedback", "data"],
+      "description": "Component category per Master Roadmap Phase 3 grouping"
+    },
+    "description": { "type": "string" },
+    "anatomy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["part", "required", "type"],
+        "properties": {
+          "part": { "type": "string" },
+          "required": { "type": "boolean" },
+          "type": { "type": "string", "enum": ["Root", "Text Slot", "Icon Slot", "Content Slot", "Indicator Slot", "Action Slot"] },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "category": { "type": "string", "enum": ["Role", "Style", "Size"] },
+          "tokenBinding": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Default", "Hover", "Focus", "Active", "Disabled", "Loading", "Error", "Success", "Selected", "ReadOnly"]
+      }
+    },
+    "tokenDependencies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Token IDs consumed by this component"
+    },
+    "assetDependencies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Asset IDs referenced by this component"
+    },
+    "componentDependencies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Other component IDs this component uses internally"
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "status"],
+        "properties": {
+          "name": { "type": "string", "enum": ["html-css", "react", "vue", "angular", "svelte", "swiftui", "flutter", "android", "figma", "canva"] },
+          "status": { "type": "string", "enum": ["Supported", "Planned", "N/A"] },
+          "path": { "type": "string" },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "properties": {
+        "role": { "type": "string" },
+        "accessibleNameSource": { "type": "string" },
+        "keyboard": { "type": "string" },
+        "screenReader": { "type": "string" },
+        "contrastRequirements": { "type": "string" }
+      }
+    },
+    "replacedBy": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "lifecycleStage": {
+      "type": "string",
+      "enum": ["Proposal", "Specification", "Review", "Implementation", "Validation", "Registry", "Release"],
+      "description": "Current stage in component lifecycle per S-Component §12"
+    }
+  }
+}

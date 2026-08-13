@@ -1,0 +1,788 @@
+{
+  "registry": "AEL Asset Registry",
+  "version": "0.2",
+  "status": "Draft",
+  "owner": "AEL Digital Studio",
+  "generated": true,
+  "generatedBy": "09-Build/generators/asset-registry-generator.js",
+  "source": "06-Implementation/assets/",
+  "generatedAt": "2026-08-06T00:30:03.669Z",
+  "description": "Generated catalog — DO NOT EDIT. Produced from 06-Implementation/assets/ manifest files. See PROP-2026-001.",
+  "governedBy": [
+    "S-Icon",
+    "S-Illustration",
+    "S-Image"
+  ],
+  "assets": {
+    "icons": [
+      {
+        "id": "AS-icon-arrow-left",
+        "name": "Arrow Left",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Left-pointing arrow icon for back navigation",
+        "source": "arrow-left.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-arrow-right",
+        "name": "Arrow Right",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Right-pointing arrow icon for forward navigation",
+        "source": "arrow-right.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-bell",
+        "name": "Bell",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Notification bell icon for alerts",
+        "source": "bell.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-calendar",
+        "name": "Calendar",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Calendar grid icon for date/time",
+        "source": "calendar.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-check",
+        "name": "Check",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Checkmark icon for confirmation",
+        "source": "check.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-close",
+        "name": "Close",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "X mark icon for dismiss/cancel",
+        "source": "close.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-heart",
+        "name": "Heart",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Heart shape icon for favorite/like",
+        "source": "heart.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-home",
+        "name": "Home",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "House icon for home navigation",
+        "source": "home.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-mail",
+        "name": "Mail",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Envelope icon for email/messages",
+        "source": "mail.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-menu",
+        "name": "Menu",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Hamburger lines icon for navigation menu",
+        "source": "menu.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-plus",
+        "name": "Plus",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Plus sign icon for add/create",
+        "source": "plus.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-search",
+        "name": "Search",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Magnifying glass icon for search functionality",
+        "source": "search.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-settings",
+        "name": "Settings",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Gear/cog icon for preferences and configuration",
+        "source": "settings.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-star",
+        "name": "Star",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Five-pointed star icon for rating/bookmark",
+        "source": "star.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      },
+      {
+        "id": "AS-icon-user",
+        "name": "User",
+        "version": "1.0",
+        "status": "Active",
+        "category": "icon",
+        "governedBy": "S-Icon",
+        "specifiedBy": "SP-Icon",
+        "description": "Person silhouette icon for user profile",
+        "source": "user.svg",
+        "sourceAvailable": true,
+        "variants": {
+          "sizes": [
+            16,
+            20,
+            24,
+            32,
+            48
+          ],
+          "styles": [
+            "outline"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "ui",
+          "navigation"
+        ],
+        "relatedTokens": [
+          "TK-color-primary",
+          "TK-icon-stroke-width-md"
+        ],
+        "replacedBy": null
+      }
+    ],
+    "logos": [
+      {
+        "id": "AS-logo-icon",
+        "name": "AEL Icon Mark",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "logo",
+        "governedBy": "S-Image",
+        "specifiedBy": "SP-Image",
+        "description": "AEL icon-only brand mark — for favicons, app icons, social avatars",
+        "source": "logos/ael-icon-mark.svg",
+        "sourceAvailable": false,
+        "variants": {
+          "resolutions": [
+            "@1x",
+            "@2x",
+            "@3x"
+          ],
+          "themes": [
+            "light",
+            "dark"
+          ]
+        },
+        "platforms": [
+          "html",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "brand",
+          "identity",
+          "icon-mark",
+          "favicon"
+        ],
+        "relatedTokens": [
+          "TK-color-brand-primary",
+          "TK-size-icon-container-md"
+        ],
+        "replacedBy": null,
+        "warning": "Source file \"ael-icon-mark.svg\" referenced in manifest but not found in logos/"
+      },
+      {
+        "id": "AS-logo-primary-dark",
+        "name": "AEL Primary Logo — Dark",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "logo",
+        "governedBy": "S-Image",
+        "specifiedBy": "SP-Image",
+        "description": "Primary AEL brand logo — white/reversed on dark background",
+        "source": "logos/ael-logo-primary-dark.svg",
+        "sourceAvailable": false,
+        "variants": {
+          "resolutions": [
+            "@1x",
+            "@2x",
+            "@3x"
+          ],
+          "themes": [
+            "dark"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva"
+        ],
+        "tags": [
+          "brand",
+          "identity",
+          "logo",
+          "dark-mode"
+        ],
+        "relatedTokens": [
+          "TK-color-white",
+          "TK-size-logo-height-md"
+        ],
+        "replacedBy": null,
+        "warning": "Source file \"ael-logo-primary-dark.svg\" referenced in manifest but not found in logos/"
+      },
+      {
+        "id": "AS-logo-primary",
+        "name": "AEL Primary Logo",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "logo",
+        "governedBy": "S-Image",
+        "specifiedBy": "SP-Image",
+        "description": "Primary AEL brand logo — full color on light background",
+        "source": "logos/ael-logo-primary.svg",
+        "sourceAvailable": false,
+        "variants": {
+          "resolutions": [
+            "@1x",
+            "@2x",
+            "@3x"
+          ],
+          "themes": [
+            "light"
+          ]
+        },
+        "platforms": [
+          "html",
+          "css",
+          "react",
+          "swiftui",
+          "flutter",
+          "figma",
+          "canva",
+          "print"
+        ],
+        "tags": [
+          "brand",
+          "identity",
+          "logo"
+        ],
+        "relatedTokens": [
+          "TK-color-brand-primary",
+          "TK-size-logo-height-md"
+        ],
+        "replacedBy": null,
+        "warning": "Source file \"ael-logo-primary.svg\" referenced in manifest but not found in logos/"
+      }
+    ]
+  },
+  "meta": {
+    "totalAssets": 18,
+    "categories": {
+      "icons": 15,
+      "logos": 3
+    }
+  }
+}

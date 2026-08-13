@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>AEL Accordion</title><link rel="stylesheet" href="accordion.css"></head>
+<body>
+
+<div class="ael-accordion">
+  <div class="ael-accordion__item">
+    <button class="ael-accordion__trigger">
+      <span>Section One</span>
+      <svg class="ael-accordion__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="ael-accordion__content"><p>Content for section one.</p></div>
+  </div>
+  <div class="ael-accordion__item">
+    <button class="ael-accordion__trigger">
+      <span>Section Two</span>
+      <svg class="ael-accordion__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="ael-accordion__content"><p>Content for section two.</p></div>
+  </div>
+</div>
+
+<script src="../../runtime/event-bus.js"></script>
+<script src="../../runtime/component.js"></script>
+<script src="../../runtime/components.js"></script>
+
+</body>
+</html>

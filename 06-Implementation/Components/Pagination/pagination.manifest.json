@@ -1,0 +1,17 @@
+{
+  "id": "CMP-pagination", "name": "Pagination", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "specifiedBy": "SP-Pagination v1.0",
+  "category": "navigation", "lifecycleStage": "Implementation",
+  "description": "Page navigation control for paginated content.",
+  "states": ["Default", "Hover", "Focus", "Active", "Disabled"],
+  "tokenDependencies": [
+    "TK-color-primary", "TK-color-border-focus", "TK-color-text-primary",
+    "TK-color-text-secondary", "TK-color-text-inverse", "TK-color-gray-100",
+    "TK-typography-font-primary", "TK-typography-size-small", "TK-typography-weight-medium",
+    "TK-size-button-sm", "TK-spacing-xs", "TK-radius-sm",
+    "TK-border-width-sm", "TK-border-width-md",
+    "TK-motion-duration-fast", "TK-opacity-disabled"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Pagination/pagination.css" }],
+  "tags": ["navigation", "pagination", "ui"], "wcag": "AA", "weight": 2, "complexity": "medium", "estimatedEffort": "S"
+}

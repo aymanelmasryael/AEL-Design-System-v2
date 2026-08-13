@@ -1,0 +1,15 @@
+{
+  "category": "shadow",
+  "tier": "core",
+  "governedBy": "S-Component",
+  "specifiedBy": "SP-Component",
+  "ssot": true,
+  "description": "SSOT for all shadow (box-shadow) token values. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-shadow-none": { "value": "none", "type": "shadow", "role": "No shadow — flat surfaces, default state" },
+    "TK-shadow-sm": { "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)", "type": "shadow", "role": "Small shadow — subtle elevation, cards on white" },
+    "TK-shadow-md": { "value": "0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05)", "type": "shadow", "role": "Medium shadow — dropdowns, elevated cards, hover state" },
+    "TK-shadow-lg": { "value": "0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04)", "type": "shadow", "role": "Large shadow — modals, drawers, prominent elevation" },
+    "TK-shadow-xl": { "value": "0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.05)", "type": "shadow", "role": "Extra large shadow — highest elevation, hero sections" }
+  }
+}

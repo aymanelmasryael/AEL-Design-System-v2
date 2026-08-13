@@ -1,0 +1,37 @@
+/* AEL Card Component — CMP-card v1.0 — Zero hardcoded design values. */
+
+.ael-card {
+  display: flex; flex-direction: column;
+  background-color: var(--ael-color-background);
+  border: var(--ael-border-width-sm) solid var(--ael-color-border);
+  border-radius: var(--ael-radius-lg);
+  box-shadow: var(--ael-shadow-sm);
+  overflow: hidden;
+}
+
+.ael-card__header {
+  padding: var(--ael-spacing-md) var(--ael-spacing-lg);
+  border-bottom: var(--ael-border-width-sm) solid var(--ael-color-border);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-h6);
+  font-weight: var(--ael-typography-weight-semibold);
+  color: var(--ael-color-text-primary);
+}
+
+.ael-card__media { width: 100%; }
+
+.ael-card__body {
+  padding: var(--ael-spacing-lg);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  color: var(--ael-color-text-primary);
+  flex: 1;
+}
+
+.ael-card__footer {
+  padding: var(--ael-spacing-md) var(--ael-spacing-lg);
+  border-top: var(--ael-border-width-sm) solid var(--ael-color-border);
+  display: flex; align-items: center; gap: var(--ael-spacing-sm);
+}
+
+.ael-card--hover:hover { box-shadow: var(--ael-shadow-md); transition: box-shadow var(--ael-motion-duration-fast) var(--ael-motion-easing-default); }

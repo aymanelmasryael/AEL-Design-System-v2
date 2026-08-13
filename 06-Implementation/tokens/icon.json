@@ -1,0 +1,17 @@
+{
+  "category": "icon",
+  "tier": "optional",
+  "governedBy": "S-Icon",
+  "specifiedBy": "SP-Icon",
+  "ssot": true,
+  "description": "SSOT for all icon-specific token values. Optional tier — implemented based on project scope. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-icon-size-sm": { "value": "16px", "type": "dimension", "role": "Small icon — compact UI, inline with small text" },
+    "TK-icon-size-md": { "value": "24px", "type": "dimension", "role": "Medium icon — default, inline with body text" },
+    "TK-icon-size-lg": { "value": "32px", "type": "dimension", "role": "Large icon — featured, navigation" },
+    "TK-icon-size-xl": { "value": "48px", "type": "dimension", "role": "Extra large icon — hero, empty states" },
+    "TK-icon-stroke-width-sm": { "value": "1.5px", "type": "dimension", "role": "Small stroke width — detailed icons" },
+    "TK-icon-stroke-width-md": { "value": "2px", "type": "dimension", "role": "Medium stroke width — default" },
+    "TK-icon-stroke-width-lg": { "value": "2.5px", "type": "dimension", "role": "Large stroke width — bold icons" }
+  }
+}

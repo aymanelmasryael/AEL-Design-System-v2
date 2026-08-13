@@ -1,0 +1,14 @@
+{
+  "id": "CMP-skeleton", "name": "Skeleton", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "feedback", "lifecycleStage": "Implementation",
+  "description": "Placeholder loading shape mimicking content layout during data fetch.",
+  "states": ["Default"],
+  "tokenDependencies": [
+    "TK-color-gray-100", "TK-color-gray-200",
+    "TK-typography-size-body", "TK-typography-size-h3",
+    "TK-size-avatar-md", "TK-size-button-md",
+    "TK-spacing-5xl", "TK-spacing-6xl", "TK-radius-sm", "TK-radius-md"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Skeleton/skeleton.css" }],
+  "tags": ["feedback", "skeleton", "loading", "ui"], "wcag": "AA", "weight": 2, "complexity": "medium", "estimatedEffort": "S"
+}

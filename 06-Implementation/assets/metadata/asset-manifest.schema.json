@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ael-design-system/asset-manifest.schema.json",
+  "title": "AEL Asset Manifest",
+  "type": "object",
+  "required": ["id", "category", "name", "version", "source", "governedBy", "specifiedBy"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^AS-(icon|logo|illustration|image|pattern)-[a-z0-9-]+$",
+      "description": "Unique asset identifier following Naming Convention Law §4.6"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["icon", "logo", "illustration", "image", "pattern"],
+      "description": "Asset category per Ontology E-06"
+    },
+    "name": { "type": "string" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "status": { "type": "string", "enum": ["Draft", "Active", "Deprecated", "Archived"] },
+    "governedBy": { "type": "string" },
+    "specifiedBy": { "type": "string" },
+    "source": { "type": "string", "description": "Relative path from assets/ to canonical source file" },
+    "description": { "type": "string" },
+    "variants": {
+      "type": "object",
+      "properties": {
+        "sizes": { "type": "array", "items": { "type": "integer" } },
+        "styles": { "type": "array", "items": { "type": "string" } },
+        "resolutions": { "type": "array", "items": { "type": "string" }, "description": "e.g., ['@1x', '@2x', '@3x']" },
+        "themes": { "type": "array", "items": { "type": "string" }, "description": "e.g., ['light', 'dark']" }
+      }
+    },
+    "platforms": { "type": "array", "items": { "type": "string" } },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "replacedBy": { "type": "string", "description": "Asset ID of replacement if deprecated" },
+    "relatedTokens": { "type": "array", "items": { "type": "string" }, "description": "Token IDs this asset depends on" }
+  }
+}

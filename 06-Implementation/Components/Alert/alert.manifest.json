@@ -1,0 +1,14 @@
+{
+  "id": "CMP-alert", "name": "Alert", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "feedback", "lifecycleStage": "Implementation",
+  "description": "Contextual feedback message for user attention — info, success, warning, error.",
+  "states": ["Default"],
+  "tokenDependencies": [
+    "TK-color-info", "TK-color-success", "TK-color-warning", "TK-color-error", "TK-color-text-primary",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-weight-semibold",
+    "TK-spacing-xs", "TK-spacing-sm", "TK-spacing-md", "TK-radius-md",
+    "TK-icon-size-md", "TK-border-width-sm"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Alert/alert.css" }],
+  "tags": ["feedback", "alert", "notification", "ui"], "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "S"
+}

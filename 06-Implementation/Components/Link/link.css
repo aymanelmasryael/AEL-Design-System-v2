@@ -1,0 +1,39 @@
+.ael-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ael-spacing-xs);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  font-weight: var(--ael-typography-weight-medium);
+  color: var(--ael-color-primary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+}
+
+.ael-link:hover {
+  color: var(--ael-color-primary-hover);
+  text-decoration: underline;
+}
+
+.ael-link:visited {
+  color: var(--ael-color-secondary);
+}
+
+.ael-link:focus-visible {
+  outline: var(--ael-border-width-md) solid var(--ael-color-border-focus);
+  outline-offset: var(--ael-border-width-md);
+}
+
+.ael-link--subtle {
+  color: var(--ael-color-text-secondary);
+}
+
+.ael-link--subtle:hover {
+  color: var(--ael-color-text-primary);
+}
+
+.ael-link__icon {
+  width: var(--ael-icon-size-md);
+  height: var(--ael-icon-size-md);
+}

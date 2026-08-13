@@ -1,0 +1,182 @@
+/*
+ * AEL Text Input Component
+ * Implementation: HTML + CSS
+ * Component: CMP-text-input v1.0
+ * Governed by: S-Component v0.3 · SP-Input v1.0
+ * Consumes: 06-Implementation/platforms/css/variables.css (generated)
+ * Zero hardcoded design values.
+ */
+
+/* ── Container ── */
+
+.ael-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ael-spacing-xs);
+  font-family: var(--ael-typography-font-primary);
+}
+
+/* ── Label ── */
+
+.ael-input__label {
+  font-size: var(--ael-typography-size-small);
+  font-weight: var(--ael-typography-weight-medium);
+  color: var(--ael-color-text-secondary);
+  cursor: pointer;
+}
+
+/* ── Wrapper ── */
+
+.ael-input__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* ── Field ── */
+
+.ael-input__field {
+  width: 100%;
+  height: var(--ael-size-button-md);
+  padding: 0 var(--ael-spacing-md);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  font-weight: var(--ael-typography-weight-regular);
+  color: var(--ael-color-text-primary);
+  background-color: var(--ael-color-background);
+  border: var(--ael-border-width-sm) solid var(--ael-color-border);
+  border-radius: var(--ael-radius-md);
+  outline: none;
+  transition: border-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default),
+              box-shadow var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+}
+
+.ael-input__field::placeholder {
+  color: var(--ael-color-gray-400);
+}
+
+.ael-input__field:hover:not(:disabled):not([readonly]) {
+  border-color: var(--ael-color-gray-400);
+}
+
+.ael-input__field:focus:not(:disabled):not([readonly]) {
+  border-color: var(--ael-color-border-focus);
+  border-width: var(--ael-border-width-md);
+  padding: 0 calc(var(--ael-spacing-md) - (var(--ael-border-width-md) - var(--ael-border-width-sm)));
+  box-shadow: 0 0 0 calc(var(--ael-border-width-sm) * 2) var(--ael-color-border-focus);
+}
+
+.ael-input__field:disabled {
+  background-color: var(--ael-color-gray-100);
+  color: var(--ael-color-text-disabled);
+  cursor: not-allowed;
+  opacity: var(--ael-opacity-disabled);
+}
+
+.ael-input__field[readonly] {
+  background-color: var(--ael-color-gray-50);
+  cursor: default;
+}
+
+/* ── Icons inside wrapper ── */
+
+.ael-input__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--ael-icon-size-md);
+  height: var(--ael-icon-size-md);
+  color: var(--ael-color-gray-600);
+  pointer-events: none;
+}
+
+.ael-input__icon--leading {
+  left: var(--ael-spacing-md);
+}
+
+.ael-input__icon--trailing {
+  right: var(--ael-spacing-md);
+}
+
+.ael-input__wrapper:has(.ael-input__icon--leading) .ael-input__field {
+  padding-left: calc(var(--ael-spacing-md) + var(--ael-icon-size-md) + var(--ael-spacing-xs));
+}
+
+.ael-input__wrapper:has(.ael-input__icon--trailing) .ael-input__field {
+  padding-right: calc(var(--ael-spacing-md) + var(--ael-icon-size-md) + var(--ael-spacing-xs));
+}
+
+/* ── Helper / Error text ── */
+
+.ael-input__helper {
+  font-size: var(--ael-typography-size-caption);
+  color: var(--ael-color-text-secondary);
+}
+
+.ael-input__error {
+  font-size: var(--ael-typography-size-caption);
+  color: var(--ael-color-error);
+}
+
+/* ── Variants ── */
+
+.ael-input--filled .ael-input__field {
+  background-color: var(--ael-color-gray-50);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: var(--ael-radius-md) var(--ael-radius-md) 0 0;
+}
+
+.ael-input--filled .ael-input__field:focus {
+  border-bottom-color: var(--ael-color-border-focus);
+  box-shadow: none;
+}
+
+.ael-input--ghost .ael-input__field {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ael-input--ghost .ael-input__field:focus {
+  border-bottom-color: var(--ael-color-border-focus);
+  border-bottom-width: var(--ael-border-width-md);
+  border-radius: 0;
+  box-shadow: none;
+  padding-left: 0;
+}
+
+/* ── Validation states ── */
+
+.ael-input--error .ael-input__field {
+  border-color: var(--ael-color-error);
+}
+
+.ael-input--error .ael-input__field:focus {
+  border-color: var(--ael-color-error);
+}
+
+.ael-input--error .ael-input__label {
+  color: var(--ael-color-error);
+}
+
+.ael-input--success .ael-input__field {
+  border-color: var(--ael-color-success);
+}
+
+.ael-input--success .ael-input__field:focus {
+  border-color: var(--ael-color-success);
+}
+
+/* ── Textarea ── */
+
+.ael-input__field--textarea {
+  height: auto;
+  min-height: calc(var(--ael-size-button-md) * 2);
+  padding-top: var(--ael-spacing-sm);
+  padding-bottom: var(--ael-spacing-sm);
+  resize: vertical;
+}

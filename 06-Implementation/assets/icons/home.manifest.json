@@ -1,0 +1,18 @@
+{
+  "id": "AS-icon-home",
+  "category": "icon",
+  "name": "Home",
+  "version": "1.0",
+  "status": "Active",
+  "governedBy": "S-Icon",
+  "specifiedBy": "SP-Icon",
+  "source": "home.svg",
+  "description": "House icon for home navigation",
+  "variants": {
+    "sizes": [16, 20, 24, 32, 48],
+    "styles": ["outline"]
+  },
+  "platforms": ["html", "css", "react", "swiftui", "flutter", "figma", "canva"],
+  "tags": ["ui", "navigation"],
+  "relatedTokens": ["TK-color-primary", "TK-icon-stroke-width-md"]
+}

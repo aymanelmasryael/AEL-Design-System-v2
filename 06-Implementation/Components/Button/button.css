@@ -1,0 +1,248 @@
+/*
+ * AEL Button Component
+ * Implementation: HTML + CSS
+ * Component: CMP-button v1.0
+ * Governed by: S-Component v0.3 · SP-Button v1.0
+ * Consumes: 06-Implementation/platforms/css/variables.css (generated)
+ * Zero hardcoded design values — all properties bound to SSOT tokens.
+ */
+
+/* ── Base ── */
+
+.ael-button {
+  --ael-btn-overlay-color: 0, 0, 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ael-spacing-xs);
+  border: none;
+  cursor: pointer;
+  font-family: var(--ael-typography-font-primary);
+  font-weight: var(--ael-typography-weight-medium);
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  transition: background-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default),
+              color var(--ael-motion-duration-fast) var(--ael-motion-easing-default),
+              border-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default),
+              box-shadow var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+  border-radius: var(--ael-radius-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.ael-button:focus-visible {
+  outline: var(--ael-border-width-md) solid var(--ael-color-border-focus);
+  outline-offset: var(--ael-border-width-md);
+}
+
+.ael-button:disabled {
+  cursor: not-allowed;
+  opacity: var(--ael-opacity-disabled);
+}
+
+/* ── Sizes ── */
+
+.ael-button--xs {
+  height: var(--ael-size-button-xs);
+  padding: 0 var(--ael-spacing-xs);
+  font-size: var(--ael-typography-size-caption);
+  border-radius: var(--ael-radius-sm);
+}
+
+.ael-button--sm {
+  height: var(--ael-size-button-sm);
+  padding: 0 var(--ael-spacing-sm);
+  font-size: var(--ael-typography-size-small);
+}
+
+.ael-button--md {
+  height: var(--ael-size-button-md);
+  padding: 0 var(--ael-spacing-lg);
+  font-size: var(--ael-typography-size-body);
+}
+
+.ael-button--lg {
+  height: var(--ael-size-button-lg);
+  padding: 0 var(--ael-spacing-xl);
+  font-size: var(--ael-typography-size-h6);
+}
+
+.ael-button--xl {
+  height: var(--ael-size-button-xl);
+  padding: 0 var(--ael-spacing-2xl);
+  font-size: var(--ael-typography-size-h5);
+}
+
+/* ── Hover / Active overlay ── */
+
+.ael-button::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  transition: background-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+  pointer-events: none;
+}
+
+.ael-button:hover:not(:disabled)::after {
+  background: rgba(var(--ael-btn-overlay-color), var(--ael-opacity-hover));
+}
+
+.ael-button:active:not(:disabled)::after {
+  background: rgba(var(--ael-btn-overlay-color), var(--ael-opacity-pressed));
+}
+
+/* ── Variants ── */
+
+.ael-button--primary {
+  background-color: var(--ael-color-primary);
+  color: var(--ael-color-text-inverse);
+  box-shadow: var(--ael-shadow-sm);
+}
+.ael-button--primary:hover:not(:disabled) {
+  background-color: var(--ael-color-primary-hover);
+  box-shadow: var(--ael-shadow-md);
+}
+.ael-button--primary:active:not(:disabled) {
+  background-color: var(--ael-color-primary-active);
+}
+
+.ael-button--secondary {
+  background-color: var(--ael-color-secondary);
+  color: var(--ael-color-text-inverse);
+}
+
+.ael-button--outline {
+  background-color: transparent;
+  color: var(--ael-color-text-primary);
+  border: var(--ael-border-width-sm) solid var(--ael-color-border);
+}
+
+.ael-button--ghost {
+  background-color: transparent;
+  color: var(--ael-color-text-primary);
+}
+
+.ael-button--text {
+  background-color: transparent;
+  color: var(--ael-color-primary);
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+  height: auto;
+  font-weight: var(--ael-typography-weight-regular);
+}
+.ael-button--text:hover:not(:disabled) {
+  text-decoration: underline;
+}
+.ael-button--text:active:not(:disabled) {
+  color: var(--ael-color-primary-active);
+}
+.ael-button--text::after {
+  display: none;
+}
+
+.ael-button--danger {
+  background-color: var(--ael-color-error);
+  color: var(--ael-color-text-inverse);
+}
+
+.ael-button--success {
+  background-color: var(--ael-color-success);
+  color: var(--ael-color-text-inverse);
+}
+
+/* ── Disabled ── */
+
+.ael-button--primary:disabled,
+.ael-button--secondary:disabled,
+.ael-button--danger:disabled,
+.ael-button--success:disabled {
+  background-color: var(--ael-color-gray-200);
+  color: var(--ael-color-text-disabled);
+  box-shadow: none;
+}
+
+.ael-button--outline:disabled,
+.ael-button--ghost:disabled {
+  background-color: transparent;
+  color: var(--ael-color-text-disabled);
+  border-color: var(--ael-color-gray-200);
+}
+
+.ael-button--text:disabled {
+  color: var(--ael-color-text-disabled);
+  text-decoration: none;
+}
+
+/* ── Icons ── */
+
+.ael-button__icon {
+  width: var(--ael-icon-size-md);
+  height: var(--ael-icon-size-md);
+  flex-shrink: 0;
+}
+
+.ael-button--xs .ael-button__icon {
+  width: var(--ael-icon-size-sm);
+  height: var(--ael-icon-size-sm);
+}
+
+.ael-button--sm .ael-button__icon {
+  width: var(--ael-icon-size-sm);
+  height: var(--ael-icon-size-sm);
+}
+
+.ael-button--lg .ael-button__icon,
+.ael-button--xl .ael-button__icon {
+  width: var(--ael-icon-size-lg);
+  height: var(--ael-icon-size-lg);
+}
+
+.ael-button--icon-only {
+  padding: 0;
+}
+.ael-button--icon-only.ael-button--md {
+  width: var(--ael-size-button-md);
+}
+.ael-button--icon-only.ael-button--sm {
+  width: var(--ael-size-button-sm);
+}
+.ael-button--icon-only.ael-button--lg {
+  width: var(--ael-size-button-lg);
+}
+
+/* ── Loading ── */
+
+.ael-button--loading {
+  cursor: wait;
+}
+
+.ael-button--loading .ael-button__label {
+  opacity: var(--ael-opacity-hover);
+}
+
+.ael-button__spinner {
+  width: var(--ael-icon-size-md);
+  height: var(--ael-icon-size-md);
+  border: var(--ael-border-width-md) solid currentColor;
+  border-right-color: transparent;
+  border-radius: var(--ael-radius-full);
+  animation-name: ael-spin;
+  animation-duration: var(--ael-motion-duration-slow);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ael-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Adjacent buttons ── */
+
+.ael-button + .ael-button {
+  margin-left: var(--ael-spacing-sm);
+}

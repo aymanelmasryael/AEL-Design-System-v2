@@ -1,0 +1,67 @@
+{
+  "id": "CMP-text-input",
+  "name": "Text Input",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Component v0.3",
+  "specifiedBy": "SP-Input v1.0",
+  "category": "foundation",
+  "description": "Standard text entry control for single-line and multi-line user input with label, validation, and icon support.",
+  "lifecycleStage": "Implementation",
+  "anatomy": [
+    { "part": "Container", "required": true, "type": "Root", "description": "Wrapping element for label + input group" },
+    { "part": "Label", "required": false, "type": "Text Slot", "description": "Descriptive label above the input" },
+    { "part": "InputField", "required": true, "type": "Root element", "description": "The input/textarea element" },
+    { "part": "LeadingIcon", "required": false, "type": "Icon Slot", "description": "Icon before text" },
+    { "part": "TrailingIcon", "required": false, "type": "Icon Slot", "description": "Action icon after text" },
+    { "part": "HelperText", "required": false, "type": "Text Slot", "description": "Supporting hint text" },
+    { "part": "ErrorText", "required": false, "type": "Text Slot", "description": "Validation error message" }
+  ],
+  "variants": [
+    { "name": "Default", "category": "Style", "tokenBinding": "TK-color-border", "description": "Standard bordered input." },
+    { "name": "Filled", "category": "Style", "tokenBinding": "TK-color-gray-50", "description": "Filled background, bottom border only." },
+    { "name": "Ghost", "category": "Style", "tokenBinding": null, "description": "No border or background. Minimal." }
+  ],
+  "states": ["Default", "Hover", "Focus", "Disabled", "ReadOnly", "Error", "Success"],
+  "tokenDependencies": [
+    "TK-color-text-primary", "TK-color-text-disabled", "TK-color-text-secondary",
+    "TK-color-gray-400", "TK-color-gray-600", "TK-color-gray-50", "TK-color-gray-100",
+    "TK-color-background", "TK-color-border", "TK-color-border-focus",
+    "TK-color-error", "TK-color-success",
+    "TK-border-width-sm", "TK-border-width-md", "TK-radius-md",
+    "TK-typography-font-primary", "TK-typography-size-body",
+    "TK-typography-size-small", "TK-typography-size-caption", "TK-typography-weight-regular",
+    "TK-spacing-md", "TK-spacing-sm",
+    "TK-icon-size-md", "TK-size-button-md",
+    "TK-motion-duration-fast", "TK-motion-easing-default",
+    "TK-opacity-disabled"
+  ],
+  "assetDependencies": [],
+  "componentDependencies": [],
+  "platforms": [
+    { "name": "html-css", "status": "Supported", "path": "Components/Input/input.css" },
+    { "name": "react", "status": "Planned", "path": "Components/Input/Input.tsx" },
+    { "name": "vue", "status": "Planned", "path": "Components/Input/Input.vue" },
+    { "name": "swiftui", "status": "Planned", "path": "Components/Input/Input.swift" },
+    { "name": "flutter", "status": "Planned", "path": "Components/Input/input.dart" },
+    { "name": "android", "status": "Planned", "path": "Components/Input/Input.kt" },
+    { "name": "figma", "status": "Planned", "path": "platforms/figma/" },
+    { "name": "canva", "status": "Planned", "path": "platforms/canva/" }
+  ],
+  "accessibility": {
+    "role": "textbox",
+    "accessibleNameSource": "Associated label element or aria-label",
+    "keyboard": "Tab to reach, type to input, Escape to clear",
+    "screenReader": "Announces label, value. Error linked via aria-describedby.",
+    "contrastRequirements": "WCAG 2.1 AA — 4.5:1 text, 3:1 large"
+  },
+  "tags": ["form", "input", "text", "ui"],
+  "documentation": "Components/Input/input.html",
+  "playground": null,
+  "examples": "Components/Input/input.html",
+  "coverage": "html-css",
+  "wcag": "AA",
+  "weight": 2,
+  "complexity": "low",
+  "estimatedEffort": "S"
+}

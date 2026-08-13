@@ -1,0 +1,59 @@
+/* AEL Switch Component — CMP-switch v1.0 — Zero hardcoded design values. */
+
+.ael-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ael-spacing-sm);
+  cursor: pointer;
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  color: var(--ael-color-text-primary);
+  user-select: none;
+}
+
+.ael-switch__input { position: absolute; opacity: 0; width: 0; height: 0; }
+
+.ael-switch__track {
+  width: var(--ael-spacing-2xl);
+  height: var(--ael-spacing-lg);
+  background-color: var(--ael-color-gray-200);
+  border-radius: var(--ael-spacing-lg);
+  position: relative;
+  transition: background-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+  flex-shrink: 0;
+}
+
+.ael-switch__input:checked + .ael-switch__track {
+  background-color: var(--ael-color-primary);
+}
+
+.ael-switch__thumb {
+  position: absolute;
+  top: calc(var(--ael-spacing-xs) / 2);
+  left: calc(var(--ael-spacing-xs) / 2);
+  width: calc(var(--ael-spacing-lg) - var(--ael-spacing-xs));
+  height: calc(var(--ael-spacing-lg) - var(--ael-spacing-xs));
+  background-color: var(--ael-color-white);
+  border-radius: 50%;
+  transition: transform var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+  box-shadow: var(--ael-shadow-sm);
+}
+
+.ael-switch__input:checked + .ael-switch__track .ael-switch__thumb {
+  transform: translateX(calc(var(--ael-spacing-2xl) - var(--ael-spacing-lg)));
+}
+
+.ael-switch__input:focus-visible + .ael-switch__track {
+  outline: var(--ael-border-width-md) solid var(--ael-color-border-focus);
+  outline-offset: var(--ael-border-width-md);
+}
+
+.ael-switch:hover .ael-switch__track {
+  opacity: calc(1 - var(--ael-opacity-hover));
+}
+
+.ael-switch__input:disabled ~ .ael-switch__track,
+.ael-switch__input:disabled ~ .ael-switch__label {
+  opacity: var(--ael-opacity-disabled);
+  cursor: not-allowed;
+}

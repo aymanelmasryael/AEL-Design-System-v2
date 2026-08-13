@@ -1,0 +1,20 @@
+/* AEL Table — CMP-data-table v1.0 */
+
+.ael-table { width: 100%; border-collapse: collapse; font-family: var(--ael-typography-font-primary); font-size: var(--ael-typography-size-body); color: var(--ael-color-text-primary); }
+
+.ael-table th {
+  padding: var(--ael-spacing-sm) var(--ael-spacing-md);
+  text-align: left; font-weight: var(--ael-typography-weight-semibold);
+  font-size: var(--ael-typography-size-small); color: var(--ael-color-text-secondary);
+  border-bottom: var(--ael-border-width-md) solid var(--ael-color-border);
+  background: var(--ael-color-gray-50);
+}
+
+.ael-table td { padding: var(--ael-spacing-sm) var(--ael-spacing-md); border-bottom: var(--ael-border-width-sm) solid var(--ael-color-border); }
+
+.ael-table tr:hover td { background-color: var(--ael-color-gray-50); }
+
+.ael-table--striped tr:nth-child(even) td { background-color: var(--ael-color-gray-50); }
+.ael-table--striped tr:hover td { background-color: var(--ael-color-gray-100); }
+
+.ael-table--bordered { border: var(--ael-border-width-sm) solid var(--ael-color-border); border-radius: var(--ael-radius-md); overflow: hidden; }

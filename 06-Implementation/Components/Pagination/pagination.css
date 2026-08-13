@@ -1,0 +1,28 @@
+/* AEL Pagination Component — CMP-pagination v1.0 — Zero hardcoded design values. */
+
+.ael-pagination { display: flex; align-items: center; gap: var(--ael-spacing-xs); }
+
+.ael-pagination__item {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: var(--ael-size-button-sm); height: var(--ael-size-button-sm);
+  padding: 0 var(--ael-spacing-xs);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-small);
+  font-weight: var(--ael-typography-weight-medium);
+  color: var(--ael-color-text-secondary);
+  background: none; border: var(--ael-border-width-sm) solid transparent;
+  border-radius: var(--ael-radius-sm); cursor: pointer;
+  transition: all var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+}
+
+.ael-pagination__item:hover { background-color: var(--ael-color-gray-100); color: var(--ael-color-text-primary); }
+.ael-pagination__item:focus-visible { outline: var(--ael-border-width-md) solid var(--ael-color-border-focus); }
+
+.ael-pagination__item--active {
+  background-color: var(--ael-color-primary); color: var(--ael-color-text-inverse);
+}
+
+.ael-pagination__item--ellipsis { cursor: default; }
+.ael-pagination__item--ellipsis:hover { background: none; color: var(--ael-color-text-secondary); }
+
+.ael-pagination__item:disabled { opacity: var(--ael-opacity-disabled); cursor: not-allowed; }

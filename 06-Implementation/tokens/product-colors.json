@@ -1,0 +1,27 @@
+{
+  "category": "color",
+  "domain": "product",
+  "tier": "core",
+  "governedBy": "S-Color v0.2",
+  "specifiedBy": "SP-Color-Palette v1.1",
+  "ssot": true,
+  "description": "SSOT for product color tokens. UI components, interactive elements, surfaces, and borders. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-color-primary": { "value": "#0074FF", "type": "color", "role": "CTAs, links, active states" },
+    "TK-color-primary-hover": { "value": "#0062D6", "type": "color", "role": "Primary hover state — per identity.html .btn-primary:hover" },
+    "TK-color-primary-active": { "value": "#004099", "type": "color", "role": "Primary active/pressed state" },
+    "TK-color-secondary": { "value": "#6C47FF", "type": "color", "role": "Secondary actions, badges, tags — brand violet per identity.html" },
+    "TK-color-accent-violet": { "value": "#6C47FF", "type": "color", "role": "Brand accent violet — identity.html tag-violet" },
+    "TK-color-accent-teal": { "value": "#00D4AA", "type": "color", "role": "Brand accent teal — identity.html tag-teal" },
+    "TK-color-accent-pink": { "value": "#FF4D8D", "type": "color", "role": "Brand accent pink — identity.html tag-pink" },
+    "TK-color-accent-amber": { "value": "#F59E0B", "type": "color", "role": "Brand accent amber — identity.html tag-amber" },
+    "TK-color-success": { "value": "#10B981", "type": "color", "role": "Confirmations, positive states — per identity.html" },
+    "TK-color-warning": { "value": "#F59E0B", "type": "color", "role": "Alerts, cautionary states — brand amber per identity.html" },
+    "TK-color-error": { "value": "#EF4444", "type": "color", "role": "Errors, destructive actions — per identity.html" },
+    "TK-color-info": { "value": "#3B82F6", "type": "color", "role": "Informational states, help text — per identity.html" },
+    "TK-color-surface": { "value": "#FAFAFA", "type": "color", "role": "Card backgrounds, containers — neutral-50 per identity.html" },
+    "TK-color-background": { "value": "#FFFFFF", "type": "color", "role": "Page backgrounds" },
+    "TK-color-border": { "value": "#E5E5E5", "type": "color", "role": "Dividers, outlines, default borders — neutral-200 per identity.html" },
+    "TK-color-border-focus": { "value": "#0074FF", "type": "color", "role": "Focus ring, active border" }
+  }
+}

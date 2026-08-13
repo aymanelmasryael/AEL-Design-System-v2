@@ -1,0 +1,19 @@
+{
+  "id": "CMP-timeline",
+  "name": "timeline",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Component v0.3",
+  "category": "data",
+  "lifecycleStage": "Implementation",
+  "description": "Chronological vertical timeline with dot markers.",
+  "states": ["Default", "Active"],
+  "tokenDependencies": [
+    "TK-color-text-primary", "TK-color-text-secondary", "TK-color-border", "TK-color-primary", "TK-color-background",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-size-caption",
+    "TK-spacing-xs", "TK-spacing-sm", "TK-spacing-lg", "TK-border-width-md"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported" }],
+  "tags": ["data", "timeline", "ui"],
+  "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "S"
+}

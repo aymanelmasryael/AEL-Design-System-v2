@@ -1,0 +1,14 @@
+{
+  "category": "elevation",
+  "tier": "layout",
+  "governedBy": "S-Component",
+  "specifiedBy": "SP-Component",
+  "ssot": true,
+  "description": "SSOT for all semantic elevation (z-axis depth) token values. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-elevation-surface": { "value": 0, "type": "number", "role": "Surface — flat, no elevation. Default background." },
+    "TK-elevation-raised": { "value": 1, "type": "number", "role": "Raised — cards, elevated containers. Slight visual lift." },
+    "TK-elevation-overlay": { "value": 2, "type": "number", "role": "Overlay — dropdowns, sheets, backdrops" },
+    "TK-elevation-modal": { "value": 3, "type": "number", "role": "Modal — dialogs, drawers. Highest content elevation" }
+  }
+}

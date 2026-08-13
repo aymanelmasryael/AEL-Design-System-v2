@@ -1,21 +1,24 @@
 # S-Spacing — Spacing Standard
 
-**Version:** 1.0
+**Version:** 0.2
 **Status:** Draft
 **Owner:** AEL Digital Studio
+**Governed By:** AEL Constitution v0.2 · Operational Laws v0.2
 **Classification:** Standard — Level 3
 
 ---
 
-# 1. Purpose
+## 1. Purpose
 
 This standard defines the spacing philosophy and rules for the AEL Design System.
 
 It establishes a unified spacing methodology that ensures consistency, scalability, readability, and predictable layouts across all digital and print products.
 
+This standard governs rules and methodology only. It does not carry concrete px values. All concrete values are defined in `06-Implementation/tokens/spacing.json` (the Single Source of Truth per PROP-2026-001).
+
 ---
 
-# 2. Objectives
+## 2. Objectives
 
 - Create a consistent visual rhythm.
 - Improve readability.
@@ -25,7 +28,7 @@ It establishes a unified spacing methodology that ensures consistency, scalabili
 
 ---
 
-# 3. Core Principles
+## 3. Core Principles
 
 - Consistency First
 - Visual Rhythm
@@ -35,44 +38,38 @@ It establishes a unified spacing methodology that ensures consistency, scalabili
 
 ---
 
-# 4. Spacing Model
+## 4. Spacing Model
 
 The AEL Design System adopts an 8-point spacing methodology.
 
-Base Unit:
+**Base Unit:** Defined by `TK-spacing-sm`.
 
-```
-8px
-```
+**Half Unit:** Defined by `TK-spacing-xs`.
 
-Half Unit:
-
-```
-4px
-```
+All spacing shall be derived from this base unit. Arbitrary spacing values are prohibited unless explicitly approved.
 
 ---
 
-# 5. Approved Scale
+## 5. Approved Scale
 
-| Token | Value |
-|--------|------:|
-| XS | 4px |
-| SM | 8px |
-| MD | 16px |
-| LG | 24px |
-| XL | 32px |
-| 2XL | 40px |
-| 3XL | 48px |
-| 4XL | 56px |
-| 5XL | 64px |
-| 6XL | 80px |
-| 7XL | 96px |
-| 8XL | 128px |
+| Token | Description |
+|---|---|
+| `TK-spacing-xs` | Extra small — icon padding, tight inline spacing |
+| `TK-spacing-sm` | Small — component inner padding, compact layouts |
+| `TK-spacing-md` | Medium — default component padding, card insets |
+| `TK-spacing-lg` | Large — section padding, component separation |
+| `TK-spacing-xl` | Extra large — layout gaps, major section spacing |
+| `TK-spacing-2xl` | 2XL — page margins, large container padding |
+| `TK-spacing-3xl` | 3XL — hero section padding, major layout blocks |
+| `TK-spacing-4xl` | 4XL — page-level spacing |
+| `TK-spacing-5xl` | 5XL — large section separation |
+| `TK-spacing-6xl` | 6XL — major layout spacing |
+| `TK-spacing-7xl` | 7XL — maximum layout spacing |
+| `TK-spacing-8xl` | 8XL — ultra large separation |
 
 ---
 
-# 6. Usage
+## 6. Usage
 
 Spacing shall be used consistently for:
 
@@ -87,7 +84,7 @@ Spacing shall be used consistently for:
 
 ---
 
-# 7. Responsive Rules
+## 7. Responsive Rules
 
 Spacing may scale proportionally across:
 
@@ -100,13 +97,13 @@ The spacing hierarchy shall remain consistent across all breakpoints.
 
 ---
 
-# 8. Accessibility
+## 8. Accessibility
 
 Spacing shall improve readability, touch interaction, and visual clarity while reducing cognitive load.
 
 ---
 
-# 9. Cross-Platform Compatibility
+## 9. Cross-Platform Compatibility
 
 Applicable to:
 
@@ -119,16 +116,21 @@ Applicable to:
 
 ---
 
-# 10. Related Specifications
+## 10. Related Specifications
 
 - SP-Spacing
 
 ---
 
-# 11. Version History
+## 11. Versioning
+
+This standard follows semantic versioning as defined in the Constitution (Section 6).
 
 | Version | Date | Description |
-|----------|------------|------------------------------|
+|---|---|---|
 | 1.0 | 2026-07-30 | Initial spacing standard |
+| 0.2 | 2026-07-31 | Removed concrete px values (migrated to Implementation SSOT per PROP-2026-001). Replaced with token ID references. |
 
-_End of S-Spacing v1.0._
+---
+
+*End of S-Spacing v0.2.*

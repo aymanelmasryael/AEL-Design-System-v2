@@ -1,0 +1,13 @@
+{
+  "id": "CMP-progress", "name": "Progress", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "feedback", "lifecycleStage": "Implementation",
+  "description": "Horizontal progress bar for task completion or loading indication.",
+  "states": ["Default", "Indeterminate", "Success", "Error"],
+  "tokenDependencies": [
+    "TK-color-primary", "TK-color-success", "TK-color-error", "TK-color-gray-200",
+    "TK-spacing-xs", "TK-radius-full",
+    "TK-motion-duration-normal", "TK-motion-easing-in", "TK-motion-easing-default"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Progress/progress.css" }],
+  "tags": ["feedback", "progress", "loading", "ui"], "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "S"
+}

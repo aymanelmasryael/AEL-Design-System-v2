@@ -1,0 +1,12 @@
+{
+  "id": "CMP-data-table", "name": "Table", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "data", "lifecycleStage": "Implementation",
+  "description": "Structured data display with sortable columns, row hover, and variants.",
+  "tokenDependencies": [
+    "TK-color-text-primary", "TK-color-text-secondary", "TK-color-border", "TK-color-gray-50", "TK-color-gray-100",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-size-small", "TK-typography-weight-semibold",
+    "TK-spacing-sm", "TK-spacing-md", "TK-radius-md", "TK-border-width-sm", "TK-border-width-md"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Table/table.css" }],
+  "tags": ["data", "table", "ui"], "wcag": "AA", "weight": 5, "complexity": "high", "estimatedEffort": "L"
+}

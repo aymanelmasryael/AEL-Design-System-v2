@@ -1,0 +1,12 @@
+{
+  "id": "CMP-popover", "name": "Popover", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "overlay", "lifecycleStage": "Implementation",
+  "description": "Floating card anchored to a trigger element with rich content.",
+  "states": ["Default", "Open"],
+  "tokenDependencies": [
+    "TK-color-background", "TK-color-border", "TK-spacing-md", "TK-spacing-5xl",
+    "TK-radius-md", "TK-shadow-lg", "TK-zindex-tooltip", "TK-border-width-sm"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Popover/popover.css" }],
+  "tags": ["overlay", "popover", "ui"], "wcag": "AA", "weight": 3, "complexity": "medium", "estimatedEffort": "S"
+}

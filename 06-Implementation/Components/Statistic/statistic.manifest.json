@@ -1,0 +1,12 @@
+{
+  "id": "CMP-statistic", "name": "Statistic", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "data", "lifecycleStage": "Implementation",
+  "description": "KPI display with value, label, and optional trend indicator.",
+  "tokenDependencies": [
+    "TK-color-text-primary", "TK-color-text-secondary", "TK-color-success", "TK-color-error",
+    "TK-typography-font-primary", "TK-typography-size-h2", "TK-typography-size-small", "TK-typography-weight-bold", "TK-typography-weight-medium", "TK-typography-lineheight-tight",
+    "TK-spacing-xs"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Statistic/statistic.css" }],
+  "tags": ["data", "statistic", "kpi", "ui"], "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "XS"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "CMP-accordion", "name": "Accordion", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "container", "lifecycleStage": "Implementation",
+  "description": "Expandable sections for progressive disclosure of content.",
+  "states": ["Default", "Hover", "Focus", "Open"],
+  "tokenDependencies": [
+    "TK-color-border", "TK-color-border-focus", "TK-color-text-primary",
+    "TK-color-gray-50", "TK-color-gray-600",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-weight-medium",
+    "TK-spacing-md", "TK-radius-md", "TK-icon-size-md",
+    "TK-border-width-sm", "TK-border-width-md",
+    "TK-motion-duration-fast"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Accordion/accordion.css" }],
+  "tags": ["container", "accordion", "disclosure", "ui"], "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "S"
+}

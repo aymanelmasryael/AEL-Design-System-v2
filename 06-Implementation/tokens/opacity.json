@@ -1,0 +1,14 @@
+{
+  "category": "opacity",
+  "tier": "core",
+  "governedBy": "S-Component",
+  "specifiedBy": "SP-Component",
+  "ssot": true,
+  "description": "SSOT for all opacity token values used by interactive states. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-opacity-disabled": { "value": 0.4, "type": "number", "role": "Disabled opacity — disabled buttons, inputs, controls" },
+    "TK-opacity-hover": { "value": 0.08, "type": "number", "role": "Hover overlay opacity — hover state darkening" },
+    "TK-opacity-focus": { "value": 0.12, "type": "number", "role": "Focus overlay opacity — focus ring visibility" },
+    "TK-opacity-pressed": { "value": 0.16, "type": "number", "role": "Pressed overlay opacity — active/pressed state darkening" }
+  }
+}

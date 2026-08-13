@@ -1,0 +1,22 @@
+<!--
+Component: Stepper
+Version: 1.0
+Canonical Reference Markup.
+Slots: steps (data-driven)
+-->
+<div class="ael-stepper">
+  <div class="ael-stepper__step ael-stepper__step--completed">
+    <div class="ael-stepper__indicator">1</div>
+    <span class="ael-stepper__label"><!-- Slot: step1Label --></span>
+    <div class="ael-stepper__connector"></div>
+  </div>
+  <div class="ael-stepper__step ael-stepper__step--active">
+    <div class="ael-stepper__indicator">2</div>
+    <span class="ael-stepper__label"><!-- Slot: step2Label --></span>
+    <div class="ael-stepper__connector"></div>
+  </div>
+  <div class="ael-stepper__step">
+    <div class="ael-stepper__indicator">3</div>
+    <span class="ael-stepper__label"><!-- Slot: step3Label --></span>
+  </div>
+</div>

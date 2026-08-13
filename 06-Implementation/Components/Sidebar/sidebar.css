@@ -1,0 +1,31 @@
+/* AEL Sidebar — Composition v1.0 — Zero hardcoded design values. */
+
+.ael-sidebar {
+  width: var(--ael-spacing-6xl);
+  min-height: 100vh;
+  background: var(--ael-color-background);
+  border-right: var(--ael-border-width-sm) solid var(--ael-color-border);
+  padding: var(--ael-spacing-md) 0;
+  position: sticky; top: 0;
+}
+
+.ael-sidebar__section { padding: var(--ael-spacing-xs) 0; }
+.ael-sidebar__section-title {
+  padding: var(--ael-spacing-xs) var(--ael-spacing-md);
+  font-size: var(--ael-typography-size-caption);
+  font-weight: var(--ael-typography-weight-bold);
+  color: var(--ael-color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: var(--ael-typography-letterspacing-wide);
+}
+
+.ael-sidebar__link {
+  display: flex; align-items: center; gap: var(--ael-spacing-sm);
+  padding: var(--ael-spacing-sm) var(--ael-spacing-md);
+  font-size: var(--ael-typography-size-body);
+  color: var(--ael-color-text-primary);
+  text-decoration: none;
+  transition: background-color var(--ael-motion-duration-fast);
+}
+.ael-sidebar__link:hover { background: var(--ael-color-gray-50); }
+.ael-sidebar__link--active { background: var(--ael-color-gray-100); color: var(--ael-color-primary); font-weight: var(--ael-typography-weight-medium); }

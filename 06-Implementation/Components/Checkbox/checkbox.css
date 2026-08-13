@@ -1,0 +1,68 @@
+/*
+ * AEL Checkbox Component — CMP-checkbox v1.0
+ * Zero hardcoded design values.
+ */
+
+.ael-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ael-spacing-sm);
+  cursor: pointer;
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  color: var(--ael-color-text-primary);
+  user-select: none;
+}
+
+.ael-checkbox__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ael-checkbox__mark {
+  width: var(--ael-icon-size-md);
+  height: var(--ael-icon-size-md);
+  border: var(--ael-border-width-md) solid var(--ael-color-border);
+  border-radius: var(--ael-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default),
+              border-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+  flex-shrink: 0;
+}
+
+.ael-checkbox:hover .ael-checkbox__mark {
+  background-color: var(--ael-color-gray-100);
+}
+
+.ael-checkbox__input:focus-visible + .ael-checkbox__mark {
+  outline: var(--ael-border-width-md) solid var(--ael-color-border-focus);
+  outline-offset: var(--ael-border-width-md);
+}
+
+.ael-checkbox__input:checked + .ael-checkbox__mark {
+  background-color: var(--ael-color-primary);
+  border-color: var(--ael-color-primary);
+}
+
+.ael-checkbox__input:checked + .ael-checkbox__mark::after {
+  content: '';
+  width: calc(var(--ael-icon-size-md) / 3);
+  height: calc(var(--ael-icon-size-md) / 2);
+  border: solid var(--ael-color-text-inverse);
+  border-width: 0 var(--ael-border-width-md) var(--ael-border-width-md) 0;
+  transform: rotate(45deg) translateY(-1px);
+}
+
+.ael-checkbox__input:disabled ~ .ael-checkbox__mark,
+.ael-checkbox__input:disabled ~ .ael-checkbox__label {
+  opacity: var(--ael-opacity-disabled);
+  cursor: not-allowed;
+}
+
+.ael-checkbox--error .ael-checkbox__mark {
+  border-color: var(--ael-color-error);
+}

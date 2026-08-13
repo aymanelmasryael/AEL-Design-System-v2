@@ -1,0 +1,41 @@
+/* AEL Modal — CMP-modal v1.0 — Zero hardcoded design values. */
+
+.ael-modal__backdrop {
+  position: fixed; inset: 0; z-index: var(--ael-zindex-modal);
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0, 0, 0, var(--ael-opacity-pressed));
+}
+
+.ael-modal__dialog {
+  background: var(--ael-color-background);
+  border-radius: var(--ael-radius-lg);
+  box-shadow: var(--ael-shadow-xl);
+  max-width: calc(100vw - var(--ael-spacing-2xl));
+  max-height: calc(100vh - var(--ael-spacing-2xl));
+  overflow-y: auto;
+  width: var(--ael-spacing-7xl);
+}
+
+.ael-modal__header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--ael-spacing-lg);
+  border-bottom: var(--ael-border-width-sm) solid var(--ael-color-border);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-h5);
+  font-weight: var(--ael-typography-weight-semibold);
+  color: var(--ael-color-text-primary);
+}
+
+.ael-modal__close {
+  background: none; border: none; cursor: pointer;
+  color: var(--ael-color-gray-600); padding: var(--ael-spacing-xs);
+}
+.ael-modal__close:hover { color: var(--ael-color-text-primary); }
+
+.ael-modal__body { padding: var(--ael-spacing-lg); font-size: var(--ael-typography-size-body); color: var(--ael-color-text-primary); }
+
+.ael-modal__footer {
+  display: flex; justify-content: flex-end; gap: var(--ael-spacing-sm);
+  padding: var(--ael-spacing-md) var(--ael-spacing-lg);
+  border-top: var(--ael-border-width-sm) solid var(--ael-color-border);
+}

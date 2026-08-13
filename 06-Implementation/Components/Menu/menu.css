@@ -1,0 +1,33 @@
+/* AEL Menu Component — CMP-menu v1.0 — Zero hardcoded design values. */
+
+.ael-menu { display: flex; flex-direction: column; min-width: var(--ael-spacing-5xl); padding: var(--ael-spacing-xs) 0; }
+
+.ael-menu__item {
+  display: flex; align-items: center; gap: var(--ael-spacing-sm);
+  padding: var(--ael-spacing-sm) var(--ael-spacing-md);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  color: var(--ael-color-text-primary);
+  background: none; border: none; cursor: pointer; text-align: left;
+  transition: background-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+}
+
+.ael-menu__item:hover { background-color: var(--ael-color-gray-100); }
+.ael-menu__item:focus-visible { outline: var(--ael-border-width-md) solid var(--ael-color-border-focus); outline-offset: calc(var(--ael-border-width-md) * -1); }
+
+.ael-menu__item--active { background-color: var(--ael-color-gray-100); color: var(--ael-color-primary); font-weight: var(--ael-typography-weight-medium); }
+.ael-menu__item:disabled { opacity: var(--ael-opacity-disabled); cursor: not-allowed; }
+
+.ael-menu__icon { width: var(--ael-icon-size-md); height: var(--ael-icon-size-md); color: var(--ael-color-gray-600); flex-shrink: 0; }
+
+.ael-menu__divider { height: var(--ael-border-width-sm); background-color: var(--ael-color-border); margin: var(--ael-spacing-xs) 0; }
+
+.ael-menu__label {
+  padding: var(--ael-spacing-xs) var(--ael-spacing-md);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-caption);
+  font-weight: var(--ael-typography-weight-bold);
+  color: var(--ael-color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: var(--ael-typography-letterspacing-wide);
+}

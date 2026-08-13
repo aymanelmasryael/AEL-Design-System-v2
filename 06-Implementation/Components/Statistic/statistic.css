@@ -1,0 +1,12 @@
+/* AEL Statistic — CMP-statistic v1.0 */
+
+.ael-statistic { font-family: var(--ael-typography-font-primary); }
+
+.ael-statistic__value { font-size: var(--ael-typography-size-h2); font-weight: var(--ael-typography-weight-bold); color: var(--ael-color-text-primary); line-height: var(--ael-typography-lineheight-tight); }
+
+.ael-statistic__label { font-size: var(--ael-typography-size-small); color: var(--ael-color-text-secondary); margin-top: var(--ael-spacing-xs); }
+
+.ael-statistic__trend { display: inline-flex; align-items: center; gap: var(--ael-spacing-xs); font-size: var(--ael-typography-size-small); font-weight: var(--ael-typography-weight-medium); }
+
+.ael-statistic__trend--up { color: var(--ael-color-success); }
+.ael-statistic__trend--down { color: var(--ael-color-error); }

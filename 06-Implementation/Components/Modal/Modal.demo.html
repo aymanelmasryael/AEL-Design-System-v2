@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>AEL Modal</title><link rel="stylesheet" href="modal.css"></head>
+<body>
+
+<button data-ael-modal="demo-modal">Open Modal</button>
+
+<div class="ael-modal" id="demo-modal" hidden>
+  <div class="ael-modal__backdrop">
+    <div class="ael-modal__dialog">
+      <div class="ael-modal__header">
+        <span>Modal Title</span>
+        <button class="ael-modal__close" aria-label="Close">&times;</button>
+      </div>
+      <div class="ael-modal__body">
+        <p>Modal content goes here.</p>
+      </div>
+      <div class="ael-modal__footer">
+        <button class="ael-button ael-button--ghost ael-button--sm">Cancel</button>
+        <button class="ael-button ael-button--primary ael-button--sm">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../runtime/event-bus.js"></script>
+<script src="../../runtime/component.js"></script>
+<script src="../../runtime/components.js"></script>
+
+</body>
+</html>

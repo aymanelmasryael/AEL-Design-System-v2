@@ -1,0 +1,18 @@
+{
+  "id": "AS-logo-primary-dark",
+  "category": "logo",
+  "name": "AEL Primary Logo — Dark",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Image",
+  "specifiedBy": "SP-Image",
+  "source": "logos/ael-logo-primary-dark.svg",
+  "description": "Primary AEL brand logo — white/reversed on dark background",
+  "variants": {
+    "resolutions": ["@1x", "@2x", "@3x"],
+    "themes": ["dark"]
+  },
+  "platforms": ["html", "css", "react", "swiftui", "flutter", "figma", "canva"],
+  "tags": ["brand", "identity", "logo", "dark-mode"],
+  "relatedTokens": ["TK-color-white", "TK-size-logo-height-md"]
+}

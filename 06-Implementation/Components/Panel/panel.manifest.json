@@ -1,0 +1,14 @@
+{
+  "id": "CMP-panel", "name": "Panel", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "container", "lifecycleStage": "Implementation",
+  "description": "Bordered or elevated container for grouping content sections.",
+  "states": ["Default"],
+  "tokenDependencies": [
+    "TK-color-background", "TK-color-border", "TK-color-text-primary", "TK-color-gray-50",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-weight-semibold",
+    "TK-spacing-md", "TK-spacing-lg", "TK-radius-md",
+    "TK-border-width-sm", "TK-shadow-sm"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Panel/panel.css" }],
+  "tags": ["container", "panel", "ui"], "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "XS"
+}

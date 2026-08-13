@@ -1,0 +1,48 @@
+/* AEL Stepper Component — CMP-stepper v1.0 — Zero hardcoded design values. */
+
+.ael-stepper { display: flex; align-items: flex-start; }
+
+.ael-stepper__step { display: flex; align-items: center; gap: var(--ael-spacing-sm); flex: 1; position: relative; }
+
+.ael-stepper__indicator {
+  display: flex; align-items: center; justify-content: center;
+  width: var(--ael-icon-size-lg); height: var(--ael-icon-size-lg);
+  border-radius: 50%;
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-small);
+  font-weight: var(--ael-typography-weight-bold);
+  border: var(--ael-border-width-md) solid var(--ael-color-border);
+  color: var(--ael-color-text-secondary);
+  background-color: var(--ael-color-background);
+  flex-shrink: 0;
+  transition: all var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+}
+
+.ael-stepper__step--active .ael-stepper__indicator {
+  border-color: var(--ael-color-primary);
+  color: var(--ael-color-primary);
+}
+
+.ael-stepper__step--completed .ael-stepper__indicator {
+  border-color: var(--ael-color-success);
+  background-color: var(--ael-color-success);
+  color: var(--ael-color-text-inverse);
+}
+
+.ael-stepper__label {
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-small);
+  color: var(--ael-color-text-secondary);
+}
+
+.ael-stepper__step--active .ael-stepper__label { color: var(--ael-color-text-primary); font-weight: var(--ael-typography-weight-medium); }
+.ael-stepper__step--completed .ael-stepper__label { color: var(--ael-color-text-primary); }
+
+.ael-stepper__connector {
+  flex: 1; height: var(--ael-border-width-md);
+  background-color: var(--ael-color-border);
+  margin: 0 calc(var(--ael-spacing-sm) * -1);
+  align-self: center;
+}
+
+.ael-stepper__step--completed .ael-stepper__connector { background-color: var(--ael-color-success); }

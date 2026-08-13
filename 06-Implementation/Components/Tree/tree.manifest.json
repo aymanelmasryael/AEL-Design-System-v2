@@ -1,0 +1,13 @@
+{
+  "id": "CMP-tree", "name": "Tree", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "data", "lifecycleStage": "Implementation",
+  "description": "Hierarchical tree view with expand/collapse and selection.",
+  "tokenDependencies": [
+    "TK-color-text-primary", "TK-color-text-inverse", "TK-color-primary", "TK-color-gray-50", "TK-color-gray-600",
+    "TK-typography-font-primary", "TK-typography-size-body",
+    "TK-spacing-xs", "TK-spacing-sm", "TK-spacing-lg", "TK-radius-sm",
+    "TK-icon-size-md", "TK-motion-duration-fast"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Tree/tree.css" }],
+  "tags": ["data", "tree", "hierarchy", "ui"], "wcag": "AA", "weight": 3, "complexity": "medium", "estimatedEffort": "M"
+}

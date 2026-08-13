@@ -1,0 +1,34 @@
+.ael-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--ael-icon-size-md);
+  height: var(--ael-icon-size-md);
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.ael-icon--sm {
+  width: var(--ael-icon-size-sm);
+  height: var(--ael-icon-size-sm);
+}
+
+.ael-icon--md {
+  width: var(--ael-icon-size-md);
+  height: var(--ael-icon-size-md);
+}
+
+.ael-icon--lg {
+  width: var(--ael-icon-size-lg);
+  height: var(--ael-icon-size-lg);
+}
+
+.ael-icon--xl {
+  width: var(--ael-icon-size-xl);
+  height: var(--ael-icon-size-xl);
+}
+
+.ael-icon svg {
+  width: 100%;
+  height: 100%;
+}

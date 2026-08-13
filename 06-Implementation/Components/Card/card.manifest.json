@@ -1,0 +1,15 @@
+{
+  "id": "CMP-card", "name": "Card", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "container", "lifecycleStage": "Implementation",
+  "description": "Container for grouping related content with optional header, media, body, and footer.",
+  "states": ["Default", "Hover"],
+  "tokenDependencies": [
+    "TK-color-background", "TK-color-border", "TK-color-text-primary",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-size-h6", "TK-typography-weight-semibold",
+    "TK-spacing-md", "TK-spacing-lg", "TK-spacing-sm", "TK-radius-lg",
+    "TK-border-width-sm", "TK-shadow-sm", "TK-shadow-md",
+    "TK-motion-duration-fast"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Card/card.css" }],
+  "tags": ["container", "card", "ui"], "wcag": "AA", "weight": 3, "complexity": "low", "estimatedEffort": "S"
+}

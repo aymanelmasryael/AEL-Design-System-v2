@@ -1,6 +1,6 @@
 # SP-Typography — Typography Specification
 
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Draft
 **Owner:** AEL Digital Studio
 **Governed By:** S-Typography
@@ -8,83 +8,85 @@
 
 ---
 
-# 1. Purpose
+## 1. Purpose
 
-This specification defines the official typography tokens, scales, font families, weights, spacing, and implementation rules for the AEL Design System.
+This specification defines the structure, token references, and implementation requirements for typography within the AEL Design System.
 
----
-
-# 2. Font Families
-
-| Role | Font |
-|------|------|
-| Primary | Inter |
-| Secondary | SF Pro Display |
-| Monospace | JetBrains Mono |
+Concrete typography values are the Single Source of Truth in `06-Implementation/tokens/typography.json`. This specification references token IDs only and does not duplicate values. See PROP-2026-001.
 
 ---
 
-# 3. Type Scale
+## 2. Font Families
 
-| Token | Size |
-|--------|------|
-| Display | 64px |
-| H1 | 48px |
-| H2 | 40px |
-| H3 | 32px |
-| H4 | 24px |
-| H5 | 20px |
-| H6 | 18px |
-| Body | 16px |
-| Small | 14px |
-| Caption | 12px |
+| Role | Token | Font Stack |
+|------|-------|------------|
+| Primary | `TK-typography-font-primary` | `'Inter', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif` |
+| Secondary | `TK-typography-font-secondary` | `'SF Pro Display', -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif` |
+| Monospace | `TK-typography-font-mono` | `'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace` |
 
 ---
 
-# 4. Font Weights
+## 3. Type Scale
 
-| Weight | Value |
+| Role | Token |
+|------|-------|
+| Display | `TK-typography-size-display` |
+| H1 | `TK-typography-size-h1` |
+| H2 | `TK-typography-size-h2` |
+| H3 | `TK-typography-size-h3` |
+| H4 | `TK-typography-size-h4` |
+| H5 | `TK-typography-size-h5` |
+| H6 | `TK-typography-size-h6` |
+| Body | `TK-typography-size-body` |
+| Small | `TK-typography-size-small` |
+| Caption | `TK-typography-size-caption` |
+
+---
+
+## 4. Font Weights
+
+| Weight | Token |
+|--------|-------|
+| Light | `TK-typography-weight-light` |
+| Regular | `TK-typography-weight-regular` |
+| Medium | `TK-typography-weight-medium` |
+| SemiBold | `TK-typography-weight-semibold` |
+| Bold | `TK-typography-weight-bold` |
+
+---
+
+## 5. Line Heights
+
+| Density | Token |
 |---------|-------|
-| Light | 300 |
-| Regular | 400 |
-| Medium | 500 |
-| SemiBold | 600 |
-| Bold | 700 |
+| Tight | `TK-typography-lineheight-tight` |
+| Normal | `TK-typography-lineheight-normal` |
+| Relaxed | `TK-typography-lineheight-relaxed` |
 
 ---
 
-# 5. Line Heights
+## 6. Letter Spacing
 
-| Token | Value |
-|--------|-------|
-| Tight | 1.2 |
-| Normal | 1.5 |
-| Relaxed | 1.8 |
-
----
-
-# 6. Letter Spacing
-
-| Token | Value |
-|--------|-------|
-| Tight | -0.02em |
-| Normal | 0em |
-| Wide | 0.04em |
+| Density | Token |
+|---------|-------|
+| Tight | `TK-typography-letterspacing-tight` |
+| Normal | `TK-typography-letterspacing-normal` |
+| Wide | `TK-typography-letterspacing-wide` |
 
 ---
 
-# 7. Accessibility
+## 7. Accessibility
 
-- Minimum body size: 16px
-- Maintain sufficient contrast
+- Minimum body size: as defined in `TK-typography-size-body`
+- Maintain sufficient contrast (verified against S-Color accessibility rules)
 - Avoid excessive line lengths
 
 ---
 
-# 8. Platform Mapping
+## 8. Platform Mapping
 
 | Platform | Status |
-|----------|----------|
+|----------|--------|
 | CSS | Supported |
 | SwiftUI | Supported |
 | Android | Planned |
@@ -92,10 +94,13 @@ This specification defines the official typography tokens, scales, font families
 
 ---
 
-# 9. Version History
+## 9. Version History
 
 | Version | Date | Description |
-|----------|------------|------------------------------|
+|---|---|---|
 | 1.0 | 2026-07-30 | Initial typography specification |
+| 1.1 | 2026-07-31 | Added full font stacks. Removed concrete values (migrated to Implementation SSOT per PROP-2026-001). Replaced with token ID references. |
 
-_End of SP-Typography v1.0._
+---
+
+*End of SP-Typography v1.1.*

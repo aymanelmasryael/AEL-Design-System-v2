@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>AEL Toast</title><link rel="stylesheet" href="toast.css"></head>
+<body>
+
+<button onclick="document.getElementById('demo-toast').hidden = false; new AELToast(document.getElementById('demo-toast'))">Show Toast</button>
+
+<div class="ael-toast" id="demo-toast" data-ael-auto data-ael-duration="3000" hidden>
+  <span>Operation completed successfully.</span>
+</div>
+
+<script src="../../runtime/event-bus.js"></script>
+<script src="../../runtime/component.js"></script>
+<script src="../../runtime/components.js"></script>
+
+</body>
+</html>

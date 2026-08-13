@@ -1,0 +1,18 @@
+{
+  "id": "CMP-select", "name": "Select", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "specifiedBy": "SP-Select v1.0",
+  "category": "selection", "lifecycleStage": "Implementation",
+  "description": "Dropdown selection from a predefined list of options.",
+  "states": ["Default", "Hover", "Focus", "Disabled", "Error"],
+  "tokenDependencies": [
+    "TK-color-border", "TK-color-border-focus", "TK-color-error",
+    "TK-color-text-primary", "TK-color-text-disabled",
+    "TK-color-background", "TK-color-gray-100", "TK-color-gray-600",
+    "TK-typography-font-primary", "TK-typography-size-body",
+    "TK-size-button-md", "TK-spacing-md", "TK-radius-md",
+    "TK-icon-size-md", "TK-motion-duration-fast", "TK-opacity-disabled"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Select/select.css" }],
+  "tags": ["select", "dropdown", "form", "ui"],
+  "wcag": "AA", "weight": 3, "complexity": "medium", "estimatedEffort": "M"
+}

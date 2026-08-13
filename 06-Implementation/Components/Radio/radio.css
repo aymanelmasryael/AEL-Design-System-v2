@@ -1,0 +1,49 @@
+/* AEL Radio Component — CMP-radio v1.0 — Zero hardcoded design values. */
+
+.ael-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ael-spacing-sm);
+  cursor: pointer;
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  color: var(--ael-color-text-primary);
+  user-select: none;
+}
+
+.ael-radio__input { position: absolute; opacity: 0; width: 0; height: 0; }
+
+.ael-radio__mark {
+  width: var(--ael-icon-size-md);
+  height: var(--ael-icon-size-md);
+  border: var(--ael-border-width-md) solid var(--ael-color-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+  flex-shrink: 0;
+}
+
+.ael-radio:hover .ael-radio__mark { background-color: var(--ael-color-gray-100); }
+
+.ael-radio__input:focus-visible + .ael-radio__mark {
+  outline: var(--ael-border-width-md) solid var(--ael-color-border-focus);
+  outline-offset: var(--ael-border-width-md);
+}
+
+.ael-radio__input:checked + .ael-radio__mark { border-color: var(--ael-color-primary); }
+
+.ael-radio__input:checked + .ael-radio__mark::after {
+  content: '';
+  width: calc(var(--ael-icon-size-md) / 2);
+  height: calc(var(--ael-icon-size-md) / 2);
+  background-color: var(--ael-color-primary);
+  border-radius: 50%;
+}
+
+.ael-radio__input:disabled ~ .ael-radio__mark,
+.ael-radio__input:disabled ~ .ael-radio__label {
+  opacity: var(--ael-opacity-disabled);
+  cursor: not-allowed;
+}

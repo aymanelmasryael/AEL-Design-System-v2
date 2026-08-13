@@ -1,0 +1,14 @@
+{
+  "category": "border",
+  "tier": "core",
+  "governedBy": "S-Component",
+  "specifiedBy": "SP-Component",
+  "ssot": true,
+  "description": "SSOT for all border width token values. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-border-width-none": { "value": "0px", "type": "dimension", "role": "No border — default state, border-less components" },
+    "TK-border-width-sm": { "value": "1px", "type": "dimension", "role": "Small border — dividers, light outlines, inputs" },
+    "TK-border-width-md": { "value": "2px", "type": "dimension", "role": "Medium border — focus rings, active states, emphasis" },
+    "TK-border-width-lg": { "value": "4px", "type": "dimension", "role": "Large border — prominent emphasis, decorative" }
+  }
+}

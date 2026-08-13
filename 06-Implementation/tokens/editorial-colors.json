@@ -1,0 +1,24 @@
+{
+  "category": "color",
+  "domain": "editorial",
+  "tier": "core",
+  "governedBy": "S-Color v0.2",
+  "specifiedBy": "SP-Color-Palette v1.1",
+  "ssot": true,
+  "description": "SSOT for editorial color tokens. Brand identity, grays, and neutral palette. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-color-brand-primary": { "value": "#0074FF", "type": "color", "role": "Brand Primary — Logo, headlines, accents, brand identity" },
+    "TK-color-black": { "value": "#000000", "type": "color", "role": "Primary text, high-contrast elements" },
+    "TK-color-white": { "value": "#FFFFFF", "type": "color", "role": "Backgrounds, reverse text, negative space" },
+    "TK-color-gray-50": { "value": "#FAFAFA", "type": "color", "role": "Subtle background, card surfaces — neutral-50 per identity.html" },
+    "TK-color-gray-100": { "value": "#F5F5F5", "type": "color", "role": "Section backgrounds, hover states — neutral-100 per identity.html" },
+    "TK-color-gray-200": { "value": "#E5E5E5", "type": "color", "role": "Borders, dividers, disabled states — neutral-200 per identity.html" },
+    "TK-color-gray-300": { "value": "#D4D4D4", "type": "color", "role": "Placeholder backgrounds, subtle separators — neutral-300 per identity.html" },
+    "TK-color-gray-400": { "value": "#A3A3A3", "type": "color", "role": "Placeholder text, secondary icons — neutral-400 per identity.html" },
+    "TK-color-gray-500": { "value": "#737373", "type": "color", "role": "Disabled text, inactive controls — neutral-500 per identity.html" },
+    "TK-color-gray-600": { "value": "#525252", "type": "color", "role": "Secondary text, captions — neutral-600 per identity.html" },
+    "TK-color-gray-700": { "value": "#2D2D2D", "type": "color", "role": "Medium-emphasis body text — neutral-700 per identity.html" },
+    "TK-color-gray-800": { "value": "#1A1A1A", "type": "color", "role": "Body text, high-emphasis content — neutral-800 per identity.html" },
+    "TK-color-gray-900": { "value": "#111111", "type": "color", "role": "Highest emphasis text, dark surfaces — neutral-900 per identity.html" }
+  }
+}

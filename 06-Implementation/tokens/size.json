@@ -1,0 +1,26 @@
+{
+  "category": "size",
+  "tier": "optional",
+  "governedBy": "S-Component",
+  "specifiedBy": "SP-Component",
+  "ssot": true,
+  "description": "SSOT for all component dimension token values. Optional tier — implemented based on project scope. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-size-avatar-xs": { "value": "24px", "type": "dimension", "role": "Extra small avatar" },
+    "TK-size-avatar-sm": { "value": "32px", "type": "dimension", "role": "Small avatar" },
+    "TK-size-avatar-md": { "value": "40px", "type": "dimension", "role": "Medium avatar — default" },
+    "TK-size-avatar-lg": { "value": "48px", "type": "dimension", "role": "Large avatar" },
+    "TK-size-avatar-xl": { "value": "64px", "type": "dimension", "role": "Extra large avatar" },
+    "TK-size-button-xs": { "value": "28px", "type": "dimension", "role": "Extra small button height" },
+    "TK-size-button-sm": { "value": "36px", "type": "dimension", "role": "Small button height" },
+    "TK-size-button-md": { "value": "44px", "type": "dimension", "role": "Medium button height — default" },
+    "TK-size-button-lg": { "value": "52px", "type": "dimension", "role": "Large button height" },
+    "TK-size-button-xl": { "value": "60px", "type": "dimension", "role": "Extra large button height" },
+    "TK-size-icon-container-sm": { "value": "32px", "type": "dimension", "role": "Small icon container" },
+    "TK-size-icon-container-md": { "value": "40px", "type": "dimension", "role": "Medium icon container — default" },
+    "TK-size-icon-container-lg": { "value": "48px", "type": "dimension", "role": "Large icon container" },
+    "TK-size-logo-height-sm": { "value": "24px", "type": "dimension", "role": "Small logo height" },
+    "TK-size-logo-height-md": { "value": "32px", "type": "dimension", "role": "Medium logo height — default" },
+    "TK-size-logo-height-lg": { "value": "48px", "type": "dimension", "role": "Large logo height" }
+  }
+}

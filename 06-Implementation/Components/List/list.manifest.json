@@ -1,0 +1,12 @@
+{
+  "id": "CMP-list", "name": "List", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "data", "lifecycleStage": "Implementation",
+  "description": "Vertical list of items with optional icons and hover states.",
+  "tokenDependencies": [
+    "TK-color-text-primary", "TK-color-border", "TK-color-gray-50",
+    "TK-typography-font-primary", "TK-typography-size-body",
+    "TK-spacing-sm", "TK-spacing-md", "TK-radius-md", "TK-border-width-sm"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/List/list.css" }],
+  "tags": ["data", "list", "ui"], "wcag": "AA", "weight": 3, "complexity": "low", "estimatedEffort": "S"
+}

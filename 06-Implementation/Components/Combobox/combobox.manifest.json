@@ -1,0 +1,20 @@
+{
+  "id": "CMP-combobox", "name": "Combobox", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "specifiedBy": "SP-Combobox v1.0",
+  "category": "selection", "lifecycleStage": "Implementation",
+  "description": "Combines text input with dropdown selection. Filter-as-you-type.",
+  "states": ["Default", "Focus", "Open", "Disabled", "Error", "Highlighted"],
+  "tokenDependencies": [
+    "TK-color-border", "TK-color-border-focus", "TK-color-error",
+    "TK-color-text-primary", "TK-color-text-disabled", "TK-color-background",
+    "TK-color-gray-100", "TK-color-gray-600", "TK-color-primary",
+    "TK-typography-font-primary", "TK-typography-size-body",
+    "TK-size-button-md", "TK-spacing-sm", "TK-spacing-md",
+    "TK-spacing-5xl", "TK-radius-md",
+    "TK-icon-size-md", "TK-shadow-lg",
+    "TK-motion-duration-fast", "TK-opacity-disabled"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Combobox/combobox.css" }],
+  "tags": ["combobox", "autocomplete", "select", "form", "ui"],
+  "wcag": "AA", "weight": 4, "complexity": "high", "estimatedEffort": "M"
+}

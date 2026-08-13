@@ -1,0 +1,890 @@
+{
+  "name": "AEL Design System",
+  "version": "0.2",
+  "generatedBy": "09-Build/generators/figma-generator.js",
+  "source": "06-Implementation/tokens/",
+  "tokens": [
+    {
+      "name": "TK-blur-lg",
+      "description": "Large blur — prominent backdrop, modal backgrounds",
+      "type": "dimension",
+      "value": "16px"
+    },
+    {
+      "name": "TK-blur-md",
+      "description": "Medium blur — glass-morphism cards, overlays",
+      "type": "dimension",
+      "value": "8px"
+    },
+    {
+      "name": "TK-blur-sm",
+      "description": "Small blur — subtle backdrop effects",
+      "type": "dimension",
+      "value": "4px"
+    },
+    {
+      "name": "TK-blur-xl",
+      "description": "Extra large blur — full-screen overlay effects",
+      "type": "dimension",
+      "value": "24px"
+    },
+    {
+      "name": "TK-border-width-lg",
+      "description": "Large border — prominent emphasis, decorative",
+      "type": "dimension",
+      "value": "4px"
+    },
+    {
+      "name": "TK-border-width-md",
+      "description": "Medium border — focus rings, active states, emphasis",
+      "type": "dimension",
+      "value": "2px"
+    },
+    {
+      "name": "TK-border-width-none",
+      "description": "No border — default state, border-less components",
+      "type": "dimension",
+      "value": "0px"
+    },
+    {
+      "name": "TK-border-width-sm",
+      "description": "Small border — dividers, light outlines, inputs",
+      "type": "dimension",
+      "value": "1px"
+    },
+    {
+      "name": "TK-breakpoint-desktop",
+      "description": "Desktop breakpoint — 1440px and above",
+      "type": "dimension",
+      "value": "1440px"
+    },
+    {
+      "name": "TK-breakpoint-laptop",
+      "description": "Laptop breakpoint — 1024px and above",
+      "type": "dimension",
+      "value": "1024px"
+    },
+    {
+      "name": "TK-breakpoint-tablet",
+      "description": "Tablet breakpoint — 768px and above",
+      "type": "dimension",
+      "value": "768px"
+    },
+    {
+      "name": "TK-color-accent-amber",
+      "description": "Brand accent amber — identity.html tag-amber",
+      "type": "color",
+      "value": "#F59E0B"
+    },
+    {
+      "name": "TK-color-accent-pink",
+      "description": "Brand accent pink — identity.html tag-pink",
+      "type": "color",
+      "value": "#FF4D8D"
+    },
+    {
+      "name": "TK-color-accent-teal",
+      "description": "Brand accent teal — identity.html tag-teal",
+      "type": "color",
+      "value": "#00D4AA"
+    },
+    {
+      "name": "TK-color-accent-violet",
+      "description": "Brand accent violet — identity.html tag-violet",
+      "type": "color",
+      "value": "#6C47FF"
+    },
+    {
+      "name": "TK-color-background",
+      "description": "Page backgrounds",
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "TK-color-background-secondary",
+      "description": "Secondary background, section surfaces — neutral-100 per identity.html",
+      "type": "color",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "TK-color-black",
+      "description": "Primary text, high-contrast elements",
+      "type": "color",
+      "value": "#000000"
+    },
+    {
+      "name": "TK-color-border",
+      "description": "Dividers, outlines, default borders — neutral-200 per identity.html",
+      "type": "color",
+      "value": "#E5E5E5"
+    },
+    {
+      "name": "TK-color-border-focus",
+      "description": "Focus ring, active border",
+      "type": "color",
+      "value": "#0074FF"
+    },
+    {
+      "name": "TK-color-brand-primary",
+      "description": "Brand Primary — Logo, headlines, accents, brand identity",
+      "type": "color",
+      "value": "#0074FF"
+    },
+    {
+      "name": "TK-color-error",
+      "description": "Errors, destructive actions — per identity.html",
+      "type": "color",
+      "value": "#EF4444"
+    },
+    {
+      "name": "TK-color-gray-100",
+      "description": "Section backgrounds, hover states — neutral-100 per identity.html",
+      "type": "color",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "TK-color-gray-200",
+      "description": "Borders, dividers, disabled states — neutral-200 per identity.html",
+      "type": "color",
+      "value": "#E5E5E5"
+    },
+    {
+      "name": "TK-color-gray-300",
+      "description": "Placeholder backgrounds, subtle separators — neutral-300 per identity.html",
+      "type": "color",
+      "value": "#D4D4D4"
+    },
+    {
+      "name": "TK-color-gray-400",
+      "description": "Placeholder text, secondary icons — neutral-400 per identity.html",
+      "type": "color",
+      "value": "#A3A3A3"
+    },
+    {
+      "name": "TK-color-gray-50",
+      "description": "Subtle background, card surfaces — neutral-50 per identity.html",
+      "type": "color",
+      "value": "#FAFAFA"
+    },
+    {
+      "name": "TK-color-gray-500",
+      "description": "Disabled text, inactive controls — neutral-500 per identity.html",
+      "type": "color",
+      "value": "#737373"
+    },
+    {
+      "name": "TK-color-gray-600",
+      "description": "Secondary text, captions — neutral-600 per identity.html",
+      "type": "color",
+      "value": "#525252"
+    },
+    {
+      "name": "TK-color-gray-700",
+      "description": "Medium-emphasis body text — neutral-700 per identity.html",
+      "type": "color",
+      "value": "#2D2D2D"
+    },
+    {
+      "name": "TK-color-gray-800",
+      "description": "Body text, high-emphasis content — neutral-800 per identity.html",
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    {
+      "name": "TK-color-gray-900",
+      "description": "Highest emphasis text, dark surfaces — neutral-900 per identity.html",
+      "type": "color",
+      "value": "#111111"
+    },
+    {
+      "name": "TK-color-info",
+      "description": "Informational states, help text — per identity.html",
+      "type": "color",
+      "value": "#3B82F6"
+    },
+    {
+      "name": "TK-color-primary",
+      "description": "CTAs, links, active states",
+      "type": "color",
+      "value": "#0074FF"
+    },
+    {
+      "name": "TK-color-primary-active",
+      "description": "Primary active/pressed state",
+      "type": "color",
+      "value": "#004099"
+    },
+    {
+      "name": "TK-color-primary-hover",
+      "description": "Primary hover state — per identity.html .btn-primary:hover",
+      "type": "color",
+      "value": "#0062D6"
+    },
+    {
+      "name": "TK-color-secondary",
+      "description": "Secondary actions, badges, tags — brand violet per identity.html",
+      "type": "color",
+      "value": "#6C47FF"
+    },
+    {
+      "name": "TK-color-success",
+      "description": "Confirmations, positive states — per identity.html",
+      "type": "color",
+      "value": "#10B981"
+    },
+    {
+      "name": "TK-color-surface",
+      "description": "Card backgrounds, containers — neutral-50 per identity.html",
+      "type": "color",
+      "value": "#FAFAFA"
+    },
+    {
+      "name": "TK-color-surface-secondary",
+      "description": "Elevated surface, modal backgrounds — neutral-100 per identity.html",
+      "type": "color",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "TK-color-text-disabled",
+      "description": "Disabled text on any background — neutral-400 per identity.html",
+      "type": "color",
+      "value": "#A3A3A3"
+    },
+    {
+      "name": "TK-color-text-inverse",
+      "description": "Text on dark or primary backgrounds",
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "TK-color-text-primary",
+      "description": "Primary text on light backgrounds — neutral-900 per identity.html",
+      "type": "color",
+      "value": "#111111"
+    },
+    {
+      "name": "TK-color-text-secondary",
+      "description": "Secondary text, captions, descriptions — neutral-600 per identity.html",
+      "type": "color",
+      "value": "#525252"
+    },
+    {
+      "name": "TK-color-warning",
+      "description": "Alerts, cautionary states — brand amber per identity.html",
+      "type": "color",
+      "value": "#F59E0B"
+    },
+    {
+      "name": "TK-color-white",
+      "description": "Backgrounds, reverse text, negative space",
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "TK-elevation-modal",
+      "description": "Modal — dialogs, drawers. Highest content elevation",
+      "type": "number",
+      "value": 3
+    },
+    {
+      "name": "TK-elevation-overlay",
+      "description": "Overlay — dropdowns, sheets, backdrops",
+      "type": "number",
+      "value": 2
+    },
+    {
+      "name": "TK-elevation-raised",
+      "description": "Raised — cards, elevated containers. Slight visual lift.",
+      "type": "number",
+      "value": 1
+    },
+    {
+      "name": "TK-elevation-surface",
+      "description": "Surface — flat, no elevation. Default background.",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "TK-grid-columns",
+      "description": "Default grid column count",
+      "type": "number",
+      "value": 12
+    },
+    {
+      "name": "TK-grid-gutter-desktop",
+      "description": "Grid gutter on desktop",
+      "type": "dimension",
+      "value": "32px"
+    },
+    {
+      "name": "TK-grid-gutter-mobile",
+      "description": "Grid gutter on mobile",
+      "type": "dimension",
+      "value": "16px"
+    },
+    {
+      "name": "TK-grid-gutter-tablet",
+      "description": "Grid gutter on tablet",
+      "type": "dimension",
+      "value": "24px"
+    },
+    {
+      "name": "TK-grid-margin-desktop",
+      "description": "Page margin on desktop",
+      "type": "dimension",
+      "value": "64px"
+    },
+    {
+      "name": "TK-grid-margin-mobile",
+      "description": "Page margin on mobile",
+      "type": "dimension",
+      "value": "16px"
+    },
+    {
+      "name": "TK-grid-margin-tablet",
+      "description": "Page margin on tablet",
+      "type": "dimension",
+      "value": "32px"
+    },
+    {
+      "name": "TK-grid-max-width",
+      "description": "Maximum content width",
+      "type": "dimension",
+      "value": "1280px"
+    },
+    {
+      "name": "TK-icon-size-lg",
+      "description": "Large icon — featured, navigation",
+      "type": "dimension",
+      "value": "32px"
+    },
+    {
+      "name": "TK-icon-size-md",
+      "description": "Medium icon — default, inline with body text",
+      "type": "dimension",
+      "value": "24px"
+    },
+    {
+      "name": "TK-icon-size-sm",
+      "description": "Small icon — compact UI, inline with small text",
+      "type": "dimension",
+      "value": "16px"
+    },
+    {
+      "name": "TK-icon-size-xl",
+      "description": "Extra large icon — hero, empty states",
+      "type": "dimension",
+      "value": "48px"
+    },
+    {
+      "name": "TK-icon-stroke-width-lg",
+      "description": "Large stroke width — bold icons",
+      "type": "dimension",
+      "value": "2.5px"
+    },
+    {
+      "name": "TK-icon-stroke-width-md",
+      "description": "Medium stroke width — default",
+      "type": "dimension",
+      "value": "2px"
+    },
+    {
+      "name": "TK-icon-stroke-width-sm",
+      "description": "Small stroke width — detailed icons",
+      "type": "dimension",
+      "value": "1.5px"
+    },
+    {
+      "name": "TK-motion-duration-fast",
+      "description": "Fast — hover transitions, micro-interactions, icon changes",
+      "type": "number",
+      "value": 150
+    },
+    {
+      "name": "TK-motion-duration-instant",
+      "description": "Instant — no animation, immediate state change",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "TK-motion-duration-normal",
+      "description": "Normal — component transitions, expand/collapse, toggle",
+      "type": "number",
+      "value": 300
+    },
+    {
+      "name": "TK-motion-duration-slow",
+      "description": "Slow — page transitions, modal open/close, complex animations",
+      "type": "number",
+      "value": 500
+    },
+    {
+      "name": "TK-motion-easing-default",
+      "description": "Default easing — general-purpose transitions",
+      "type": "string",
+      "value": "cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    {
+      "name": "TK-motion-easing-in",
+      "description": "Ease-in — elements entering the viewport, appearing",
+      "type": "string",
+      "value": "cubic-bezier(0.4, 0, 1, 1)"
+    },
+    {
+      "name": "TK-motion-easing-out",
+      "description": "Ease-out — elements leaving the viewport, disappearing",
+      "type": "string",
+      "value": "cubic-bezier(0, 0, 0.2, 1)"
+    },
+    {
+      "name": "TK-opacity-disabled",
+      "description": "Disabled opacity — disabled buttons, inputs, controls",
+      "type": "number",
+      "value": 0.4
+    },
+    {
+      "name": "TK-opacity-focus",
+      "description": "Focus overlay opacity — focus ring visibility",
+      "type": "number",
+      "value": 0.12
+    },
+    {
+      "name": "TK-opacity-hover",
+      "description": "Hover overlay opacity — hover state darkening",
+      "type": "number",
+      "value": 0.08
+    },
+    {
+      "name": "TK-opacity-pressed",
+      "description": "Pressed overlay opacity — active/pressed state darkening",
+      "type": "number",
+      "value": 0.16
+    },
+    {
+      "name": "TK-radius-full",
+      "description": "Fully rounded — pills, badges, avatars, circular buttons",
+      "type": "dimension",
+      "value": "9999px"
+    },
+    {
+      "name": "TK-radius-lg",
+      "description": "Large radius — modals, large cards, panels",
+      "type": "dimension",
+      "value": "12px"
+    },
+    {
+      "name": "TK-radius-md",
+      "description": "Medium radius — buttons, inputs, cards",
+      "type": "dimension",
+      "value": "8px"
+    },
+    {
+      "name": "TK-radius-none",
+      "description": "No border radius — sharp corners",
+      "type": "dimension",
+      "value": "0px"
+    },
+    {
+      "name": "TK-radius-sm",
+      "description": "Small radius — checkboxes, tags, small inputs",
+      "type": "dimension",
+      "value": "4px"
+    },
+    {
+      "name": "TK-radius-xl",
+      "description": "Extra large radius — containers, image cards",
+      "type": "dimension",
+      "value": "16px"
+    },
+    {
+      "name": "TK-shadow-lg",
+      "description": "Large shadow — modals, drawers, prominent elevation",
+      "type": "shadow",
+      "value": "0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04)"
+    },
+    {
+      "name": "TK-shadow-md",
+      "description": "Medium shadow — dropdowns, elevated cards, hover state",
+      "type": "shadow",
+      "value": "0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05)"
+    },
+    {
+      "name": "TK-shadow-none",
+      "description": "No shadow — flat surfaces, default state",
+      "type": "shadow",
+      "value": "none"
+    },
+    {
+      "name": "TK-shadow-sm",
+      "description": "Small shadow — subtle elevation, cards on white",
+      "type": "shadow",
+      "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)"
+    },
+    {
+      "name": "TK-shadow-xl",
+      "description": "Extra large shadow — highest elevation, hero sections",
+      "type": "shadow",
+      "value": "0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.05)"
+    },
+    {
+      "name": "TK-size-avatar-lg",
+      "description": "Large avatar",
+      "type": "dimension",
+      "value": "48px"
+    },
+    {
+      "name": "TK-size-avatar-md",
+      "description": "Medium avatar — default",
+      "type": "dimension",
+      "value": "40px"
+    },
+    {
+      "name": "TK-size-avatar-sm",
+      "description": "Small avatar",
+      "type": "dimension",
+      "value": "32px"
+    },
+    {
+      "name": "TK-size-avatar-xl",
+      "description": "Extra large avatar",
+      "type": "dimension",
+      "value": "64px"
+    },
+    {
+      "name": "TK-size-avatar-xs",
+      "description": "Extra small avatar",
+      "type": "dimension",
+      "value": "24px"
+    },
+    {
+      "name": "TK-size-button-lg",
+      "description": "Large button height",
+      "type": "dimension",
+      "value": "52px"
+    },
+    {
+      "name": "TK-size-button-md",
+      "description": "Medium button height — default",
+      "type": "dimension",
+      "value": "44px"
+    },
+    {
+      "name": "TK-size-button-sm",
+      "description": "Small button height",
+      "type": "dimension",
+      "value": "36px"
+    },
+    {
+      "name": "TK-size-button-xl",
+      "description": "Extra large button height",
+      "type": "dimension",
+      "value": "60px"
+    },
+    {
+      "name": "TK-size-button-xs",
+      "description": "Extra small button height",
+      "type": "dimension",
+      "value": "28px"
+    },
+    {
+      "name": "TK-size-icon-container-lg",
+      "description": "Large icon container",
+      "type": "dimension",
+      "value": "48px"
+    },
+    {
+      "name": "TK-size-icon-container-md",
+      "description": "Medium icon container — default",
+      "type": "dimension",
+      "value": "40px"
+    },
+    {
+      "name": "TK-size-icon-container-sm",
+      "description": "Small icon container",
+      "type": "dimension",
+      "value": "32px"
+    },
+    {
+      "name": "TK-size-logo-height-lg",
+      "description": "Large logo height",
+      "type": "dimension",
+      "value": "48px"
+    },
+    {
+      "name": "TK-size-logo-height-md",
+      "description": "Medium logo height — default",
+      "type": "dimension",
+      "value": "32px"
+    },
+    {
+      "name": "TK-size-logo-height-sm",
+      "description": "Small logo height",
+      "type": "dimension",
+      "value": "24px"
+    },
+    {
+      "name": "TK-spacing-2xl",
+      "description": "2XL — page margins, large container padding",
+      "type": "dimension",
+      "value": "40px"
+    },
+    {
+      "name": "TK-spacing-3xl",
+      "description": "3XL — hero section padding, major layout blocks",
+      "type": "dimension",
+      "value": "48px"
+    },
+    {
+      "name": "TK-spacing-4xl",
+      "description": "4XL — page-level spacing",
+      "type": "dimension",
+      "value": "56px"
+    },
+    {
+      "name": "TK-spacing-5xl",
+      "description": "5XL — large section separation",
+      "type": "dimension",
+      "value": "64px"
+    },
+    {
+      "name": "TK-spacing-6xl",
+      "description": "6XL — major layout spacing",
+      "type": "dimension",
+      "value": "80px"
+    },
+    {
+      "name": "TK-spacing-7xl",
+      "description": "7XL — maximum layout spacing",
+      "type": "dimension",
+      "value": "96px"
+    },
+    {
+      "name": "TK-spacing-8xl",
+      "description": "8XL — ultra large separation",
+      "type": "dimension",
+      "value": "128px"
+    },
+    {
+      "name": "TK-spacing-lg",
+      "description": "Large — section padding, component separation",
+      "type": "dimension",
+      "value": "24px"
+    },
+    {
+      "name": "TK-spacing-md",
+      "description": "Medium — default component padding, card insets",
+      "type": "dimension",
+      "value": "16px"
+    },
+    {
+      "name": "TK-spacing-sm",
+      "description": "Small — base unit, component inner padding, compact layouts",
+      "type": "dimension",
+      "value": "8px"
+    },
+    {
+      "name": "TK-spacing-xl",
+      "description": "Extra large — layout gaps, major section spacing",
+      "type": "dimension",
+      "value": "32px"
+    },
+    {
+      "name": "TK-spacing-xs",
+      "description": "Extra small — icon padding, tight inline spacing",
+      "type": "dimension",
+      "value": "4px"
+    },
+    {
+      "name": "TK-typography-font-mono",
+      "description": "Monospace font for code, data, technical content",
+      "type": "fontFamily",
+      "value": "JetBrains Mono"
+    },
+    {
+      "name": "TK-typography-font-primary",
+      "description": "Primary font for body text, headings, UI",
+      "type": "fontFamily",
+      "value": "Inter"
+    },
+    {
+      "name": "TK-typography-font-secondary",
+      "description": "Secondary font for headlines, display text",
+      "type": "fontFamily",
+      "value": "SF Pro Display"
+    },
+    {
+      "name": "TK-typography-letterspacing-normal",
+      "description": "Normal letter spacing — body text, UI",
+      "type": "dimension",
+      "value": "0em"
+    },
+    {
+      "name": "TK-typography-letterspacing-tight",
+      "description": "Tight letter spacing — headings, display text",
+      "type": "dimension",
+      "value": "-0.02em"
+    },
+    {
+      "name": "TK-typography-letterspacing-wide",
+      "description": "Wide letter spacing — labels, captions, uppercase",
+      "type": "dimension",
+      "value": "0.04em"
+    },
+    {
+      "name": "TK-typography-lineheight-normal",
+      "description": "Normal line height — body text, UI",
+      "type": "number",
+      "value": 1.5
+    },
+    {
+      "name": "TK-typography-lineheight-relaxed",
+      "description": "Relaxed line height — long-form reading, articles",
+      "type": "number",
+      "value": 1.8
+    },
+    {
+      "name": "TK-typography-lineheight-tight",
+      "description": "Tight line height — headings, display text",
+      "type": "number",
+      "value": 1.2
+    },
+    {
+      "name": "TK-typography-size-body",
+      "description": "Body text — paragraphs, form labels, lists",
+      "type": "dimension",
+      "value": "16px"
+    },
+    {
+      "name": "TK-typography-size-caption",
+      "description": "Caption text — image captions, footnotes, legal",
+      "type": "dimension",
+      "value": "12px"
+    },
+    {
+      "name": "TK-typography-size-display",
+      "description": "Display text — hero headings, landing pages",
+      "type": "dimension",
+      "value": "64px"
+    },
+    {
+      "name": "TK-typography-size-h1",
+      "description": "Heading 1 — page titles",
+      "type": "dimension",
+      "value": "48px"
+    },
+    {
+      "name": "TK-typography-size-h2",
+      "description": "Heading 2 — section titles",
+      "type": "dimension",
+      "value": "40px"
+    },
+    {
+      "name": "TK-typography-size-h3",
+      "description": "Heading 3 — subsection titles",
+      "type": "dimension",
+      "value": "32px"
+    },
+    {
+      "name": "TK-typography-size-h4",
+      "description": "Heading 4 — card titles, panel headers",
+      "type": "dimension",
+      "value": "24px"
+    },
+    {
+      "name": "TK-typography-size-h5",
+      "description": "Heading 5 — minor headings",
+      "type": "dimension",
+      "value": "20px"
+    },
+    {
+      "name": "TK-typography-size-h6",
+      "description": "Heading 6 — smallest heading",
+      "type": "dimension",
+      "value": "18px"
+    },
+    {
+      "name": "TK-typography-size-small",
+      "description": "Small text — secondary information, metadata",
+      "type": "dimension",
+      "value": "14px"
+    },
+    {
+      "name": "TK-typography-weight-bold",
+      "description": "Bold weight — primary headings, emphasis",
+      "type": "number",
+      "value": 700
+    },
+    {
+      "name": "TK-typography-weight-light",
+      "description": "Light weight — display text, large headings",
+      "type": "number",
+      "value": 300
+    },
+    {
+      "name": "TK-typography-weight-medium",
+      "description": "Medium weight — emphasized text, subheadings",
+      "type": "number",
+      "value": 500
+    },
+    {
+      "name": "TK-typography-weight-regular",
+      "description": "Regular weight — body text, UI labels",
+      "type": "number",
+      "value": 400
+    },
+    {
+      "name": "TK-typography-weight-semibold",
+      "description": "Semibold weight — section headings, CTAs",
+      "type": "number",
+      "value": 600
+    },
+    {
+      "name": "TK-zindex-base",
+      "description": "Base content — default stacking context",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "TK-zindex-drawer",
+      "description": "Side drawers, slide-out panels",
+      "type": "number",
+      "value": 400
+    },
+    {
+      "name": "TK-zindex-dropdown",
+      "description": "Dropdown menus, select options",
+      "type": "number",
+      "value": 100
+    },
+    {
+      "name": "TK-zindex-modal",
+      "description": "Modal dialogs, alert dialogs",
+      "type": "number",
+      "value": 500
+    },
+    {
+      "name": "TK-zindex-overlay",
+      "description": "Overlays, backdrops",
+      "type": "number",
+      "value": 300
+    },
+    {
+      "name": "TK-zindex-sticky",
+      "description": "Sticky headers, fixed navigation",
+      "type": "number",
+      "value": 200
+    },
+    {
+      "name": "TK-zindex-toast",
+      "description": "Toast notifications, snackbars",
+      "type": "number",
+      "value": 700
+    },
+    {
+      "name": "TK-zindex-tooltip",
+      "description": "Tooltips, popovers",
+      "type": "number",
+      "value": 600
+    }
+  ]
+}

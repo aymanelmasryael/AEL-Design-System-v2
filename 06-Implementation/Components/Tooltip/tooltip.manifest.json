@@ -1,0 +1,14 @@
+{
+  "id": "CMP-tooltip", "name": "Tooltip", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "overlay", "lifecycleStage": "Implementation",
+  "description": "Brief floating label on hover/focus providing supplementary information.",
+  "states": ["Default"],
+  "tokenDependencies": [
+    "TK-color-text-primary", "TK-color-text-inverse",
+    "TK-typography-font-primary", "TK-typography-size-caption",
+    "TK-spacing-xs", "TK-spacing-sm", "TK-spacing-5xl", "TK-radius-sm",
+    "TK-zindex-tooltip"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Tooltip/tooltip.css" }],
+  "tags": ["overlay", "tooltip", "ui"], "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "XS"
+}

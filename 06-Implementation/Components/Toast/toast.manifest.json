@@ -1,0 +1,14 @@
+{
+  "id": "CMP-toast", "name": "Toast", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "feedback", "lifecycleStage": "Implementation",
+  "description": "Temporary notification appearing at screen edge, auto-dismissing.",
+  "states": ["Default"],
+  "tokenDependencies": [
+    "TK-color-text-primary", "TK-color-text-inverse",
+    "TK-typography-font-primary", "TK-typography-size-small",
+    "TK-spacing-sm", "TK-spacing-md", "TK-spacing-5xl", "TK-radius-md",
+    "TK-shadow-lg", "TK-zindex-toast"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Toast/toast.css" }],
+  "tags": ["feedback", "toast", "notification", "ui"], "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "S"
+}

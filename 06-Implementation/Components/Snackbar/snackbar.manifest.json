@@ -1,0 +1,13 @@
+{
+  "id": "CMP-snackbar", "name": "Snackbar", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "feedback", "lifecycleStage": "Implementation",
+  "description": "Bottom-screen message with optional action button, auto-dismissing.",
+  "states": ["Default"],
+  "tokenDependencies": [
+    "TK-color-text-primary", "TK-color-text-inverse", "TK-color-primary",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-weight-medium",
+    "TK-spacing-sm", "TK-spacing-md", "TK-radius-md", "TK-shadow-lg", "TK-zindex-toast"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Snackbar/snackbar.css" }],
+  "tags": ["feedback", "snackbar", "notification", "ui"], "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "S"
+}

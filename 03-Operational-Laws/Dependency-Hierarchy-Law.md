@@ -1,6 +1,6 @@
 # Dependency Hierarchy Law
 
-**Version:** 0.1
+**Version:** 0.2
 **Status:** Draft
 **Owner:** AEL Digital Studio
 **Governed By:** AEL Constitution v0.1
@@ -83,13 +83,19 @@ AEL Meta-Architecture
 
 ### 4.3 Level-Specific Rules
 
+The following rules define permitted and prohibited dependencies for each level in the governance hierarchy.
+
 | Level | May Depend On | Must NOT Depend On |
 |---|---|---|
 | Constitution | Meta-Architecture, Ontology | Operational Laws, Standards, Specifications, Implementation |
 | Operational Laws | Meta-Architecture, Ontology, Constitution | Standards, Specifications, Implementation |
 | Standards | Meta-Architecture, Ontology, Constitution, Operational Laws | Specifications, Implementation |
-| Specifications | Meta-Architecture, Ontology, Constitution, Operational Laws, Standards | Implementation |
-| Implementation | All higher levels | Nothing at same level or below |
+| Specifications | Meta-Architecture, Ontology, Constitution, Operational Laws, Standards, **Implementation token IDs** (namespace reference only) | Implementation value files, Registry |
+| Implementation | All governance levels above | Registry |
+| Registry | **Implementation (generated from)** | Nothing — Registry must not be hand-authored |
+
+**Token ID Reference Rule (DD06):**
+Specifications may reference Implementation token IDs (e.g., `TK-color-primary`) without creating a downward dependency. A token ID is a namespace identifier shared between Specification and Implementation. The token value is defined in Implementation; the token ID is a stable reference that both documents may use. Referencing a token ID does not constitute a dependency on the Implementation file.
 
 ### 4.4 Circular Dependency
 
@@ -213,6 +219,7 @@ This law follows semantic versioning as defined in the Constitution (Section 6).
 | Version | Date | Change |
 |---|---|---|
 | 0.1 | 2026-07-30 | Initial draft |
+| 0.2 | 2026-07-31 | Added DD06 Token ID Reference Rule. Updated Implementation and Registry level rules. Per PROP-2026-001. |
 
 ---
 

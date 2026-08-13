@@ -1,0 +1,16 @@
+{
+  "category": "radius",
+  "tier": "core",
+  "governedBy": "S-Component",
+  "specifiedBy": "SP-Component",
+  "ssot": true,
+  "description": "SSOT for all border radius token values. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-radius-none": { "value": "0px", "type": "dimension", "role": "No border radius — sharp corners" },
+    "TK-radius-sm": { "value": "4px", "type": "dimension", "role": "Small radius — checkboxes, tags, small inputs" },
+    "TK-radius-md": { "value": "8px", "type": "dimension", "role": "Medium radius — buttons, inputs, cards" },
+    "TK-radius-lg": { "value": "12px", "type": "dimension", "role": "Large radius — modals, large cards, panels" },
+    "TK-radius-xl": { "value": "16px", "type": "dimension", "role": "Extra large radius — containers, image cards" },
+    "TK-radius-full": { "value": "9999px", "type": "dimension", "role": "Fully rounded — pills, badges, avatars, circular buttons" }
+  }
+}

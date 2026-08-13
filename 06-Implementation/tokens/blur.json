@@ -1,0 +1,14 @@
+{
+  "category": "blur",
+  "tier": "optional",
+  "governedBy": "S-Component",
+  "specifiedBy": "SP-Component",
+  "ssot": true,
+  "description": "SSOT for all blur token values. Optional tier — implemented based on project scope. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-blur-sm": { "value": "4px", "type": "dimension", "role": "Small blur — subtle backdrop effects" },
+    "TK-blur-md": { "value": "8px", "type": "dimension", "role": "Medium blur — glass-morphism cards, overlays" },
+    "TK-blur-lg": { "value": "16px", "type": "dimension", "role": "Large blur — prominent backdrop, modal backgrounds" },
+    "TK-blur-xl": { "value": "24px", "type": "dimension", "role": "Extra large blur — full-screen overlay effects" }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "CMP-badge", "name": "Badge", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "data", "lifecycleStage": "Implementation",
+  "description": "Small count or status indicator overlaying icons or avatars.",
+  "tokenDependencies": [
+    "TK-color-primary", "TK-color-secondary", "TK-color-success", "TK-color-warning", "TK-color-error", "TK-color-info", "TK-color-text-inverse", "TK-color-text-primary",
+    "TK-typography-font-primary", "TK-typography-size-caption", "TK-typography-weight-bold",
+    "TK-icon-size-md", "TK-spacing-xs", "TK-radius-full"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Badge/badge.css" }],
+  "tags": ["data", "badge", "indicator", "ui"], "wcag": "AA", "weight": 1, "complexity": "low", "estimatedEffort": "XS"
+}

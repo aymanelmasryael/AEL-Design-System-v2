@@ -1,0 +1,18 @@
+{
+  "id": "AS-logo-primary",
+  "category": "logo",
+  "name": "AEL Primary Logo",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Image",
+  "specifiedBy": "SP-Image",
+  "source": "logos/ael-logo-primary.svg",
+  "description": "Primary AEL brand logo — full color on light background",
+  "variants": {
+    "resolutions": ["@1x", "@2x", "@3x"],
+    "themes": ["light"]
+  },
+  "platforms": ["html", "css", "react", "swiftui", "flutter", "figma", "canva", "print"],
+  "tags": ["brand", "identity", "logo"],
+  "relatedTokens": ["TK-color-brand-primary", "TK-size-logo-height-md"]
+}

@@ -1,0 +1,18 @@
+/* AEL Drawer — CMP-drawer v1.0 — Zero hardcoded design values. */
+
+.ael-drawer__backdrop {
+  position: fixed; inset: 0; z-index: var(--ael-zindex-drawer);
+  background: rgba(0, 0, 0, var(--ael-opacity-pressed));
+}
+
+.ael-drawer__panel {
+  position: fixed; top: 0; bottom: 0;
+  background: var(--ael-color-background);
+  box-shadow: var(--ael-shadow-xl);
+  padding: var(--ael-spacing-lg);
+  overflow-y: auto;
+  z-index: var(--ael-zindex-drawer);
+}
+
+.ael-drawer--left .ael-drawer__panel { left: 0; width: var(--ael-spacing-6xl); }
+.ael-drawer--right .ael-drawer__panel { right: 0; width: var(--ael-spacing-6xl); }

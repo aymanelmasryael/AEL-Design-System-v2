@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>AEL Menu</title><link rel="stylesheet" href="menu.css"></head>
+<body>
+
+<button id="menu-trigger">Open Menu</button>
+
+<div class="ael-menu" data-ael-menu-trigger="menu-trigger" hidden>
+  <div class="ael-menu__label">Actions</div>
+  <button class="ael-menu__item">
+    <svg class="ael-menu__icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+    Edit
+  </button>
+  <button class="ael-menu__item">
+    <svg class="ael-menu__icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18"/></svg>
+    Duplicate
+  </button>
+  <div class="ael-menu__divider"></div>
+  <button class="ael-menu__item ael-menu__item--danger">Delete</button>
+</div>
+
+<script src="../../runtime/event-bus.js"></script>
+<script src="../../runtime/component.js"></script>
+<script src="../../runtime/components.js"></script>
+
+</body>
+</html>

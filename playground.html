@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AEL Playground — Compiler Core v1.0</title>
+<link rel="stylesheet" href="06-Implementation/platforms/css/variables.css">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--ael-typography-font-primary); display: flex; min-height: 100vh; }
+.sidebar { width: 260px; background: var(--ael-color-gray-50); border-right: 1px solid var(--ael-color-border); padding: 24px 0; overflow-y: auto; position: sticky; top: 0; height: 100vh; }
+.sidebar h2 { padding: 0 24px 16px; font-size: 18px; color: var(--ael-color-text-primary); }
+.sidebar .group { padding: 4px 0; }
+.sidebar .group-title { padding: 8px 24px; font-size: 12px; font-weight: 600; color: var(--ael-color-text-secondary); text-transform: uppercase; letter-spacing: 0.04em; }
+.sidebar .comp { display: block; padding: 8px 24px 8px 36px; font-size: 14px; color: var(--ael-color-text-primary); cursor: pointer; text-decoration: none; transition: background 0.1s; border: none; background: none; width: 100%; text-align: left; }
+.sidebar .comp:hover { background: var(--ael-color-gray-100); }
+.sidebar .comp.active { background: var(--ael-color-primary); color: #fff; }
+
+.main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.toolbar { display: flex; gap: 8px; padding: 12px 24px; border-bottom: 1px solid var(--ael-color-border); }
+.toolbar button { padding: 6px 16px; font-size: 13px; border: 1px solid var(--ael-color-border); background: var(--ael-color-background); border-radius: var(--ael-radius-sm); cursor: pointer; color: var(--ael-color-text-secondary); }
+.toolbar button.active { background: var(--ael-color-primary); color: #fff; border-color: var(--ael-color-primary); }
+
+.content { display: flex; flex: 1; min-height: 0; }
+.preview { flex: 1; display: flex; align-items: center; justify-content: center; padding: 40px; background: var(--ael-color-gray-50); }
+.code-panel { width: 480px; background: var(--ael-color-text-primary); color: #e0e0e0; padding: 24px; overflow-y: auto; font-family: var(--ael-typography-font-mono); font-size: 13px; line-height: 1.6; white-space: pre-wrap; display: none; }
+.code-panel.visible { display: block; }
+.status { padding: 8px 24px; font-size: 12px; color: var(--ael-color-text-secondary); border-top: 1px solid var(--ael-color-border); background: var(--ael-color-gray-50); }
+
+.toast-container { position: fixed; bottom: 24px; right: 24px; display: flex; flex-direction: column; gap: 8px; z-index: 1000; }
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <h2>AEL Playground</h2>
+  <div class="group"><div class="group-title">Overlay</div>
+    <button class="comp active" data-comp="modal">Modal</button>
+    <button class="comp" data-comp="drawer">Drawer</button>
+  </div>
+  <div class="group"><div class="group-title">Form</div>
+    <button class="comp" data-comp="input">Input</button>
+    <button class="comp" data-comp="textarea">Textarea</button>
+    <button class="comp" data-comp="select">Select</button>
+  </div>
+  <div class="group"><div class="group-title">Action</div>
+    <button class="comp" data-comp="button">Button</button>
+    <button class="comp" data-comp="checkbox">Checkbox</button>
+  </div>
+  <div class="group"><div class="group-title">Navigation</div>
+    <button class="comp" data-comp="tabs">Tabs</button>
+    <button class="comp" data-comp="menu">Menu</button>
+  </div>
+  <div class="group"><div class="group-title">Disclosure</div>
+    <button class="comp" data-comp="accordion">Accordion</button>
+  </div>
+  <div class="group"><div class="group-title">Feedback</div>
+    <button class="comp" data-comp="toast">Toast</button>
+    <button class="comp" data-comp="tooltip">Tooltip</button>
+  </div>
+  <div class="group"><div class="group-title">Container</div>
+    <button class="comp" data-comp="card">Card</button>
+  </div>
+  <div class="group"><div class="group-title">Data</div>
+    <button class="comp" data-comp="badge">Badge</button>
+    <button class="comp" data-comp="table">Table</button>
+    <button class="comp" data-comp="timeline">Timeline</button>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="toolbar">
+    <button class="tab active" data-tab="preview">Preview</button>
+    <button class="tab" data-tab="html">Canonical HTML</button>
+    <button class="tab" data-tab="react">React Output</button>
+    <button class="tab" data-tab="vue">Vue Output</button>
+  </div>
+  <div class="content">
+    <div class="preview" id="preview"></div>
+    <div class="code-panel visible" id="code-html"></div>
+    <div class="code-panel" id="code-react"></div>
+    <div class="code-panel" id="code-vue"></div>
+  </div>
+  <div class="status" id="status">Modal — CMP-modal — overlay</div>
+</main>
+
+<div class="toast-container" id="toasts"></div>
+
+<script type="module" src="06-Implementation/runtime/index.js"></script>
+<script type="module">
+const components = {
+  modal: {
+    html: `<!-- Component: Modal -->\n<div class="ael-modal" hidden>\n  <div class="ael-modal__backdrop">\n    <div class="ael-modal__dialog" role="dialog" aria-modal="true">\n      <div class="ael-modal__header">\n        <!-- Slot: header -->\n        <button class="ael-modal__close" aria-label="Close">&times;</button>\n      </div>\n      <div class="ael-modal__body"><!-- Slot: body --></div>\n      <div class="ael-modal__footer"><!-- Slot: footer --></div>\n    </div>\n  </div>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<button class="ael-button ael-button--primary ael-button--md" onclick="document.getElementById('playground-modal').hidden=false">Open Modal</button>
+<div class="ael-modal" id="playground-modal" hidden>
+  <div class="ael-modal__backdrop">
+    <div class="ael-modal__dialog" role="dialog" aria-modal="true">
+      <div class="ael-modal__header"><span>Modal Title</span><button class="ael-modal__close" aria-label="Close" onclick="document.getElementById('playground-modal').hidden=true">&times;</button></div>
+      <div class="ael-modal__body"><p>This is the modal body content.</p></div>
+      <div class="ael-modal__footer">
+        <button class="ael-button ael-button--ghost ael-button--sm" onclick="document.getElementById('playground-modal').hidden=true">Cancel</button>
+        <button class="ael-button ael-button--primary ael-button--sm" onclick="document.getElementById('playground-modal').hidden=true">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>`;
+      return div;
+    }
+  },
+  drawer: {
+    html: `<!-- Component: Drawer -->\n<div class="ael-drawer ael-drawer--right" hidden>\n  <div class="ael-drawer__backdrop"></div>\n  <div class="ael-drawer__panel" role="dialog" aria-modal="true"></div>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<button class="ael-button ael-button--primary ael-button--md" onclick="document.getElementById('pg-drawer').hidden=false">Open Drawer</button>
+<div class="ael-drawer ael-drawer--right" id="pg-drawer" hidden>
+  <div class="ael-drawer__backdrop" onclick="document.getElementById('pg-drawer').hidden=true"></div>
+  <div class="ael-drawer__panel" role="dialog"><h2>Drawer</h2><p>Slide-in panel content.</p></div>
+</div>`;
+      return div;
+    }
+  },
+  input: {
+    html: `<!-- Component: Input -->\n<div class="ael-input">\n  <label class="ael-input__label"><!-- Slot: label --></label>\n  <div class="ael-input__wrapper">\n    <input class="ael-input__field" type="text">\n  </div>\n  <span class="ael-input__helper"><!-- Slot: helper --></span>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div class="ael-input" style="width:320px">
+  <label class="ael-input__label" for="pg-email">Email</label>
+  <div class="ael-input__wrapper">
+    <input class="ael-input__field" id="pg-email" type="email" placeholder="you@example.com">
+  </div>
+  <span class="ael-input__helper">We will never share your email.</span>
+</div>`;
+      return div;
+    }
+  },
+  textarea: {
+    html: `<!-- Component: Textarea -->\n<div class="ael-textarea">\n  <label class="ael-textarea__label"><!-- Slot: label --></label>\n  <textarea class="ael-textarea__field" rows="4"></textarea>\n  <span class="ael-textarea__helper"><!-- Slot: helper --></span>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div class="ael-textarea" style="width:400px"><label class="ael-textarea__label" for="pg-desc">Description</label><textarea class="ael-textarea__field" id="pg-desc" rows="4" placeholder="Enter description..."></textarea><span class="ael-textarea__helper">Maximum 500 characters.</span></div>`;
+      return div;
+    }
+  },
+  select: {
+    html: `<!-- Component: Select -->\n<div class="ael-select">\n  <label class="ael-select__label"><!-- Slot: label --></label>\n  <div class="ael-select__wrapper">\n    <select class="ael-select__field"></select>\n    <svg class="ael-select__chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>\n  </div>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div class="ael-select" style="width:280px"><label class="ael-select__label" for="pg-country">Country</label><div class="ael-select__wrapper"><select class="ael-select__field" id="pg-country"><option>United States</option><option>Canada</option><option>United Kingdom</option></select><svg class="ael-select__chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></div></div>`;
+      return div;
+    }
+  },
+  button: {
+    html: `<!-- Component: Button -->\n<button class="ael-button ael-button--primary ael-button--md"><!-- Slot: label --></button>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+<button class="ael-button ael-button--primary ael-button--md">Primary</button>
+<button class="ael-button ael-button--secondary ael-button--md">Secondary</button>
+<button class="ael-button ael-button--outline ael-button--md">Outline</button>
+<button class="ael-button ael-button--ghost ael-button--md">Ghost</button>
+<button class="ael-button ael-button--danger ael-button--md">Danger</button>
+<button class="ael-button ael-button--primary ael-button--md" disabled>Disabled</button>
+</div>`;
+      return div;
+    }
+  },
+  checkbox: {
+    html: `<!-- Component: Checkbox -->\n<label class="ael-checkbox">\n  <input class="ael-checkbox__input" type="checkbox">\n  <span class="ael-checkbox__mark"></span>\n  <span class="ael-checkbox__label"><!-- Slot: label --></span>\n</label>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div style="display:flex;flex-direction:column;gap:8px">
+<label class="ael-checkbox"><input class="ael-checkbox__input" type="checkbox" checked><span class="ael-checkbox__mark"></span><span class="ael-checkbox__label">Accept terms</span></label>
+<label class="ael-checkbox"><input class="ael-checkbox__input" type="checkbox"><span class="ael-checkbox__mark"></span><span class="ael-checkbox__label">Subscribe to newsletter</span></label>
+<label class="ael-checkbox"><input class="ael-checkbox__input" type="checkbox" disabled><span class="ael-checkbox__mark"></span><span class="ael-checkbox__label">Disabled option</span></label>
+</div>`;
+      return div;
+    }
+  },
+  tabs: {
+    html: `<!-- Component: Tabs -->\n<div class="ael-tabs" role="tablist">\n  <button class="ael-tabs__tab ael-tabs__tab--active" role="tab" data-ael-tab="1">Tab 1</button>\n  <button class="ael-tabs__tab" role="tab" data-ael-tab="2">Tab 2</button>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div class="ael-tabs"><button class="ael-tabs__tab ael-tabs__tab--active">Overview</button><button class="ael-tabs__tab">Settings</button><button class="ael-tabs__tab">Billing</button></div>`;
+      return div;
+    }
+  },
+  menu: {
+    html: `<!-- Component: Menu -->\n<div class="ael-menu" role="menu">\n  <button class="ael-menu__item" role="menuitem">Edit</button>\n  <div class="ael-menu__divider" role="separator"></div>\n  <button class="ael-menu__item" role="menuitem">Delete</button>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div class="ael-menu" style="min-width:200px">
+<div class="ael-menu__label">Actions</div>
+<button class="ael-menu__item">Edit</button>
+<button class="ael-menu__item">Duplicate</button>
+<div class="ael-menu__divider"></div>
+<button class="ael-menu__item">Delete</button>
+</div>`;
+      return div;
+    }
+  },
+  accordion: {
+    html: `<!-- Component: Accordion -->\n<div class="ael-accordion">\n  <div class="ael-accordion__item">\n    <button class="ael-accordion__trigger"><span>Title</span><svg class="ael-accordion__icon" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>\n    <div class="ael-accordion__content"><!-- Slot: content --></div>\n  </div>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div class="ael-accordion" style="width:400px">
+<div class="ael-accordion__item">
+<button class="ael-accordion__trigger"><span>What is AEL?</span><svg class="ael-accordion__icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+<div class="ael-accordion__content"><p>AEL is a design system compiler platform.</p></div>
+</div>
+<div class="ael-accordion__item">
+<button class="ael-accordion__trigger"><span>How does it work?</span><svg class="ael-accordion__icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+<div class="ael-accordion__content"><p>Canonical HTML → IR → Multi-platform output.</p></div>
+</div>
+</div>`;
+      return div;
+    }
+  },
+  toast: {
+    html: `<!-- Component: Toast -->\n<div class="ael-toast" role="status" hidden>\n  <span><!-- Slot: message --></span>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<button class="ael-button ael-button--primary ael-button--md" onclick="showToast()">Show Toast</button>`;
+      return div;
+    }
+  },
+  tooltip: {
+    html: `<!-- Component: Tooltip -->\n<div class="ael-tooltip" role="tooltip" hidden>\n  <!-- Slot: text -->\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div style="position:relative;display:inline-block;padding:60px">
+<button class="ael-button ael-button--outline ael-button--md" id="tt-target">Hover me</button>
+<div class="ael-tooltip" id="pg-tooltip" style="position:absolute;top:20px;left:50%;transform:translateX(-50%)" hidden>This is a helpful tooltip</div>
+</div>`;
+      return div;
+    }
+  },
+  card: {
+    html: `<!-- Component: Card -->\n<div class="ael-card">\n  <div class="ael-card__header"><!-- Slot: header --></div>\n  <div class="ael-card__body"><!-- Slot: body --></div>\n  <div class="ael-card__footer"><!-- Slot: footer --></div>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div class="ael-card" style="width:360px"><div class="ael-card__header">Card Title</div><div class="ael-card__body"><p>This is the card body content. Cards group related information.</p></div><div class="ael-card__footer"><button class="ael-button ael-button--primary ael-button--sm">Action</button><button class="ael-button ael-button--ghost ael-button--sm">Cancel</button></div></div>`;
+      return div;
+    }
+  },
+  badge: {
+    html: `<!-- Component: Badge -->\n<span class="ael-badge"><!-- Slot: text --></span>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div style="display:flex;gap:8px">
+<span class="ael-badge">5</span>
+<span class="ael-badge ael-badge--success">Done</span>
+<span class="ael-badge ael-badge--warning">Pending</span>
+<span class="ael-badge ael-badge--error">Failed</span>
+<span class="ael-badge ael-badge--dot"></span>
+</div>`;
+      return div;
+    }
+  },
+  table: {
+    html: `<!-- Component: Table -->\n<table class="ael-table">\n  <tr><th>Column</th></tr>\n  <tr><td>Value</td></tr>\n</table>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<table class="ael-table" style="width:100%"><thead><tr><th>Name</th><th>Role</th><th>Status</th></tr></thead><tbody><tr><td>Alice</td><td>Admin</td><td><span class="ael-badge ael-badge--success">Active</span></td></tr><tr><td>Bob</td><td>Editor</td><td><span class="ael-badge">Inactive</span></td></tr></tbody></table>`;
+      return div;
+    }
+  },
+  timeline: {
+    html: `<!-- Component: Timeline -->\n<div class="ael-timeline">\n  <div class="ael-timeline__item ael-timeline__item--active">\n    <div class="ael-timeline__dot"></div>\n    <div class="ael-timeline__content">\n      <div class="ael-timeline__time"><!-- Slot: time --></div>\n      <!-- Slot: title -->\n      <!-- Slot: description -->\n    </div>\n  </div>\n</div>`,
+    render: () => {
+      const div = document.createElement('div');
+      div.innerHTML = `<div class="ael-timeline" style="width:400px">
+<div class="ael-timeline__item ael-timeline__item--active">
+  <div class="ael-timeline__dot"></div>
+  <div class="ael-timeline__content">
+    <div class="ael-timeline__time">2026-07-31</div>
+    <strong>Compiler Core v1.0</strong>
+    <p style="margin:0;color:var(--ael-color-text-secondary);font-size:14px">Baseline established. 22/22 tests pass.</p>
+  </div>
+</div>
+<div class="ael-timeline__item ael-timeline__item--active">
+  <div class="ael-timeline__dot"></div>
+  <div class="ael-timeline__content">
+    <div class="ael-timeline__time">2026-07-31</div>
+    <strong>Architecture Frozen</strong>
+    <p style="margin:0;color:var(--ael-color-text-secondary);font-size:14px">Data-driven extensibility proven. Zero compiler changes.</p>
+  </div>
+</div>
+</div>`;
+      return div;
+    }
+  }
+};
+
+const status = document.getElementById('status');
+const preview = document.getElementById('preview');
+const panels = {
+  html: document.getElementById('code-html'),
+  react: document.getElementById('code-react'),
+  vue: document.getElementById('code-vue')
+};
+
+function escapeHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+async function loadCode(name) {
+  try {
+    const r1 = await fetch(`06-Implementation/Components/${name.charAt(0).toUpperCase()+name.slice(1)}/${name}.html`);
+    panels.html.innerHTML = `<pre>${escapeHtml(await r1.text())}</pre>`;
+  } catch(e) { panels.html.innerHTML = `<pre>${escapeHtml(components[name]?.html || '')}</pre>`; }
+
+  try {
+    const r2 = await fetch(`06-Implementation/platforms/react/src/${name.split('-').map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join('')}.jsx`);
+    panels.react.innerHTML = `<pre>${escapeHtml(await r2.text())}</pre>`;
+  } catch(e) { panels.react.innerHTML = `<pre>// React component not generated for ${name}</pre>`; }
+
+  try {
+    const r3 = await fetch(`06-Implementation/platforms/vue/src/${name.split('-').map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join('')}.vue`);
+    panels.vue.innerHTML = `<pre>${escapeHtml(await r3.text())}</pre>`;
+  } catch(e) { panels.vue.innerHTML = `<pre>// Vue component not generated for ${name}</pre>`; }
+}
+
+function showComponent(name) {
+  const comp = components[name];
+  if (!comp) return;
+
+  preview.innerHTML = '';
+  preview.appendChild(comp.render());
+  status.textContent = `${name.charAt(0).toUpperCase()+name.slice(1)} — ${name} — AEL Playground`;
+
+  if (name === 'tooltip') {
+    const tt = document.getElementById('pg-tooltip');
+    const target = document.getElementById('tt-target');
+    if (tt && target) {
+      target.onmouseenter = () => tt.hidden = false;
+      target.onmouseleave = () => tt.hidden = true;
+    }
+  }
+
+  loadCode(name);
+}
+
+document.querySelectorAll('.sidebar .comp').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.sidebar .comp').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    showComponent(btn.dataset.comp);
+  });
+});
+
+document.querySelectorAll('.toolbar .tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.toolbar .tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const tab = btn.dataset.tab;
+    if (tab === 'preview') {
+      Object.values(panels).forEach(p => p.classList.remove('visible'));
+      preview.style.display = 'flex';
+    } else {
+      preview.style.display = 'none';
+      Object.entries(panels).forEach(([k, p]) => p.classList.toggle('visible', k === tab));
+    }
+  });
+});
+
+window.showToast = () => {
+  const container = document.getElementById('toasts');
+  const toast = document.createElement('div');
+  toast.className = 'ael-toast';
+  toast.setAttribute('role', 'status');
+  toast.innerHTML = '<span>Operation completed successfully.</span>';
+  container.appendChild(toast);
+  toast.hidden = false;
+  setTimeout(() => { toast.hidden = true; setTimeout(() => toast.remove(), 300); }, 3000);
+};
+
+showComponent('modal');
+</script>
+</body>
+</html>

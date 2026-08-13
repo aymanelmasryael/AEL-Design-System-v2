@@ -1,0 +1,29 @@
+{
+  "id": "CMP-icon",
+  "name": "Icon",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Component v0.3",
+  "specifiedBy": "SP-Icon-Component v1.0",
+  "category": "foundation",
+  "description": "Renders SVG icons from the AEL asset system with size and accessibility bindings.",
+  "lifecycleStage": "Implementation",
+  "anatomy": [
+    { "part": "SvgElement", "required": true, "type": "Root", "description": "SVG element from asset" }
+  ],
+  "variants": [],
+  "states": ["Default"],
+  "tokenDependencies": [
+    "TK-icon-size-md", "TK-icon-size-sm", "TK-icon-size-lg", "TK-icon-size-xl"
+  ],
+  "assetDependencies": ["AS-icon-*"],
+  "platforms": [
+    { "name": "html-css", "status": "Supported", "path": "Components/Icon/icon.css" }
+  ],
+  "tags": ["icon", "svg", "ui"],
+  "documentation": null,
+  "wcag": "AA",
+  "weight": 1,
+  "complexity": "low",
+  "estimatedEffort": "XS"
+}

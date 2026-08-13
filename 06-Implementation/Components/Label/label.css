@@ -1,0 +1,8 @@
+.ael-label {
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-small);
+  font-weight: var(--ael-typography-weight-medium);
+  color: var(--ael-color-text-secondary);
+  cursor: pointer;
+  user-select: none;
+}

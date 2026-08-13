@@ -1,0 +1,24 @@
+/* AEL Layout — Stack v1.0 — Zero hardcoded design values. */
+
+.ael-stack { display: flex; }
+
+.ael-stack--vertical { flex-direction: column; }
+.ael-stack--horizontal { flex-direction: row; }
+
+.ael-stack--xs { gap: var(--ael-spacing-xs); }
+.ael-stack--sm { gap: var(--ael-spacing-sm); }
+.ael-stack--md { gap: var(--ael-spacing-md); }
+.ael-stack--lg { gap: var(--ael-spacing-lg); }
+.ael-stack--xl { gap: var(--ael-spacing-xl); }
+.ael-stack--2xl { gap: var(--ael-spacing-2xl); }
+.ael-stack--3xl { gap: var(--ael-spacing-3xl); }
+
+.ael-stack--align-start { align-items: flex-start; }
+.ael-stack--align-center { align-items: center; }
+.ael-stack--align-end { align-items: flex-end; }
+.ael-stack--align-stretch { align-items: stretch; }
+
+.ael-stack--justify-start { justify-content: flex-start; }
+.ael-stack--justify-center { justify-content: center; }
+.ael-stack--justify-end { justify-content: flex-end; }
+.ael-stack--justify-between { justify-content: space-between; }

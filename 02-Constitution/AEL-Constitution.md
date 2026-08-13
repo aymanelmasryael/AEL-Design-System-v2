@@ -1,6 +1,6 @@
 # AEL Constitution
 
-**Version:** 0.1 (Draft)
+**Version:** 0.2 (Draft)
 **Status:** Draft
 **Owner:** AEL Digital Studio
 **Governed By:** AEL Meta-Architecture v0.1 · AEL Ontology v0.1
@@ -73,9 +73,12 @@ AEL Meta-Architecture
   → AEL Ontology
     → AEL Constitution
       → Operational Laws
-        → Standards
-          → Specifications
-            → Implementation
+        → Standards (rules only — no concrete values)
+          → Specifications (structure + token ID references — no concrete values)
+            → Implementation (SSOT — all concrete values)
+              → Registry (Generated Catalog — machine-produced from Implementation)
+
+Validation (Cross-cutting, all levels)
 ```
 
 Each level constrains the levels below it. No lower-level document may override a higher-level rule.
@@ -117,7 +120,7 @@ All governance documents follow semantic versioning: **MAJOR.MINOR.PATCH**
 
 ### 6.2 Constitution Version
 
-The current version of this document is **0.1 (Draft)**. It shall remain in Draft status until:
+The current version of this document is **0.2 (Draft)**. It shall remain in Draft status until:
 
 - The Ontology has been tested against real Standards and Specifications, and
 - The Meta-Architecture is confirmed stable.

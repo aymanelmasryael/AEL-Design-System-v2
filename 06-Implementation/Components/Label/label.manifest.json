@@ -1,0 +1,29 @@
+{
+  "id": "CMP-label",
+  "name": "Label",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Component v0.3",
+  "specifiedBy": "SP-Label v1.0",
+  "category": "foundation",
+  "description": "Descriptive text label associated with form controls.",
+  "lifecycleStage": "Implementation",
+  "anatomy": [
+    { "part": "LabelElement", "required": true, "type": "Root", "description": "Label element" }
+  ],
+  "variants": [],
+  "states": ["Default"],
+  "tokenDependencies": [
+    "TK-typography-font-primary", "TK-typography-size-small",
+    "TK-typography-weight-medium", "TK-color-text-secondary"
+  ],
+  "platforms": [
+    { "name": "html-css", "status": "Supported", "path": "Components/Label/label.css" }
+  ],
+  "tags": ["form", "label", "ui"],
+  "documentation": null,
+  "wcag": "AA",
+  "weight": 1,
+  "complexity": "low",
+  "estimatedEffort": "XS"
+}

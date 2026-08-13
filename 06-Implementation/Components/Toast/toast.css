@@ -1,0 +1,14 @@
+/* AEL Toast — CMP-toast v1.0 — Zero hardcoded design values. */
+
+.ael-toast {
+  display: flex; align-items: center; gap: var(--ael-spacing-sm);
+  padding: var(--ael-spacing-sm) var(--ael-spacing-md);
+  background: var(--ael-color-text-primary);
+  color: var(--ael-color-text-inverse);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-small);
+  border-radius: var(--ael-radius-md);
+  box-shadow: var(--ael-shadow-lg);
+  min-width: var(--ael-spacing-5xl);
+  z-index: var(--ael-zindex-toast);
+}

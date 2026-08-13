@@ -1,0 +1,14 @@
+/* AEL Tooltip — CMP-tooltip v1.0 — Zero hardcoded design values. */
+
+.ael-tooltip {
+  position: absolute; z-index: var(--ael-zindex-tooltip);
+  background: var(--ael-color-text-primary);
+  color: var(--ael-color-text-inverse);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-caption);
+  padding: var(--ael-spacing-xs) var(--ael-spacing-sm);
+  border-radius: var(--ael-radius-sm);
+  max-width: var(--ael-spacing-5xl);
+  white-space: nowrap;
+  pointer-events: none;
+}

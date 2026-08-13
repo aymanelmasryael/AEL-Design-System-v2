@@ -1,0 +1,12 @@
+{
+  "id": "CMP-drawer", "name": "Drawer", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "overlay", "lifecycleStage": "Implementation",
+  "description": "Slide-in panel from left or right for navigation or supplementary content.",
+  "states": ["Default", "Open"],
+  "tokenDependencies": [
+    "TK-color-background", "TK-spacing-6xl", "TK-spacing-lg",
+    "TK-shadow-xl", "TK-zindex-drawer", "TK-opacity-pressed"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Drawer/drawer.css" }],
+  "tags": ["overlay", "drawer", "panel", "ui"], "wcag": "AA", "weight": 3, "complexity": "medium", "estimatedEffort": "S"
+}

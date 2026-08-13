@@ -1,0 +1,18 @@
+{
+  "id": "AS-icon-plus",
+  "category": "icon",
+  "name": "Plus",
+  "version": "1.0",
+  "status": "Active",
+  "governedBy": "S-Icon",
+  "specifiedBy": "SP-Icon",
+  "source": "plus.svg",
+  "description": "Plus sign icon for add/create",
+  "variants": {
+    "sizes": [16, 20, 24, 32, 48],
+    "styles": ["outline"]
+  },
+  "platforms": ["html", "css", "react", "swiftui", "flutter", "figma", "canva"],
+  "tags": ["ui", "navigation"],
+  "relatedTokens": ["TK-color-primary", "TK-icon-stroke-width-md"]
+}

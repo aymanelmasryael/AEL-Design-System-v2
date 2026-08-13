@@ -1,0 +1,20 @@
+/* AEL Snackbar — CMP-snackbar v1.0 — Zero hardcoded design values. */
+
+.ael-snackbar {
+  display: flex; align-items: center; gap: var(--ael-spacing-md);
+  padding: var(--ael-spacing-sm) var(--ael-spacing-md);
+  background: var(--ael-color-text-primary);
+  color: var(--ael-color-text-inverse);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  border-radius: var(--ael-radius-md);
+  box-shadow: var(--ael-shadow-lg);
+  z-index: var(--ael-zindex-toast);
+}
+
+.ael-snackbar__action {
+  background: none; border: none;
+  color: var(--ael-color-primary); font-weight: var(--ael-typography-weight-medium);
+  cursor: pointer; padding: 0; font-size: inherit;
+  white-space: nowrap;
+}

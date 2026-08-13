@@ -1,0 +1,24 @@
+/* AEL Timeline — CMP-timeline v1.0 — Zero hardcoded design values. */
+
+.ael-timeline { position: relative; padding-left: var(--ael-spacing-lg); }
+
+.ael-timeline::before {
+  content: ''; position: absolute; left: calc(var(--ael-spacing-xs) + var(--ael-border-width-md));
+  top: 0; bottom: 0; width: var(--ael-border-width-md);
+  background-color: var(--ael-color-border);
+}
+
+.ael-timeline__item { position: relative; padding-bottom: var(--ael-spacing-lg); }
+
+.ael-timeline__dot {
+  position: absolute; left: calc(-1 * var(--ael-spacing-lg));
+  width: var(--ael-spacing-sm); height: var(--ael-spacing-sm);
+  border-radius: 50%; background: var(--ael-color-border);
+  border: var(--ael-border-width-md) solid var(--ael-color-background);
+}
+
+.ael-timeline__item--active .ael-timeline__dot { background: var(--ael-color-primary); border-color: var(--ael-color-primary); }
+
+.ael-timeline__content { font-family: var(--ael-typography-font-primary); font-size: var(--ael-typography-size-body); color: var(--ael-color-text-primary); }
+
+.ael-timeline__time { font-size: var(--ael-typography-size-caption); color: var(--ael-color-text-secondary); margin-bottom: var(--ael-spacing-xs); }

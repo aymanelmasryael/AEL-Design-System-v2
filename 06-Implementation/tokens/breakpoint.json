@@ -1,0 +1,13 @@
+{
+  "category": "breakpoint",
+  "tier": "layout",
+  "governedBy": "S-Grid",
+  "specifiedBy": "SP-Grid v1.1",
+  "ssot": true,
+  "description": "SSOT for all responsive breakpoint token values. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-breakpoint-tablet": { "value": "768px", "type": "dimension", "role": "Tablet breakpoint — 768px and above" },
+    "TK-breakpoint-laptop": { "value": "1024px", "type": "dimension", "role": "Laptop breakpoint — 1024px and above" },
+    "TK-breakpoint-desktop": { "value": "1440px", "type": "dimension", "role": "Desktop breakpoint — 1440px and above" }
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>AEL Tabs</title><link rel="stylesheet" href="tabs.css"></head>
+<body>
+
+<div class="ael-tabs">
+  <button class="ael-tabs__tab ael-tabs__tab--active" data-ael-tab="panel-1">Tab One</button>
+  <button class="ael-tabs__tab" data-ael-tab="panel-2">Tab Two</button>
+  <button class="ael-tabs__tab" data-ael-tab="panel-3">Tab Three</button>
+</div>
+
+<div data-ael-tab-panel id="panel-1"><p>Content for tab one.</p></div>
+<div data-ael-tab-panel id="panel-2" hidden><p>Content for tab two.</p></div>
+<div data-ael-tab-panel id="panel-3" hidden><p>Content for tab three.</p></div>
+
+<script src="../../runtime/event-bus.js"></script>
+<script src="../../runtime/component.js"></script>
+<script src="../../runtime/components.js"></script>
+
+</body>
+</html>

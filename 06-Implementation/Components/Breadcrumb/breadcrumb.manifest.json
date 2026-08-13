@@ -1,0 +1,15 @@
+{
+  "id": "CMP-breadcrumb", "name": "Breadcrumb", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "specifiedBy": "SP-Breadcrumb v1.0",
+  "category": "navigation", "lifecycleStage": "Implementation",
+  "description": "Hierarchical navigation trail showing current page location.",
+  "states": ["Default", "Hover", "Focus", "Current"],
+  "tokenDependencies": [
+    "TK-color-primary", "TK-color-border-focus", "TK-color-text-primary",
+    "TK-color-text-secondary", "TK-color-gray-400",
+    "TK-typography-font-primary", "TK-typography-size-small", "TK-typography-weight-medium",
+    "TK-spacing-xs", "TK-border-width-md", "TK-motion-duration-fast"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Breadcrumb/breadcrumb.css" }],
+  "tags": ["navigation", "breadcrumb", "ui"], "wcag": "AA", "weight": 1, "complexity": "low", "estimatedEffort": "XS"
+}

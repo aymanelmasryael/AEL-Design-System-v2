@@ -1,0 +1,55 @@
+{
+  "id": "CMP-textarea",
+  "name": "Textarea",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Component v0.3",
+  "specifiedBy": "SP-Textarea v1.0",
+  "category": "foundation",
+  "description": "Multi-line text entry control for paragraphs, descriptions, and messages.",
+  "lifecycleStage": "Implementation",
+  "anatomy": [
+    { "part": "Container", "required": true, "type": "Root", "description": "Wrapping element" },
+    { "part": "Label", "required": false, "type": "Text Slot", "description": "Descriptive label" },
+    { "part": "TextareaField", "required": true, "type": "Root element", "description": "The textarea element" },
+    { "part": "HelperText", "required": false, "type": "Text Slot", "description": "Hint text" },
+    { "part": "ErrorText", "required": false, "type": "Text Slot", "description": "Error message" }
+  ],
+  "variants": [
+    { "name": "Default", "category": "Style", "tokenBinding": "TK-color-border", "description": "Standard bordered textarea." },
+    { "name": "Filled", "category": "Style", "tokenBinding": "TK-color-gray-50", "description": "Filled background, bottom border." }
+  ],
+  "states": ["Default", "Hover", "Focus", "Disabled", "ReadOnly", "Error"],
+  "tokenDependencies": [
+    "TK-color-text-primary", "TK-color-text-disabled", "TK-color-text-secondary",
+    "TK-color-gray-400", "TK-color-gray-50", "TK-color-gray-100", "TK-color-background",
+    "TK-color-border", "TK-color-border-focus", "TK-color-error",
+    "TK-border-width-sm", "TK-border-width-md", "TK-radius-md",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-size-small",
+    "TK-typography-size-caption", "TK-typography-weight-regular", "TK-typography-lineheight-normal",
+    "TK-spacing-md", "TK-spacing-sm", "TK-spacing-3xl",
+    "TK-motion-duration-fast", "TK-motion-easing-default", "TK-opacity-disabled"
+  ],
+  "assetDependencies": [],
+  "componentDependencies": [],
+  "platforms": [
+    { "name": "html-css", "status": "Supported", "path": "Components/Textarea/textarea.css" },
+    { "name": "react", "status": "Planned", "path": "Components/Textarea/Textarea.tsx" }
+  ],
+  "accessibility": {
+    "role": "textbox",
+    "accessibleNameSource": "Associated label",
+    "keyboard": "Tab to reach, type to input",
+    "screenReader": "Announces label, value",
+    "contrastRequirements": "WCAG 2.1 AA"
+  },
+  "tags": ["form", "textarea", "text", "multi-line", "ui"],
+  "documentation": "Components/Textarea/textarea.html",
+  "playground": null,
+  "examples": "Components/Textarea/textarea.html",
+  "coverage": "html-css",
+  "wcag": "AA",
+  "weight": 1,
+  "complexity": "low",
+  "estimatedEffort": "S"
+}

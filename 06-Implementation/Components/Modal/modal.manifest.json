@@ -1,0 +1,14 @@
+{
+  "id": "CMP-modal", "name": "Modal", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "overlay", "lifecycleStage": "Implementation",
+  "description": "Dialog overlay for confirmations, forms, and focused content.",
+  "states": ["Default", "Open"],
+  "tokenDependencies": [
+    "TK-color-background", "TK-color-border", "TK-color-text-primary", "TK-color-gray-600",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-size-h5", "TK-typography-weight-semibold",
+    "TK-spacing-xs", "TK-spacing-sm", "TK-spacing-md", "TK-spacing-lg", "TK-spacing-2xl", "TK-spacing-7xl",
+    "TK-radius-lg", "TK-shado-xl", "TK-zindex-modal", "TK-border-width-sm", "TK-opacity-pressed"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Modal/modal.css" }],
+  "tags": ["overlay", "modal", "dialog", "ui"], "wcag": "AA", "weight": 4, "complexity": "high", "estimatedEffort": "M"
+}

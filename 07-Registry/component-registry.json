@@ -1,0 +1,2581 @@
+{
+  "registry": "AEL Component Registry",
+  "version": "0.2",
+  "status": "Draft",
+  "owner": "AEL Digital Studio",
+  "generated": true,
+  "generatedBy": "09-Build/generators/component-registry-generator.js",
+  "source": "06-Implementation/Components/",
+  "generatedAt": "2026-08-06T00:30:03.670Z",
+  "description": "Generated catalog — DO NOT EDIT. Produced from 06-Implementation/Components/ manifest files. See PROP-2026-001.",
+  "governedBy": [
+    "S-Component v0.3",
+    "SP-Component v1.2"
+  ],
+  "components": {
+    "container": [
+      {
+        "id": "CMP-accordion",
+        "name": "Accordion",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "container",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Expandable sections for progressive disclosure of content.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Open"
+        ],
+        "tokenDependencies": [
+          "TK-color-border",
+          "TK-color-border-focus",
+          "TK-color-text-primary",
+          "TK-color-gray-50",
+          "TK-color-gray-600",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-weight-medium",
+          "TK-spacing-md",
+          "TK-radius-md",
+          "TK-icon-size-md",
+          "TK-border-width-sm",
+          "TK-border-width-md",
+          "TK-motion-duration-fast"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Accordion/accordion.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "container",
+          "accordion",
+          "disclosure",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-card",
+        "name": "Card",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "container",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Container for grouping related content with optional header, media, body, and footer.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover"
+        ],
+        "tokenDependencies": [
+          "TK-color-background",
+          "TK-color-border",
+          "TK-color-text-primary",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-size-h6",
+          "TK-typography-weight-semibold",
+          "TK-spacing-md",
+          "TK-spacing-lg",
+          "TK-spacing-sm",
+          "TK-radius-lg",
+          "TK-border-width-sm",
+          "TK-shadow-sm",
+          "TK-shadow-md",
+          "TK-motion-duration-fast"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Card/card.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "container",
+          "card",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 3,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-collapse",
+        "name": "Collapse",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "container",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Single-section expandable panel for toggling content visibility.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Open"
+        ],
+        "tokenDependencies": [
+          "TK-color-border",
+          "TK-color-border-focus",
+          "TK-color-text-primary",
+          "TK-color-gray-50",
+          "TK-color-gray-100",
+          "TK-color-gray-600",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-weight-medium",
+          "TK-spacing-sm",
+          "TK-spacing-md",
+          "TK-radius-md",
+          "TK-icon-size-md",
+          "TK-border-width-sm",
+          "TK-border-width-md",
+          "TK-motion-duration-fast"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Collapse/collapse.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "container",
+          "collapse",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "XS"
+        }
+      },
+      {
+        "id": "CMP-panel",
+        "name": "Panel",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "container",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Bordered or elevated container for grouping content sections.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default"
+        ],
+        "tokenDependencies": [
+          "TK-color-background",
+          "TK-color-border",
+          "TK-color-text-primary",
+          "TK-color-gray-50",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-weight-semibold",
+          "TK-spacing-md",
+          "TK-spacing-lg",
+          "TK-radius-md",
+          "TK-border-width-sm",
+          "TK-shadow-sm"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Panel/panel.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "container",
+          "panel",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "XS"
+        }
+      }
+    ],
+    "feedback": [
+      {
+        "id": "CMP-alert",
+        "name": "Alert",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "feedback",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Contextual feedback message for user attention — info, success, warning, error.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default"
+        ],
+        "tokenDependencies": [
+          "TK-color-info",
+          "TK-color-success",
+          "TK-color-warning",
+          "TK-color-error",
+          "TK-color-text-primary",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-weight-semibold",
+          "TK-spacing-xs",
+          "TK-spacing-sm",
+          "TK-spacing-md",
+          "TK-radius-md",
+          "TK-icon-size-md",
+          "TK-border-width-sm"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Alert/alert.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "feedback",
+          "alert",
+          "notification",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-progress",
+        "name": "Progress",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "feedback",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Horizontal progress bar for task completion or loading indication.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Indeterminate",
+          "Success",
+          "Error"
+        ],
+        "tokenDependencies": [
+          "TK-color-primary",
+          "TK-color-success",
+          "TK-color-error",
+          "TK-color-gray-200",
+          "TK-spacing-xs",
+          "TK-radius-full",
+          "TK-motion-duration-normal",
+          "TK-motion-easing-in",
+          "TK-motion-easing-default"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Progress/progress.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "feedback",
+          "progress",
+          "loading",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-skeleton",
+        "name": "Skeleton",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "feedback",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Placeholder loading shape mimicking content layout during data fetch.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default"
+        ],
+        "tokenDependencies": [
+          "TK-color-gray-100",
+          "TK-color-gray-200",
+          "TK-typography-size-body",
+          "TK-typography-size-h3",
+          "TK-size-avatar-md",
+          "TK-size-button-md",
+          "TK-spacing-5xl",
+          "TK-spacing-6xl",
+          "TK-radius-sm",
+          "TK-radius-md"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Skeleton/skeleton.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "feedback",
+          "skeleton",
+          "loading",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "medium",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-snackbar",
+        "name": "Snackbar",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "feedback",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Bottom-screen message with optional action button, auto-dismissing.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default"
+        ],
+        "tokenDependencies": [
+          "TK-color-text-primary",
+          "TK-color-text-inverse",
+          "TK-color-primary",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-weight-medium",
+          "TK-spacing-sm",
+          "TK-spacing-md",
+          "TK-radius-md",
+          "TK-shadow-lg",
+          "TK-zindex-toast"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Snackbar/snackbar.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "feedback",
+          "snackbar",
+          "notification",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-toast",
+        "name": "Toast",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "feedback",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Temporary notification appearing at screen edge, auto-dismissing.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default"
+        ],
+        "tokenDependencies": [
+          "TK-color-text-primary",
+          "TK-color-text-inverse",
+          "TK-typography-font-primary",
+          "TK-typography-size-small",
+          "TK-spacing-sm",
+          "TK-spacing-md",
+          "TK-spacing-5xl",
+          "TK-radius-md",
+          "TK-shadow-lg",
+          "TK-zindex-toast"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Toast/toast.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "feedback",
+          "toast",
+          "notification",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      }
+    ],
+    "data": [
+      {
+        "id": "CMP-avatar",
+        "name": "Avatar",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "data",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "User or entity image with initials fallback in multiple sizes.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [],
+        "tokenDependencies": [
+          "TK-color-gray-200",
+          "TK-color-gray-600",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-size-caption",
+          "TK-typography-size-h5",
+          "TK-typography-size-h3",
+          "TK-typography-weight-medium",
+          "TK-size-avatar-xs",
+          "TK-size-avatar-sm",
+          "TK-size-avatar-md",
+          "TK-size-avatar-lg",
+          "TK-size-avatar-xl",
+          "TK-radius-md"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Avatar/avatar.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "data",
+          "avatar",
+          "user",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-badge",
+        "name": "Badge",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "data",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Small count or status indicator overlaying icons or avatars.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [],
+        "tokenDependencies": [
+          "TK-color-primary",
+          "TK-color-secondary",
+          "TK-color-success",
+          "TK-color-warning",
+          "TK-color-error",
+          "TK-color-info",
+          "TK-color-text-inverse",
+          "TK-color-text-primary",
+          "TK-typography-font-primary",
+          "TK-typography-size-caption",
+          "TK-typography-weight-bold",
+          "TK-icon-size-md",
+          "TK-spacing-xs",
+          "TK-radius-full"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Badge/badge.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "data",
+          "badge",
+          "indicator",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 1,
+          "complexity": "low",
+          "estimatedEffort": "XS"
+        }
+      },
+      {
+        "id": "CMP-list",
+        "name": "List",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "data",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Vertical list of items with optional icons and hover states.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [],
+        "tokenDependencies": [
+          "TK-color-text-primary",
+          "TK-color-border",
+          "TK-color-gray-50",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-spacing-sm",
+          "TK-spacing-md",
+          "TK-radius-md",
+          "TK-border-width-sm"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/List/list.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "data",
+          "list",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 3,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-statistic",
+        "name": "Statistic",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "data",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "KPI display with value, label, and optional trend indicator.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [],
+        "tokenDependencies": [
+          "TK-color-text-primary",
+          "TK-color-text-secondary",
+          "TK-color-success",
+          "TK-color-error",
+          "TK-typography-font-primary",
+          "TK-typography-size-h2",
+          "TK-typography-size-small",
+          "TK-typography-weight-bold",
+          "TK-typography-weight-medium",
+          "TK-typography-lineheight-tight",
+          "TK-spacing-xs"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Statistic/statistic.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "data",
+          "statistic",
+          "kpi",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "XS"
+        }
+      },
+      {
+        "id": "CMP-data-table",
+        "name": "Table",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "data",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Structured data display with sortable columns, row hover, and variants.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [],
+        "tokenDependencies": [
+          "TK-color-text-primary",
+          "TK-color-text-secondary",
+          "TK-color-border",
+          "TK-color-gray-50",
+          "TK-color-gray-100",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-size-small",
+          "TK-typography-weight-semibold",
+          "TK-spacing-sm",
+          "TK-spacing-md",
+          "TK-radius-md",
+          "TK-border-width-sm",
+          "TK-border-width-md"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Table/table.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "data",
+          "table",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 5,
+          "complexity": "high",
+          "estimatedEffort": "L"
+        }
+      },
+      {
+        "id": "CMP-tag",
+        "name": "Tag",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "data",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Compact label for categorization, filtering, or metadata.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [],
+        "tokenDependencies": [
+          "TK-color-primary",
+          "TK-color-success",
+          "TK-color-warning",
+          "TK-color-error",
+          "TK-color-text-secondary",
+          "TK-color-gray-100",
+          "TK-typography-font-primary",
+          "TK-typography-size-caption",
+          "TK-typography-weight-medium",
+          "TK-spacing-xs",
+          "TK-spacing-sm",
+          "TK-spacing-lg",
+          "TK-radius-sm"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Tag/tag.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "data",
+          "tag",
+          "label",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 1,
+          "complexity": "low",
+          "estimatedEffort": "XS"
+        }
+      },
+      {
+        "id": "CMP-timeline",
+        "name": "timeline",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "data",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Chronological vertical timeline with dot markers.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Active"
+        ],
+        "tokenDependencies": [
+          "TK-color-text-primary",
+          "TK-color-text-secondary",
+          "TK-color-border",
+          "TK-color-primary",
+          "TK-color-background",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-size-caption",
+          "TK-spacing-xs",
+          "TK-spacing-sm",
+          "TK-spacing-lg",
+          "TK-border-width-md"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "data",
+          "timeline",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-tree",
+        "name": "Tree",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "data",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Hierarchical tree view with expand/collapse and selection.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [],
+        "tokenDependencies": [
+          "TK-color-text-primary",
+          "TK-color-text-inverse",
+          "TK-color-primary",
+          "TK-color-gray-50",
+          "TK-color-gray-600",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-spacing-xs",
+          "TK-spacing-sm",
+          "TK-spacing-lg",
+          "TK-radius-sm",
+          "TK-icon-size-md",
+          "TK-motion-duration-fast"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Tree/tree.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "data",
+          "tree",
+          "hierarchy",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 3,
+          "complexity": "medium",
+          "estimatedEffort": "M"
+        }
+      }
+    ],
+    "navigation": [
+      {
+        "id": "CMP-breadcrumb",
+        "name": "Breadcrumb",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "navigation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Breadcrumb v1.0",
+        "description": "Hierarchical navigation trail showing current page location.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Current"
+        ],
+        "tokenDependencies": [
+          "TK-color-primary",
+          "TK-color-border-focus",
+          "TK-color-text-primary",
+          "TK-color-text-secondary",
+          "TK-color-gray-400",
+          "TK-typography-font-primary",
+          "TK-typography-size-small",
+          "TK-typography-weight-medium",
+          "TK-spacing-xs",
+          "TK-border-width-md",
+          "TK-motion-duration-fast"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Breadcrumb/breadcrumb.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "navigation",
+          "breadcrumb",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 1,
+          "complexity": "low",
+          "estimatedEffort": "XS"
+        }
+      },
+      {
+        "id": "CMP-menu",
+        "name": "Menu",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "navigation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Menu v1.0",
+        "description": "Vertical list of actions or navigation items with icons and dividers.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Active",
+          "Disabled"
+        ],
+        "tokenDependencies": [
+          "TK-color-primary",
+          "TK-color-border-focus",
+          "TK-color-border",
+          "TK-color-text-primary",
+          "TK-color-text-secondary",
+          "TK-color-gray-100",
+          "TK-color-gray-600",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-size-caption",
+          "TK-typography-weight-medium",
+          "TK-typography-weight-bold",
+          "TK-typography-letterspacing-wide",
+          "TK-icon-size-md",
+          "TK-spacing-xs",
+          "TK-spacing-sm",
+          "TK-spacing-md",
+          "TK-spacing-5xl",
+          "TK-border-width-sm",
+          "TK-border-width-md",
+          "TK-motion-duration-fast",
+          "TK-opacity-disabled"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Menu/menu.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "navigation",
+          "menu",
+          "dropdown",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "medium",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-pagination",
+        "name": "Pagination",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "navigation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Pagination v1.0",
+        "description": "Page navigation control for paginated content.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Active",
+          "Disabled"
+        ],
+        "tokenDependencies": [
+          "TK-color-primary",
+          "TK-color-border-focus",
+          "TK-color-text-primary",
+          "TK-color-text-secondary",
+          "TK-color-text-inverse",
+          "TK-color-gray-100",
+          "TK-typography-font-primary",
+          "TK-typography-size-small",
+          "TK-typography-weight-medium",
+          "TK-size-button-sm",
+          "TK-spacing-xs",
+          "TK-radius-sm",
+          "TK-border-width-sm",
+          "TK-border-width-md",
+          "TK-motion-duration-fast",
+          "TK-opacity-disabled"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Pagination/pagination.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "navigation",
+          "pagination",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "medium",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-stepper",
+        "name": "stepper",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "navigation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Step-by-step progress indicator for multi-step workflows.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Active",
+          "Completed"
+        ],
+        "tokenDependencies": [
+          "TK-color-primary",
+          "TK-color-success",
+          "TK-color-border",
+          "TK-color-text-primary",
+          "TK-color-text-secondary",
+          "TK-color-text-inverse",
+          "TK-color-background",
+          "TK-typography-font-primary",
+          "TK-typography-size-small",
+          "TK-typography-weight-bold",
+          "TK-typography-weight-medium",
+          "TK-icon-size-lg",
+          "TK-spacing-sm",
+          "TK-border-width-md",
+          "TK-motion-duration-fast"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "navigation",
+          "stepper",
+          "wizard",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "medium",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-tabs",
+        "name": "Tabs",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "navigation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Tabs v1.0",
+        "description": "Horizontal tab navigation for switching between content panels.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Active",
+          "Disabled"
+        ],
+        "tokenDependencies": [
+          "TK-color-primary",
+          "TK-color-border",
+          "TK-color-border-focus",
+          "TK-color-text-primary",
+          "TK-color-text-secondary",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-weight-medium",
+          "TK-spacing-sm",
+          "TK-spacing-md",
+          "TK-border-width-sm",
+          "TK-border-width-md",
+          "TK-motion-duration-fast",
+          "TK-opacity-disabled"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Tabs/tabs.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "navigation",
+          "tabs",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "medium",
+          "estimatedEffort": "S"
+        }
+      }
+    ],
+    "foundation": [
+      {
+        "id": "CMP-button",
+        "name": "Button",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "foundation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Button v1.0",
+        "description": "Primary interactive control for triggering user actions — submit, navigate, confirm, delete.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [
+          {
+            "part": "Container",
+            "required": true,
+            "type": "Root",
+            "description": "Clickable/tappable surface"
+          },
+          {
+            "part": "Label",
+            "required": true,
+            "type": "Text Slot",
+            "description": "Button text content or accessible name"
+          },
+          {
+            "part": "LeadingIcon",
+            "required": false,
+            "type": "Icon Slot",
+            "description": "Icon before label text"
+          },
+          {
+            "part": "TrailingIcon",
+            "required": false,
+            "type": "Icon Slot",
+            "description": "Icon after label text"
+          },
+          {
+            "part": "LoadingIndicator",
+            "required": false,
+            "type": "Indicator Slot",
+            "description": "Spinner shown during loading"
+          }
+        ],
+        "variants": [
+          {
+            "name": "Primary",
+            "category": "Role",
+            "tokenBinding": "TK-color-primary",
+            "description": "Default CTA. Highest emphasis."
+          },
+          {
+            "name": "Secondary",
+            "category": "Role",
+            "tokenBinding": "TK-color-secondary",
+            "description": "Supporting action."
+          },
+          {
+            "name": "Outline",
+            "category": "Style",
+            "tokenBinding": "TK-color-border",
+            "description": "Bordered. Medium emphasis."
+          },
+          {
+            "name": "Ghost",
+            "category": "Style",
+            "tokenBinding": null,
+            "description": "No border or background until hover. Text color via TK-color-text-primary."
+          },
+          {
+            "name": "Text",
+            "category": "Style",
+            "tokenBinding": "TK-color-primary (text only)",
+            "description": "Inline with text. Minimal."
+          },
+          {
+            "name": "Danger",
+            "category": "Role",
+            "tokenBinding": "TK-color-error",
+            "description": "Destructive action."
+          },
+          {
+            "name": "Success",
+            "category": "Role",
+            "tokenBinding": "TK-color-success",
+            "description": "Confirmation action."
+          }
+        ],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Active",
+          "Disabled",
+          "Loading"
+        ],
+        "tokenDependencies": [
+          "TK-color-primary",
+          "TK-color-primary-hover",
+          "TK-color-primary-active",
+          "TK-color-secondary",
+          "TK-color-error",
+          "TK-color-success",
+          "TK-color-text-inverse",
+          "TK-color-text-primary",
+          "TK-color-text-disabled",
+          "TK-color-border",
+          "TK-color-border-focus",
+          "TK-color-gray-200",
+          "TK-color-gray-500",
+          "TK-border-width-md",
+          "TK-radius-md",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-weight-medium",
+          "TK-spacing-lg",
+          "TK-spacing-sm",
+          "TK-spacing-xs",
+          "TK-icon-size-md",
+          "TK-size-button-md",
+          "TK-size-button-xs",
+          "TK-size-button-sm",
+          "TK-size-button-lg",
+          "TK-size-button-xl",
+          "TK-shadow-sm",
+          "TK-shadow-md",
+          "TK-opacity-hover",
+          "TK-opacity-pressed",
+          "TK-opacity-disabled",
+          "TK-motion-duration-fast",
+          "TK-motion-easing-default"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Button/button.css"
+          },
+          {
+            "name": "react",
+            "status": "Planned",
+            "path": "Components/Button/Button.tsx"
+          },
+          {
+            "name": "vue",
+            "status": "Planned",
+            "path": "Components/Button/Button.vue"
+          },
+          {
+            "name": "swiftui",
+            "status": "Planned",
+            "path": "Components/Button/Button.swift"
+          },
+          {
+            "name": "flutter",
+            "status": "Planned",
+            "path": "Components/Button/button.dart"
+          },
+          {
+            "name": "android",
+            "status": "Planned",
+            "path": "Components/Button/Button.kt"
+          },
+          {
+            "name": "figma",
+            "status": "Planned",
+            "path": "platforms/figma/"
+          },
+          {
+            "name": "canva",
+            "status": "Planned",
+            "path": "platforms/canva/"
+          }
+        ],
+        "accessibility": {
+          "role": "button",
+          "accessibleNameSource": "Label slot text or aria-label attribute",
+          "keyboard": "Tab to reach, Enter or Space to activate. Disabled and loading removed from tab order.",
+          "screenReader": "Announces label text. Announces loading via aria-busy. Announces disabled via aria-disabled.",
+          "contrastRequirements": "WCAG 2.1 AA — 4.5:1 normal text, 3:1 large text"
+        },
+        "replacedBy": null,
+        "tags": [
+          "interactive",
+          "action",
+          "form",
+          "ui"
+        ],
+        "meta": {
+          "documentation": "Components/Button/button.html",
+          "playground": null,
+          "examples": "Components/Button/button.html",
+          "coverage": "html-css",
+          "wcag": "AA",
+          "weight": 1,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-icon",
+        "name": "Icon",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "foundation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Icon-Component v1.0",
+        "description": "Renders SVG icons from the AEL asset system with size and accessibility bindings.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [
+          {
+            "part": "SvgElement",
+            "required": true,
+            "type": "Root",
+            "description": "SVG element from asset"
+          }
+        ],
+        "variants": [],
+        "states": [
+          "Default"
+        ],
+        "tokenDependencies": [
+          "TK-icon-size-md",
+          "TK-icon-size-sm",
+          "TK-icon-size-lg",
+          "TK-icon-size-xl"
+        ],
+        "assetDependencies": [
+          "AS-icon-*"
+        ],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Icon/icon.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "icon",
+          "svg",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 1,
+          "complexity": "low",
+          "estimatedEffort": "XS"
+        }
+      },
+      {
+        "id": "CMP-text-input",
+        "name": "Text Input",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "foundation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Input v1.0",
+        "description": "Standard text entry control for single-line and multi-line user input with label, validation, and icon support.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [
+          {
+            "part": "Container",
+            "required": true,
+            "type": "Root",
+            "description": "Wrapping element for label + input group"
+          },
+          {
+            "part": "Label",
+            "required": false,
+            "type": "Text Slot",
+            "description": "Descriptive label above the input"
+          },
+          {
+            "part": "InputField",
+            "required": true,
+            "type": "Root element",
+            "description": "The input/textarea element"
+          },
+          {
+            "part": "LeadingIcon",
+            "required": false,
+            "type": "Icon Slot",
+            "description": "Icon before text"
+          },
+          {
+            "part": "TrailingIcon",
+            "required": false,
+            "type": "Icon Slot",
+            "description": "Action icon after text"
+          },
+          {
+            "part": "HelperText",
+            "required": false,
+            "type": "Text Slot",
+            "description": "Supporting hint text"
+          },
+          {
+            "part": "ErrorText",
+            "required": false,
+            "type": "Text Slot",
+            "description": "Validation error message"
+          }
+        ],
+        "variants": [
+          {
+            "name": "Default",
+            "category": "Style",
+            "tokenBinding": "TK-color-border",
+            "description": "Standard bordered input."
+          },
+          {
+            "name": "Filled",
+            "category": "Style",
+            "tokenBinding": "TK-color-gray-50",
+            "description": "Filled background, bottom border only."
+          },
+          {
+            "name": "Ghost",
+            "category": "Style",
+            "tokenBinding": null,
+            "description": "No border or background. Minimal."
+          }
+        ],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Disabled",
+          "ReadOnly",
+          "Error",
+          "Success"
+        ],
+        "tokenDependencies": [
+          "TK-color-text-primary",
+          "TK-color-text-disabled",
+          "TK-color-text-secondary",
+          "TK-color-gray-400",
+          "TK-color-gray-600",
+          "TK-color-gray-50",
+          "TK-color-gray-100",
+          "TK-color-background",
+          "TK-color-border",
+          "TK-color-border-focus",
+          "TK-color-error",
+          "TK-color-success",
+          "TK-border-width-sm",
+          "TK-border-width-md",
+          "TK-radius-md",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-size-small",
+          "TK-typography-size-caption",
+          "TK-typography-weight-regular",
+          "TK-spacing-md",
+          "TK-spacing-sm",
+          "TK-icon-size-md",
+          "TK-size-button-md",
+          "TK-motion-duration-fast",
+          "TK-motion-easing-default",
+          "TK-opacity-disabled"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Input/input.css"
+          },
+          {
+            "name": "react",
+            "status": "Planned",
+            "path": "Components/Input/Input.tsx"
+          },
+          {
+            "name": "vue",
+            "status": "Planned",
+            "path": "Components/Input/Input.vue"
+          },
+          {
+            "name": "swiftui",
+            "status": "Planned",
+            "path": "Components/Input/Input.swift"
+          },
+          {
+            "name": "flutter",
+            "status": "Planned",
+            "path": "Components/Input/input.dart"
+          },
+          {
+            "name": "android",
+            "status": "Planned",
+            "path": "Components/Input/Input.kt"
+          },
+          {
+            "name": "figma",
+            "status": "Planned",
+            "path": "platforms/figma/"
+          },
+          {
+            "name": "canva",
+            "status": "Planned",
+            "path": "platforms/canva/"
+          }
+        ],
+        "accessibility": {
+          "role": "textbox",
+          "accessibleNameSource": "Associated label element or aria-label",
+          "keyboard": "Tab to reach, type to input, Escape to clear",
+          "screenReader": "Announces label, value. Error linked via aria-describedby.",
+          "contrastRequirements": "WCAG 2.1 AA — 4.5:1 text, 3:1 large"
+        },
+        "replacedBy": null,
+        "tags": [
+          "form",
+          "input",
+          "text",
+          "ui"
+        ],
+        "meta": {
+          "documentation": "Components/Input/input.html",
+          "playground": null,
+          "examples": "Components/Input/input.html",
+          "coverage": "html-css",
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-label",
+        "name": "Label",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "foundation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Label v1.0",
+        "description": "Descriptive text label associated with form controls.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [
+          {
+            "part": "LabelElement",
+            "required": true,
+            "type": "Root",
+            "description": "Label element"
+          }
+        ],
+        "variants": [],
+        "states": [
+          "Default"
+        ],
+        "tokenDependencies": [
+          "TK-typography-font-primary",
+          "TK-typography-size-small",
+          "TK-typography-weight-medium",
+          "TK-color-text-secondary"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Label/label.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "form",
+          "label",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 1,
+          "complexity": "low",
+          "estimatedEffort": "XS"
+        }
+      },
+      {
+        "id": "CMP-link",
+        "name": "Link",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "foundation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Link v1.0",
+        "description": "Navigational or action hyperlink with inline and standalone variants.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [
+          {
+            "part": "LinkElement",
+            "required": true,
+            "type": "Root",
+            "description": "Anchor element"
+          },
+          {
+            "part": "LeadingIcon",
+            "required": false,
+            "type": "Icon Slot",
+            "description": "Icon before text"
+          },
+          {
+            "part": "TrailingIcon",
+            "required": false,
+            "type": "Icon Slot",
+            "description": "Icon after text"
+          }
+        ],
+        "variants": [
+          {
+            "name": "Default",
+            "category": "Style",
+            "tokenBinding": "TK-color-primary",
+            "description": "Standard link."
+          },
+          {
+            "name": "Subtle",
+            "category": "Style",
+            "tokenBinding": "TK-color-text-secondary",
+            "description": "Low emphasis."
+          }
+        ],
+        "states": [
+          "Default",
+          "Hover",
+          "Visited",
+          "Focus"
+        ],
+        "tokenDependencies": [
+          "TK-color-primary",
+          "TK-color-primary-hover",
+          "TK-color-secondary",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-weight-medium",
+          "TK-color-border-focus",
+          "TK-motion-duration-fast"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Link/link.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "navigation",
+          "link",
+          "anchor",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 1,
+          "complexity": "low",
+          "estimatedEffort": "XS"
+        }
+      },
+      {
+        "id": "CMP-textarea",
+        "name": "Textarea",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "foundation",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Textarea v1.0",
+        "description": "Multi-line text entry control for paragraphs, descriptions, and messages.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [
+          {
+            "part": "Container",
+            "required": true,
+            "type": "Root",
+            "description": "Wrapping element"
+          },
+          {
+            "part": "Label",
+            "required": false,
+            "type": "Text Slot",
+            "description": "Descriptive label"
+          },
+          {
+            "part": "TextareaField",
+            "required": true,
+            "type": "Root element",
+            "description": "The textarea element"
+          },
+          {
+            "part": "HelperText",
+            "required": false,
+            "type": "Text Slot",
+            "description": "Hint text"
+          },
+          {
+            "part": "ErrorText",
+            "required": false,
+            "type": "Text Slot",
+            "description": "Error message"
+          }
+        ],
+        "variants": [
+          {
+            "name": "Default",
+            "category": "Style",
+            "tokenBinding": "TK-color-border",
+            "description": "Standard bordered textarea."
+          },
+          {
+            "name": "Filled",
+            "category": "Style",
+            "tokenBinding": "TK-color-gray-50",
+            "description": "Filled background, bottom border."
+          }
+        ],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Disabled",
+          "ReadOnly",
+          "Error"
+        ],
+        "tokenDependencies": [
+          "TK-color-text-primary",
+          "TK-color-text-disabled",
+          "TK-color-text-secondary",
+          "TK-color-gray-400",
+          "TK-color-gray-50",
+          "TK-color-gray-100",
+          "TK-color-background",
+          "TK-color-border",
+          "TK-color-border-focus",
+          "TK-color-error",
+          "TK-border-width-sm",
+          "TK-border-width-md",
+          "TK-radius-md",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-size-small",
+          "TK-typography-size-caption",
+          "TK-typography-weight-regular",
+          "TK-typography-lineheight-normal",
+          "TK-spacing-md",
+          "TK-spacing-sm",
+          "TK-spacing-3xl",
+          "TK-motion-duration-fast",
+          "TK-motion-easing-default",
+          "TK-opacity-disabled"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Textarea/textarea.css"
+          },
+          {
+            "name": "react",
+            "status": "Planned",
+            "path": "Components/Textarea/Textarea.tsx"
+          }
+        ],
+        "accessibility": {
+          "role": "textbox",
+          "accessibleNameSource": "Associated label",
+          "keyboard": "Tab to reach, type to input",
+          "screenReader": "Announces label, value",
+          "contrastRequirements": "WCAG 2.1 AA"
+        },
+        "replacedBy": null,
+        "tags": [
+          "form",
+          "textarea",
+          "text",
+          "multi-line",
+          "ui"
+        ],
+        "meta": {
+          "documentation": "Components/Textarea/textarea.html",
+          "playground": null,
+          "examples": "Components/Textarea/textarea.html",
+          "coverage": "html-css",
+          "wcag": "AA",
+          "weight": 1,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      }
+    ],
+    "selection": [
+      {
+        "id": "CMP-checkbox",
+        "name": "Checkbox",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "selection",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Checkbox v1.0",
+        "description": "Binary selection control for multi-select lists and option toggling.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Checked",
+          "Disabled",
+          "Error"
+        ],
+        "tokenDependencies": [
+          "TK-color-border",
+          "TK-color-primary",
+          "TK-color-border-focus",
+          "TK-color-error",
+          "TK-color-gray-100",
+          "TK-color-text-primary",
+          "TK-color-text-disabled",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-icon-size-md",
+          "TK-radius-sm",
+          "TK-spacing-sm",
+          "TK-motion-duration-fast",
+          "TK-opacity-disabled"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Checkbox/checkbox.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "selection",
+          "checkbox",
+          "form",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "medium",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-combobox",
+        "name": "Combobox",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "selection",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Combobox v1.0",
+        "description": "Combines text input with dropdown selection. Filter-as-you-type.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Focus",
+          "Open",
+          "Disabled",
+          "Error",
+          "Highlighted"
+        ],
+        "tokenDependencies": [
+          "TK-color-border",
+          "TK-color-border-focus",
+          "TK-color-error",
+          "TK-color-text-primary",
+          "TK-color-text-disabled",
+          "TK-color-background",
+          "TK-color-gray-100",
+          "TK-color-gray-600",
+          "TK-color-primary",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-size-button-md",
+          "TK-spacing-sm",
+          "TK-spacing-md",
+          "TK-spacing-5xl",
+          "TK-radius-md",
+          "TK-icon-size-md",
+          "TK-shadow-lg",
+          "TK-motion-duration-fast",
+          "TK-opacity-disabled"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Combobox/combobox.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "combobox",
+          "autocomplete",
+          "select",
+          "form",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 4,
+          "complexity": "high",
+          "estimatedEffort": "M"
+        }
+      },
+      {
+        "id": "CMP-radio",
+        "name": "Radio",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "selection",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Radio v1.0",
+        "description": "Single-selection control within a named group.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Selected",
+          "Disabled"
+        ],
+        "tokenDependencies": [
+          "TK-color-border",
+          "TK-color-primary",
+          "TK-color-border-focus",
+          "TK-color-gray-100",
+          "TK-color-text-primary",
+          "TK-color-text-disabled",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-icon-size-md",
+          "TK-spacing-sm",
+          "TK-motion-duration-fast",
+          "TK-opacity-disabled"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Radio/radio.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "selection",
+          "radio",
+          "form",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-select",
+        "name": "Select",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "selection",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Select v1.0",
+        "description": "Dropdown selection from a predefined list of options.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Disabled",
+          "Error"
+        ],
+        "tokenDependencies": [
+          "TK-color-border",
+          "TK-color-border-focus",
+          "TK-color-error",
+          "TK-color-text-primary",
+          "TK-color-text-disabled",
+          "TK-color-background",
+          "TK-color-gray-100",
+          "TK-color-gray-600",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-size-button-md",
+          "TK-spacing-md",
+          "TK-radius-md",
+          "TK-icon-size-md",
+          "TK-motion-duration-fast",
+          "TK-opacity-disabled"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Select/select.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "select",
+          "dropdown",
+          "form",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 3,
+          "complexity": "medium",
+          "estimatedEffort": "M"
+        }
+      },
+      {
+        "id": "CMP-switch",
+        "name": "Switch",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "selection",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": "SP-Switch v1.0",
+        "description": "Toggle control for binary on/off states with immediate effect.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Hover",
+          "Focus",
+          "Disabled"
+        ],
+        "tokenDependencies": [
+          "TK-color-gray-200",
+          "TK-color-primary",
+          "TK-color-white",
+          "TK-color-border-focus",
+          "TK-color-text-primary",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-spacing-2xl",
+          "TK-spacing-lg",
+          "TK-spacing-sm",
+          "TK-motion-duration-fast",
+          "TK-opacity-disabled",
+          "TK-opacity-hover"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Switch/switch.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "toggle",
+          "switch",
+          "form",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "S"
+        }
+      }
+    ],
+    "overlay": [
+      {
+        "id": "CMP-drawer",
+        "name": "Drawer",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "overlay",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Slide-in panel from left or right for navigation or supplementary content.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Open"
+        ],
+        "tokenDependencies": [
+          "TK-color-background",
+          "TK-spacing-6xl",
+          "TK-spacing-lg",
+          "TK-shadow-xl",
+          "TK-zindex-drawer",
+          "TK-opacity-pressed"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Drawer/drawer.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "overlay",
+          "drawer",
+          "panel",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 3,
+          "complexity": "medium",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-modal",
+        "name": "Modal",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "overlay",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Dialog overlay for confirmations, forms, and focused content.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Open"
+        ],
+        "tokenDependencies": [
+          "TK-color-background",
+          "TK-color-border",
+          "TK-color-text-primary",
+          "TK-color-gray-600",
+          "TK-typography-font-primary",
+          "TK-typography-size-body",
+          "TK-typography-size-h5",
+          "TK-typography-weight-semibold",
+          "TK-spacing-xs",
+          "TK-spacing-sm",
+          "TK-spacing-md",
+          "TK-spacing-lg",
+          "TK-spacing-2xl",
+          "TK-spacing-7xl",
+          "TK-radius-lg",
+          "TK-shado-xl",
+          "TK-zindex-modal",
+          "TK-border-width-sm",
+          "TK-opacity-pressed"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Modal/modal.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "overlay",
+          "modal",
+          "dialog",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 4,
+          "complexity": "high",
+          "estimatedEffort": "M"
+        }
+      },
+      {
+        "id": "CMP-popover",
+        "name": "Popover",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "overlay",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Floating card anchored to a trigger element with rich content.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default",
+          "Open"
+        ],
+        "tokenDependencies": [
+          "TK-color-background",
+          "TK-color-border",
+          "TK-spacing-md",
+          "TK-spacing-5xl",
+          "TK-radius-md",
+          "TK-shadow-lg",
+          "TK-zindex-tooltip",
+          "TK-border-width-sm"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Popover/popover.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "overlay",
+          "popover",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 3,
+          "complexity": "medium",
+          "estimatedEffort": "S"
+        }
+      },
+      {
+        "id": "CMP-tooltip",
+        "name": "Tooltip",
+        "version": "1.0",
+        "status": "Draft",
+        "category": "overlay",
+        "governedBy": "S-Component v0.3",
+        "specifiedBy": null,
+        "description": "Brief floating label on hover/focus providing supplementary information.",
+        "lifecycleStage": "Implementation",
+        "anatomy": [],
+        "variants": [],
+        "states": [
+          "Default"
+        ],
+        "tokenDependencies": [
+          "TK-color-text-primary",
+          "TK-color-text-inverse",
+          "TK-typography-font-primary",
+          "TK-typography-size-caption",
+          "TK-spacing-xs",
+          "TK-spacing-sm",
+          "TK-spacing-5xl",
+          "TK-radius-sm",
+          "TK-zindex-tooltip"
+        ],
+        "assetDependencies": [],
+        "componentDependencies": [],
+        "platforms": [
+          {
+            "name": "html-css",
+            "status": "Supported",
+            "path": "Components/Tooltip/tooltip.css"
+          }
+        ],
+        "accessibility": null,
+        "replacedBy": null,
+        "tags": [
+          "overlay",
+          "tooltip",
+          "ui"
+        ],
+        "meta": {
+          "documentation": null,
+          "playground": null,
+          "examples": null,
+          "coverage": null,
+          "wcag": "AA",
+          "weight": 2,
+          "complexity": "low",
+          "estimatedEffort": "XS"
+        }
+      }
+    ]
+  },
+  "meta": {
+    "totalComponents": 37,
+    "categories": {
+      "container": 4,
+      "feedback": 5,
+      "data": 8,
+      "navigation": 5,
+      "foundation": 6,
+      "selection": 5,
+      "overlay": 4
+    }
+  }
+}

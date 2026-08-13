@@ -1,6 +1,6 @@
 # Naming Convention Law
 
-**Version:** 0.1
+**Version:** 0.2
 **Status:** Draft
 **Owner:** AEL Digital Studio
 **Governed By:** AEL Constitution v0.1
@@ -80,15 +80,38 @@ Each entity type from the Ontology uses a fixed prefix.
 
 ### 4.3 Token Naming Rules
 
-Token identifiers must follow a strict three-segment structure.
+Token identifiers must follow a strict segment structure.
 
 **Pattern: `TK-{category}-{property}-{variant}`**
 
+Categories are organized into three tiers:
+
+| Tier | Purpose | Stability | Categories |
+|---|---|---|---|
+| **Core** | Required by all tokens. Present in every design system. | Stable | `color`, `typography`, `spacing`, `radius`, `shadow`, `border`, `motion`, `opacity` |
+| **Layout** | Required by layout systems. Present in most platforms. | Stable | `breakpoint`, `grid`, `zindex`, `elevation` |
+| **Optional** | Context-dependent. Present based on project scope. | May expand | `blur`, `size`, `icon` |
+
+**Tier rules:**
+
+| # | Rule |
+|---|---|
+| T01 | All Core categories must be present in every platform implementation. |
+| T02 | Layout categories must be present if the platform supports responsive or z-axis layout. |
+| T03 | Optional categories may be added or removed without requiring an amendment to this law. The law defines the allowed set; project scope decides which Optional categories are implemented. |
+| T04 | Adding a new category to Core or Layout tiers requires an amendment to this law. |
+| T05 | Adding a new category to Optional tier does not require a law amendment. |
+| T06 | Category identifiers must be atomic — they must not contain the segment delimiter (`-`) within the category name itself. A multi-word concept (e.g., "z index") shall be written as a single atomic identifier (e.g., `zindex`). This ensures unambiguous token segmentation: `TK-{category}-{property}-{variant}` yields exactly 3 semantic segments after the prefix. |
+
 | Segment | Allowed Values |
 |---|---|
-| category | `color`, `typography`, `spacing`, `radius`, `shadow`, `motion`, `border` |
-| property | A single noun describing the property (e.g., `primary`, `background`, `body`, `md`, `sm`) |
+| category | See tier table above — expanded to 15 categories (v0.2) |
+| property | A single noun describing the property (e.g., `primary`, `background`, `body`, `md`, `sm`, `modal`, `tablet`) |
 | variant | Optional: `hover`, `active`, `disabled`, `dark`, `light` |
+
+**Token Lifecycle:**
+
+Every token progresses through 7 stages: Proposal → Review → Approval → Implementation (SSOT) → Validation → Registry Generation → Release. See PROP-2026-001 §5 for the formal lifecycle definition.
 
 **Rules:**
 - The variant segment is optional. When omitted, the token represents the base/default value.
@@ -101,6 +124,11 @@ Token identifiers must follow a strict three-segment structure.
 - `TK-spacing-md`
 - `TK-typography-body`
 - `TK-radius-lg`
+- `TK-opacity-disabled`
+- `TK-breakpoint-tablet`
+- `TK-elevation-modal`
+- `TK-zindex-dropdown`
+- `TK-blur-md`
 
 **Invalid examples:**
 - `TK-primary` (missing category)
@@ -222,6 +250,7 @@ This law follows semantic versioning as defined in the Constitution (Section 6).
 | Version | Date | Change |
 |---|---|---|
 | 0.1 | 2026-07-30 | Initial draft |
+| 0.2 | 2026-07-31 | Expanded categories to 15 (Core 8 + Layout 4 + Optional 3) with tier model. Added Token Lifecycle reference. Per PROP-2026-001. |
 
 ---
 

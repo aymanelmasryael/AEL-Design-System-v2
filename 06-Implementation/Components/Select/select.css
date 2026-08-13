@@ -1,0 +1,63 @@
+/* AEL Select Component — CMP-select v1.0 — Zero hardcoded design values. */
+
+.ael-select {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ael-spacing-xs);
+  font-family: var(--ael-typography-font-primary);
+}
+
+.ael-select__label {
+  font-size: var(--ael-typography-size-small);
+  font-weight: var(--ael-typography-weight-medium);
+  color: var(--ael-color-text-secondary);
+}
+
+.ael-select__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ael-select__field {
+  width: 100%;
+  height: var(--ael-size-button-md);
+  padding: 0 var(--ael-spacing-2xl) 0 var(--ael-spacing-md);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  color: var(--ael-color-text-primary);
+  background-color: var(--ael-color-background);
+  border: var(--ael-border-width-sm) solid var(--ael-color-border);
+  border-radius: var(--ael-radius-md);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  transition: border-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+}
+
+.ael-select__field:hover:not(:disabled) { border-color: var(--ael-color-gray-400); }
+.ael-select__field:focus:not(:disabled) { border-color: var(--ael-color-border-focus); }
+
+.ael-select__field:disabled {
+  background-color: var(--ael-color-gray-100);
+  color: var(--ael-color-text-disabled);
+  opacity: var(--ael-opacity-disabled);
+  cursor: not-allowed;
+}
+
+.ael-select__chevron {
+  position: absolute;
+  right: var(--ael-spacing-sm);
+  width: var(--ael-icon-size-md);
+  height: var(--ael-icon-size-md);
+  color: var(--ael-color-gray-600);
+  pointer-events: none;
+}
+
+.ael-select__helper {
+  font-size: var(--ael-typography-size-caption);
+  color: var(--ael-color-text-secondary);
+}
+
+.ael-select--error .ael-select__field { border-color: var(--ael-color-error); }
+.ael-select--error .ael-select__label { color: var(--ael-color-error); }

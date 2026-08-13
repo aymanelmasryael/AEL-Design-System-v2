@@ -1,0 +1,41 @@
+/* AEL Charts — Data Visualization v1.0 — Zero hardcoded design values. */
+
+.ael-chart {
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-caption);
+  color: var(--ael-color-text-secondary);
+}
+
+.ael-chart__axis { stroke: var(--ael-color-border); stroke-width: var(--ael-border-width-sm); }
+.ael-chart__tick { font-size: var(--ael-typography-size-caption); fill: var(--ael-color-text-secondary); }
+
+.ael-chart__line { fill: none; stroke-width: var(--ael-border-width-md); }
+.ael-chart__line--primary { stroke: var(--ael-color-primary); }
+.ael-chart__line--secondary { stroke: var(--ael-color-secondary); }
+.ael-chart__line--success { stroke: var(--ael-color-success); }
+.ael-chart__line--warning { stroke: var(--ael-color-warning); }
+.ael-chart__line--error { stroke: var(--ael-color-error); }
+
+.ael-chart__bar--primary { fill: var(--ael-color-primary); }
+.ael-chart__bar--secondary { fill: var(--ael-color-secondary); }
+
+.ael-chart__tooltip {
+  background: var(--ael-color-text-primary);
+  color: var(--ael-color-text-inverse);
+  padding: var(--ael-spacing-xs) var(--ael-spacing-sm);
+  border-radius: var(--ael-radius-sm);
+  font-size: var(--ael-typography-size-caption);
+}
+
+.ael-kpi {
+  display: flex; flex-direction: column; gap: var(--ael-spacing-xs);
+  padding: var(--ael-spacing-lg);
+  background: var(--ael-color-background);
+  border: var(--ael-border-width-sm) solid var(--ael-color-border);
+  border-radius: var(--ael-radius-lg);
+}
+
+.ael-dashboard {
+  display: grid; gap: var(--ael-spacing-lg);
+  grid-template-columns: repeat(var(--ael-grid-columns), 1fr);
+}

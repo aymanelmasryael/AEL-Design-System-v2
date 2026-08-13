@@ -1,0 +1,22 @@
+/* AEL Badge — CMP-badge v1.0 */
+
+.ael-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: var(--ael-icon-size-md); height: var(--ael-icon-size-md);
+  padding: 0 var(--ael-spacing-xs);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-caption);
+  font-weight: var(--ael-typography-weight-bold);
+  color: var(--ael-color-text-inverse);
+  background-color: var(--ael-color-primary);
+  border-radius: var(--ael-radius-full);
+  line-height: 1;
+}
+
+.ael-badge--secondary { background-color: var(--ael-color-secondary); }
+.ael-badge--success { background-color: var(--ael-color-success); }
+.ael-badge--warning { background-color: var(--ael-color-warning); color: var(--ael-color-text-primary); }
+.ael-badge--error { background-color: var(--ael-color-error); }
+.ael-badge--info { background-color: var(--ael-color-info); }
+
+.ael-badge--dot { min-width: var(--ael-spacing-xs); width: var(--ael-spacing-xs); height: var(--ael-spacing-xs); padding: 0; }

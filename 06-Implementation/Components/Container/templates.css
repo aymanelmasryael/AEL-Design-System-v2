@@ -1,0 +1,46 @@
+/* AEL Templates — Composition v1.0 — Zero hardcoded design values. */
+
+/* Page shell */
+.ael-page { display: flex; min-height: 100vh; }
+.ael-page__sidebar { flex-shrink: 0; }
+.ael-page__main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+.ael-page__content { flex: 1; padding: var(--ael-spacing-lg); }
+
+/* Auth layout */
+.ael-auth { display: flex; min-height: 100vh; }
+.ael-auth__aside {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  background: var(--ael-color-primary);
+  color: var(--ael-color-text-inverse);
+  padding: var(--ael-spacing-3xl);
+}
+.ael-auth__form {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  padding: var(--ael-spacing-3xl);
+  max-width: var(--ael-spacing-6xl);
+}
+
+/* Dashboard grid */
+.ael-dashboard-grid {
+  display: grid; gap: var(--ael-spacing-lg);
+  grid-template-columns: repeat(12, 1fr);
+}
+.ael-dashboard-grid__item--span { grid-column: span var(--ael-span, 12); }
+
+/* Blog / Content */
+.ael-content { max-width: var(--ael-spacing-6xl); margin: 0 auto; padding: var(--ael-spacing-2xl) var(--ael-spacing-lg); }
+.ael-content__title { font-size: var(--ael-typography-size-h2); font-weight: var(--ael-typography-weight-bold); margin-bottom: var(--ael-spacing-md); }
+.ael-content__body { font-size: var(--ael-typography-size-body); line-height: var(--ael-typography-lineheight-relaxed); color: var(--ael-color-text-primary); }
+
+/* Settings */
+.ael-settings { display: flex; gap: var(--ael-spacing-2xl); }
+.ael-settings__nav { width: var(--ael-spacing-5xl); flex-shrink: 0; }
+.ael-settings__panel { flex: 1; max-width: var(--ael-spacing-5xl); }
+
+/* Error */
+.ael-error-page {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 100vh; text-align: center; padding: var(--ael-spacing-2xl);
+}
+.ael-error-page__code { font-size: var(--ael-typography-size-display); font-weight: var(--ael-typography-weight-bold); color: var(--ael-color-gray-200); }
+.ael-error-page__message { font-size: var(--ael-typography-size-h5); color: var(--ael-color-text-secondary); margin-top: var(--ael-spacing-md); }

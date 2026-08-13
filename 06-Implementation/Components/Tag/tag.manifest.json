@@ -1,0 +1,13 @@
+{
+  "id": "CMP-tag", "name": "Tag", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "data", "lifecycleStage": "Implementation",
+  "description": "Compact label for categorization, filtering, or metadata.",
+  "tokenDependencies": [
+    "TK-color-primary", "TK-color-success", "TK-color-warning", "TK-color-error",
+    "TK-color-text-secondary", "TK-color-gray-100",
+    "TK-typography-font-primary", "TK-typography-size-caption", "TK-typography-weight-medium",
+    "TK-spacing-xs", "TK-spacing-sm", "TK-spacing-lg", "TK-radius-sm"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Tag/tag.css" }],
+  "tags": ["data", "tag", "label", "ui"], "wcag": "AA", "weight": 1, "complexity": "low", "estimatedEffort": "XS"
+}

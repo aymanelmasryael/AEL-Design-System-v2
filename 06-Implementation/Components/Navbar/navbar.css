@@ -1,0 +1,14 @@
+/* AEL Navbar — Composition v1.0 — Zero hardcoded design values. */
+
+.ael-navbar {
+  display: flex; align-items: center;
+  height: var(--ael-spacing-3xl);
+  padding: 0 var(--ael-spacing-lg);
+  background: var(--ael-color-background);
+  border-bottom: var(--ael-border-width-sm) solid var(--ael-color-border);
+  position: sticky; top: 0; z-index: var(--ael-zindex-sticky);
+}
+
+.ael-navbar__brand { display: flex; align-items: center; gap: var(--ael-spacing-sm); font-weight: var(--ael-typography-weight-bold); }
+.ael-navbar__nav { display: flex; align-items: center; gap: var(--ael-spacing-xs); margin-left: var(--ael-spacing-2xl); flex: 1; }
+.ael-navbar__actions { display: flex; align-items: center; gap: var(--ael-spacing-sm); margin-left: auto; }

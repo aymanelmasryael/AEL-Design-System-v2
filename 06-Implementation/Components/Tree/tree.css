@@ -1,0 +1,17 @@
+/* AEL Tree — CMP-tree v1.0 */
+
+.ael-tree { font-family: var(--ael-typography-font-primary); font-size: var(--ael-typography-size-body); color: var(--ael-color-text-primary); }
+
+.ael-tree__node { padding: var(--ael-spacing-xs) 0; padding-left: calc(var(--ael-spacing-lg) * var(--ael-tree-level, 0)); }
+
+.ael-tree__toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: var(--ael-icon-size-md); height: var(--ael-icon-size-md); margin-right: var(--ael-spacing-xs);
+  background: none; border: none; cursor: pointer; color: var(--ael-color-gray-600);
+  transition: transform var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+}
+.ael-tree__node--expanded > .ael-tree__toggle { transform: rotate(90deg); }
+
+.ael-tree__label { cursor: pointer; padding: var(--ael-spacing-xs) var(--ael-spacing-sm); border-radius: var(--ael-radius-sm); }
+.ael-tree__label:hover { background-color: var(--ael-color-gray-50); }
+.ael-tree__label--selected { background-color: var(--ael-color-primary); color: var(--ael-color-text-inverse); }

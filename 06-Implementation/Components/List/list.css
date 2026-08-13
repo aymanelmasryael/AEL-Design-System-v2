@@ -1,0 +1,16 @@
+/* AEL List — CMP-list v1.0 */
+
+.ael-list { display: flex; flex-direction: column; list-style: none; padding: 0; margin: 0; }
+
+.ael-list__item {
+  display: flex; align-items: center; gap: var(--ael-spacing-sm);
+  padding: var(--ael-spacing-sm) var(--ael-spacing-md);
+  font-family: var(--ael-typography-font-primary); font-size: var(--ael-typography-size-body);
+  color: var(--ael-color-text-primary);
+  border-bottom: var(--ael-border-width-sm) solid var(--ael-color-border);
+}
+
+.ael-list__item:last-child { border-bottom: none; }
+.ael-list__item:hover { background-color: var(--ael-color-gray-50); }
+
+.ael-list--bordered { border: var(--ael-border-width-sm) solid var(--ael-color-border); border-radius: var(--ael-radius-md); overflow: hidden; }

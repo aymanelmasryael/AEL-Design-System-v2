@@ -1,0 +1,16 @@
+{
+  "id": "CMP-tabs", "name": "Tabs", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "specifiedBy": "SP-Tabs v1.0",
+  "category": "navigation", "lifecycleStage": "Implementation",
+  "description": "Horizontal tab navigation for switching between content panels.",
+  "states": ["Default", "Hover", "Focus", "Active", "Disabled"],
+  "tokenDependencies": [
+    "TK-color-primary", "TK-color-border", "TK-color-border-focus",
+    "TK-color-text-primary", "TK-color-text-secondary",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-weight-medium",
+    "TK-spacing-sm", "TK-spacing-md", "TK-border-width-sm", "TK-border-width-md",
+    "TK-motion-duration-fast", "TK-opacity-disabled"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Tabs/tabs.css" }],
+  "tags": ["navigation", "tabs", "ui"], "wcag": "AA", "weight": 2, "complexity": "medium", "estimatedEffort": "S"
+}

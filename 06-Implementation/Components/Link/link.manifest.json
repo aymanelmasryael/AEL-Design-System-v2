@@ -1,0 +1,35 @@
+{
+  "id": "CMP-link",
+  "name": "Link",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Component v0.3",
+  "specifiedBy": "SP-Link v1.0",
+  "category": "foundation",
+  "description": "Navigational or action hyperlink with inline and standalone variants.",
+  "lifecycleStage": "Implementation",
+  "anatomy": [
+    { "part": "LinkElement", "required": true, "type": "Root", "description": "Anchor element" },
+    { "part": "LeadingIcon", "required": false, "type": "Icon Slot", "description": "Icon before text" },
+    { "part": "TrailingIcon", "required": false, "type": "Icon Slot", "description": "Icon after text" }
+  ],
+  "variants": [
+    { "name": "Default", "category": "Style", "tokenBinding": "TK-color-primary", "description": "Standard link." },
+    { "name": "Subtle", "category": "Style", "tokenBinding": "TK-color-text-secondary", "description": "Low emphasis." }
+  ],
+  "states": ["Default", "Hover", "Visited", "Focus"],
+  "tokenDependencies": [
+    "TK-color-primary", "TK-color-primary-hover", "TK-color-secondary",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-weight-medium",
+    "TK-color-border-focus", "TK-motion-duration-fast"
+  ],
+  "platforms": [
+    { "name": "html-css", "status": "Supported", "path": "Components/Link/link.css" }
+  ],
+  "tags": ["navigation", "link", "anchor", "ui"],
+  "documentation": null,
+  "wcag": "AA",
+  "weight": 1,
+  "complexity": "low",
+  "estimatedEffort": "XS"
+}

@@ -1,0 +1,18 @@
+{
+  "category": "zindex",
+  "tier": "layout",
+  "governedBy": "S-Component",
+  "specifiedBy": "SP-Component",
+  "ssot": true,
+  "description": "SSOT for all z-index stacking order token values. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-zindex-base": { "value": 0, "type": "number", "role": "Base content — default stacking context" },
+    "TK-zindex-dropdown": { "value": 100, "type": "number", "role": "Dropdown menus, select options" },
+    "TK-zindex-sticky": { "value": 200, "type": "number", "role": "Sticky headers, fixed navigation" },
+    "TK-zindex-overlay": { "value": 300, "type": "number", "role": "Overlays, backdrops" },
+    "TK-zindex-drawer": { "value": 400, "type": "number", "role": "Side drawers, slide-out panels" },
+    "TK-zindex-modal": { "value": 500, "type": "number", "role": "Modal dialogs, alert dialogs" },
+    "TK-zindex-tooltip": { "value": 600, "type": "number", "role": "Tooltips, popovers" },
+    "TK-zindex-toast": { "value": 700, "type": "number", "role": "Toast notifications, snackbars" }
+  }
+}

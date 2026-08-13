@@ -1,0 +1,22 @@
+/* AEL Avatar — CMP-avatar v1.0 */
+
+.ael-avatar {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: var(--ael-size-avatar-md); height: var(--ael-size-avatar-md);
+  border-radius: 50%; overflow: hidden;
+  background-color: var(--ael-color-gray-200);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  font-weight: var(--ael-typography-weight-medium);
+  color: var(--ael-color-gray-600);
+  user-select: none;
+}
+
+.ael-avatar--xs { width: var(--ael-size-avatar-xs); height: var(--ael-size-avatar-xs); font-size: var(--ael-typography-size-caption); }
+.ael-avatar--sm { width: var(--ael-size-avatar-sm); height: var(--ael-size-avatar-sm); }
+.ael-avatar--lg { width: var(--ael-size-avatar-lg); height: var(--ael-size-avatar-lg); font-size: var(--ael-typography-size-h5); }
+.ael-avatar--xl { width: var(--ael-size-avatar-xl); height: var(--ael-size-avatar-xl); font-size: var(--ael-typography-size-h3); }
+
+.ael-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.ael-avatar--square { border-radius: var(--ael-radius-md); }

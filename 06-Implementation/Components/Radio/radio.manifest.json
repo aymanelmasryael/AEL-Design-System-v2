@@ -1,0 +1,16 @@
+{
+  "id": "CMP-radio", "name": "Radio", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "specifiedBy": "SP-Radio v1.0",
+  "category": "selection", "lifecycleStage": "Implementation",
+  "description": "Single-selection control within a named group.",
+  "states": ["Default", "Hover", "Focus", "Selected", "Disabled"],
+  "tokenDependencies": [
+    "TK-color-border", "TK-color-primary", "TK-color-border-focus",
+    "TK-color-gray-100", "TK-color-text-primary", "TK-color-text-disabled",
+    "TK-typography-font-primary", "TK-typography-size-body",
+    "TK-icon-size-md", "TK-spacing-sm", "TK-motion-duration-fast", "TK-opacity-disabled"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Radio/radio.css" }],
+  "tags": ["selection", "radio", "form", "ui"],
+  "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "S"
+}

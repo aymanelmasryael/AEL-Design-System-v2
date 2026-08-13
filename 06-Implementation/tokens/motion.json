@@ -1,0 +1,17 @@
+{
+  "category": "motion",
+  "tier": "core",
+  "governedBy": "S-Component",
+  "specifiedBy": "SP-Component",
+  "ssot": true,
+  "description": "SSOT for all motion (animation duration and easing) token values. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-motion-duration-instant": { "value": "0ms", "type": "duration", "role": "Instant — no animation, immediate state change" },
+    "TK-motion-duration-fast": { "value": "150ms", "type": "duration", "role": "Fast — hover transitions, micro-interactions, icon changes" },
+    "TK-motion-duration-normal": { "value": "300ms", "type": "duration", "role": "Normal — component transitions, expand/collapse, toggle" },
+    "TK-motion-duration-slow": { "value": "500ms", "type": "duration", "role": "Slow — page transitions, modal open/close, complex animations" },
+    "TK-motion-easing-default": { "value": "cubic-bezier(0.4, 0, 0.2, 1)", "type": "easing", "role": "Default easing — general-purpose transitions" },
+    "TK-motion-easing-in": { "value": "cubic-bezier(0.4, 0, 1, 1)", "type": "easing", "role": "Ease-in — elements entering the viewport, appearing" },
+    "TK-motion-easing-out": { "value": "cubic-bezier(0, 0, 0.2, 1)", "type": "easing", "role": "Ease-out — elements leaving the viewport, disappearing" }
+  }
+}

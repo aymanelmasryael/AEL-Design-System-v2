@@ -3,6 +3,7 @@
 **Version:** 1.0
 **Status:** Draft
 **Owner:** AEL Digital Studio
+**Governed By:** AEL Constitution v0.1 · Operational Laws v0.1
 **Classification:** Standard — Level 3
 
 ---

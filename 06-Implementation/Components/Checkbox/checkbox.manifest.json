@@ -1,0 +1,17 @@
+{
+  "id": "CMP-checkbox", "name": "Checkbox", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "specifiedBy": "SP-Checkbox v1.0",
+  "category": "selection", "lifecycleStage": "Implementation",
+  "description": "Binary selection control for multi-select lists and option toggling.",
+  "states": ["Default", "Hover", "Focus", "Checked", "Disabled", "Error"],
+  "tokenDependencies": [
+    "TK-color-border", "TK-color-primary", "TK-color-border-focus", "TK-color-error",
+    "TK-color-gray-100", "TK-color-text-primary", "TK-color-text-disabled",
+    "TK-typography-font-primary", "TK-typography-size-body",
+    "TK-icon-size-md", "TK-radius-sm", "TK-spacing-sm",
+    "TK-motion-duration-fast", "TK-opacity-disabled"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Checkbox/checkbox.css" }],
+  "tags": ["selection", "checkbox", "form", "ui"],
+  "wcag": "AA", "weight": 2, "complexity": "medium", "estimatedEffort": "S"
+}

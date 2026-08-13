@@ -1,0 +1,28 @@
+/* AEL Progress — CMP-progress v1.0 — Zero hardcoded design values. */
+
+.ael-progress {
+  width: 100%; height: var(--ael-spacing-xs);
+  background-color: var(--ael-color-gray-200);
+  border-radius: var(--ael-radius-full);
+  overflow: hidden;
+}
+
+.ael-progress__bar {
+  height: 100%;
+  background-color: var(--ael-color-primary);
+  border-radius: var(--ael-radius-full);
+  transition: width var(--ael-motion-duration-normal) var(--ael-motion-easing-default);
+}
+
+.ael-progress--success .ael-progress__bar { background-color: var(--ael-color-success); }
+.ael-progress--error .ael-progress__bar { background-color: var(--ael-color-error); }
+
+.ael-progress--indeterminate .ael-progress__bar {
+  width: 30%;
+  animation: ael-progress-indeterminate 1.5s var(--ael-motion-easing-in) infinite;
+}
+
+@keyframes ael-progress-indeterminate {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}

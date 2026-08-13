@@ -1,0 +1,22 @@
+{
+  "category": "spacing",
+  "tier": "core",
+  "governedBy": "S-Spacing v0.2",
+  "specifiedBy": "SP-Spacing v1.1",
+  "ssot": true,
+  "description": "SSOT for all spacing token values. 8px base grid methodology. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-spacing-xs": { "value": "4px", "type": "dimension", "role": "Extra small — icon padding, tight inline spacing" },
+    "TK-spacing-sm": { "value": "8px", "type": "dimension", "role": "Small — base unit, component inner padding, compact layouts" },
+    "TK-spacing-md": { "value": "16px", "type": "dimension", "role": "Medium — default component padding, card insets" },
+    "TK-spacing-lg": { "value": "24px", "type": "dimension", "role": "Large — section padding, component separation" },
+    "TK-spacing-xl": { "value": "32px", "type": "dimension", "role": "Extra large — layout gaps, major section spacing" },
+    "TK-spacing-2xl": { "value": "40px", "type": "dimension", "role": "2XL — page margins, large container padding" },
+    "TK-spacing-3xl": { "value": "48px", "type": "dimension", "role": "3XL — hero section padding, major layout blocks" },
+    "TK-spacing-4xl": { "value": "56px", "type": "dimension", "role": "4XL — page-level spacing" },
+    "TK-spacing-5xl": { "value": "64px", "type": "dimension", "role": "5XL — large section separation" },
+    "TK-spacing-6xl": { "value": "80px", "type": "dimension", "role": "6XL — major layout spacing" },
+    "TK-spacing-7xl": { "value": "96px", "type": "dimension", "role": "7XL — maximum layout spacing" },
+    "TK-spacing-8xl": { "value": "128px", "type": "dimension", "role": "8XL — ultra large separation" }
+  }
+}

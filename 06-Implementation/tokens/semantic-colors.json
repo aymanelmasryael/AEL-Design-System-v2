@@ -1,0 +1,17 @@
+{
+  "category": "color",
+  "domain": "semantic",
+  "tier": "core",
+  "governedBy": "S-Color v0.2",
+  "specifiedBy": "SP-Color-Palette v1.1",
+  "ssot": true,
+  "description": "SSOT for semantic color tokens. Text colors, surface aliases, and context-dependent mappings. No other document defines these values. See PROP-2026-001.",
+  "tokens": {
+    "TK-color-text-primary": { "value": "#111111", "type": "color", "role": "Primary text on light backgrounds — neutral-900 per identity.html" },
+    "TK-color-text-secondary": { "value": "#525252", "type": "color", "role": "Secondary text, captions, descriptions — neutral-600 per identity.html" },
+    "TK-color-text-disabled": { "value": "#A3A3A3", "type": "color", "role": "Disabled text on any background — neutral-400 per identity.html" },
+    "TK-color-text-inverse": { "value": "#FFFFFF", "type": "color", "role": "Text on dark or primary backgrounds" },
+    "TK-color-background-secondary": { "value": "#F5F5F5", "type": "color", "role": "Secondary background, section surfaces — neutral-100 per identity.html" },
+    "TK-color-surface-secondary": { "value": "#F5F5F5", "type": "color", "role": "Elevated surface, modal backgrounds — neutral-100 per identity.html" }
+  }
+}

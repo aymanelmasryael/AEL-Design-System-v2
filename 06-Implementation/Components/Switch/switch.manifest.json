@@ -1,0 +1,17 @@
+{
+  "id": "CMP-switch", "name": "Switch", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "specifiedBy": "SP-Switch v1.0",
+  "category": "selection", "lifecycleStage": "Implementation",
+  "description": "Toggle control for binary on/off states with immediate effect.",
+  "states": ["Default", "Hover", "Focus", "Disabled"],
+  "tokenDependencies": [
+    "TK-color-gray-200", "TK-color-primary", "TK-color-white",
+    "TK-color-border-focus", "TK-color-text-primary",
+    "TK-typography-font-primary", "TK-typography-size-body",
+    "TK-spacing-2xl", "TK-spacing-lg", "TK-spacing-sm",
+    "TK-motion-duration-fast", "TK-opacity-disabled", "TK-opacity-hover"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Switch/switch.css" }],
+  "tags": ["toggle", "switch", "form", "ui"],
+  "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "S"
+}

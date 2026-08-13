@@ -1,0 +1,18 @@
+{
+  "id": "AS-logo-icon",
+  "category": "logo",
+  "name": "AEL Icon Mark",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Image",
+  "specifiedBy": "SP-Image",
+  "source": "logos/ael-icon-mark.svg",
+  "description": "AEL icon-only brand mark — for favicons, app icons, social avatars",
+  "variants": {
+    "resolutions": ["@1x", "@2x", "@3x"],
+    "themes": ["light", "dark"]
+  },
+  "platforms": ["html", "react", "swiftui", "flutter", "figma", "canva"],
+  "tags": ["brand", "identity", "icon-mark", "favicon"],
+  "relatedTokens": ["TK-color-brand-primary", "TK-size-icon-container-md"]
+}

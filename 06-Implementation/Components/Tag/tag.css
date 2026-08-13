@@ -1,0 +1,24 @@
+/* AEL Tag — CMP-tag v1.0 */
+
+.ael-tag {
+  display: inline-flex; align-items: center; gap: var(--ael-spacing-xs);
+  padding: 0 var(--ael-spacing-sm); height: var(--ael-spacing-lg);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-caption);
+  font-weight: var(--ael-typography-weight-medium);
+  border-radius: var(--ael-radius-sm);
+  background-color: var(--ael-color-gray-100);
+  color: var(--ael-color-text-secondary);
+  white-space: nowrap;
+}
+
+.ael-tag--primary { background-color: rgba(0, 116, 255, 0.1); color: var(--ael-color-primary); }
+.ael-tag--success { background-color: rgba(52, 199, 89, 0.1); color: var(--ael-color-success); }
+.ael-tag--warning { background-color: rgba(255, 149, 0, 0.1); color: var(--ael-color-warning); }
+.ael-tag--error { background-color: rgba(255, 59, 48, 0.1); color: var(--ael-color-error); }
+
+.ael-tag__close {
+  display: inline-flex; background: none; border: none; cursor: pointer;
+  color: inherit; opacity: 0.6; padding: 0;
+}
+.ael-tag__close:hover { opacity: 1; }

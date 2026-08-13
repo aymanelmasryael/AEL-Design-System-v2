@@ -1,0 +1,28 @@
+/* AEL Layout — Grid v1.0 — Zero hardcoded design values. */
+
+.ael-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--ael-grid-columns), 1fr);
+  gap: var(--ael-grid-gutter-mobile);
+}
+
+@media (min-width: 768px) {
+  .ael-grid { gap: var(--ael-grid-gutter-tablet); }
+}
+
+@media (min-width: 1024px) {
+  .ael-grid { gap: var(--ael-grid-gutter-desktop); }
+}
+
+.ael-grid--2 { grid-template-columns: repeat(2, 1fr); }
+.ael-grid--3 { grid-template-columns: repeat(3, 1fr); }
+.ael-grid--4 { grid-template-columns: repeat(4, 1fr); }
+.ael-grid--6 { grid-template-columns: repeat(6, 1fr); }
+.ael-grid--8 { grid-template-columns: repeat(8, 1fr); }
+
+.ael-grid__item--span-2 { grid-column: span 2; }
+.ael-grid__item--span-3 { grid-column: span 3; }
+.ael-grid__item--span-4 { grid-column: span 4; }
+.ael-grid__item--span-6 { grid-column: span 6; }
+.ael-grid__item--span-8 { grid-column: span 8; }
+.ael-grid__item--span-12 { grid-column: span 12; }

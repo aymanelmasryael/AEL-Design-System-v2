@@ -1,0 +1,12 @@
+{
+  "id": "CMP-avatar", "name": "Avatar", "version": "1.0", "status": "Draft",
+  "governedBy": "S-Component v0.3", "category": "data", "lifecycleStage": "Implementation",
+  "description": "User or entity image with initials fallback in multiple sizes.",
+  "tokenDependencies": [
+    "TK-color-gray-200", "TK-color-gray-600",
+    "TK-typography-font-primary", "TK-typography-size-body", "TK-typography-size-caption", "TK-typography-size-h5", "TK-typography-size-h3", "TK-typography-weight-medium",
+    "TK-size-avatar-xs", "TK-size-avatar-sm", "TK-size-avatar-md", "TK-size-avatar-lg", "TK-size-avatar-xl", "TK-radius-md"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported", "path": "Components/Avatar/avatar.css" }],
+  "tags": ["data", "avatar", "user", "ui"], "wcag": "AA", "weight": 2, "complexity": "low", "estimatedEffort": "S"
+}

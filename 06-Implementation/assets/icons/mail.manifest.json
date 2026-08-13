@@ -1,0 +1,18 @@
+{
+  "id": "AS-icon-mail",
+  "category": "icon",
+  "name": "Mail",
+  "version": "1.0",
+  "status": "Active",
+  "governedBy": "S-Icon",
+  "specifiedBy": "SP-Icon",
+  "source": "mail.svg",
+  "description": "Envelope icon for email/messages",
+  "variants": {
+    "sizes": [16, 20, 24, 32, 48],
+    "styles": ["outline"]
+  },
+  "platforms": ["html", "css", "react", "swiftui", "flutter", "figma", "canva"],
+  "tags": ["ui", "navigation"],
+  "relatedTokens": ["TK-color-primary", "TK-icon-stroke-width-md"]
+}

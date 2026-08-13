@@ -1,0 +1,18 @@
+{
+  "id": "AS-icon-settings",
+  "category": "icon",
+  "name": "Settings",
+  "version": "1.0",
+  "status": "Active",
+  "governedBy": "S-Icon",
+  "specifiedBy": "SP-Icon",
+  "source": "settings.svg",
+  "description": "Gear/cog icon for preferences and configuration",
+  "variants": {
+    "sizes": [16, 20, 24, 32, 48],
+    "styles": ["outline"]
+  },
+  "platforms": ["html", "css", "react", "swiftui", "flutter", "figma", "canva"],
+  "tags": ["ui", "navigation"],
+  "relatedTokens": ["TK-color-primary", "TK-icon-stroke-width-md"]
+}

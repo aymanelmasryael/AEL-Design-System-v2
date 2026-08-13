@@ -1,0 +1,19 @@
+/* AEL Alert — CMP-alert v1.0 — Zero hardcoded design values. */
+
+.ael-alert {
+  display: flex; align-items: flex-start; gap: var(--ael-spacing-sm);
+  padding: var(--ael-spacing-md);
+  border-radius: var(--ael-radius-md);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  border: var(--ael-border-width-sm) solid;
+}
+
+.ael-alert--info { background: rgba(50, 173, 230, 0.1); border-color: var(--ael-color-info); color: var(--ael-color-text-primary); }
+.ael-alert--success { background: rgba(52, 199, 89, 0.1); border-color: var(--ael-color-success); color: var(--ael-color-text-primary); }
+.ael-alert--warning { background: rgba(255, 149, 0, 0.1); border-color: var(--ael-color-warning); color: var(--ael-color-text-primary); }
+.ael-alert--error { background: rgba(255, 59, 48, 0.1); border-color: var(--ael-color-error); color: var(--ael-color-text-primary); }
+
+.ael-alert__icon { width: var(--ael-icon-size-md); height: var(--ael-icon-size-md); flex-shrink: 0; margin-top: 2px; }
+.ael-alert__content { flex: 1; }
+.ael-alert__title { font-weight: var(--ael-typography-weight-semibold); margin-bottom: var(--ael-spacing-xs); }

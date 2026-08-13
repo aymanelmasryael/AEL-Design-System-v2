@@ -1,0 +1,98 @@
+{
+  "concepts": {
+    "ael-modal":                     { "type": "overlay", "props": { "kind": "modal" } },
+    "ael-modal__backdrop":           { "type": "backdrop" },
+    "ael-modal__dialog":             { "type": "container", "props": { "role": "dialog" } },
+    "ael-modal__header":             { "type": "header" },
+    "ael-modal__body":               { "type": "body" },
+    "ael-modal__footer":             { "type": "footer" },
+    "ael-modal__close":              { "type": "closeButton" },
+
+    "ael-drawer":                    { "type": "overlay", "props": { "kind": "drawer" } },
+    "ael-drawer__backdrop":          { "type": "backdrop" },
+    "ael-drawer__panel":             { "type": "panel" },
+
+    "ael-tabs":                      { "type": "tabList" },
+    "ael-tabs__tab":                 { "type": "tab" },
+
+    "ael-accordion":                 { "type": "accordion" },
+    "ael-accordion__item":           { "type": "accordionItem" },
+    "ael-accordion__trigger":        { "type": "trigger" },
+    "ael-accordion__content":        { "type": "content" },
+    "ael-accordion__icon":           { "type": "icon", "props": { "purpose": "expandIndicator" } },
+
+    "ael-menu":                      { "type": "menu" },
+    "ael-menu__item":                { "type": "menuItem" },
+    "ael-menu__divider":             { "type": "divider" },
+    "ael-menu__label":               { "type": "sectionLabel" },
+    "ael-menu__icon":                { "type": "icon", "props": { "purpose": "decorative" } },
+
+    "ael-toast":                     { "type": "notification", "props": { "kind": "toast" } },
+    "ael-tooltip":                   { "type": "tooltip" },
+
+    "ael-button":                    { "type": "button" },
+    "ael-button__icon":              { "type": "icon", "props": { "purpose": "adornment" } },
+    "ael-button__spinner":           { "type": "spinner" },
+    "ael-button__label":             { "type": "label" },
+
+    "ael-input":                     { "type": "formField" },
+    "ael-input__label":              { "type": "label" },
+    "ael-input__wrapper":            { "type": "wrapper" },
+    "ael-input__field":              { "type": "input", "props": { "multiline": false } },
+    "ael-input__helper":             { "type": "helperText" },
+    "ael-input__error":              { "type": "errorText" },
+    "ael-input__icon":               { "type": "icon", "props": { "purpose": "adornment" } },
+
+    "ael-textarea":                  { "type": "formField" },
+    "ael-textarea__label":           { "type": "label" },
+    "ael-textarea__field":           { "type": "input", "props": { "multiline": true } },
+    "ael-textarea__helper":          { "type": "helperText" },
+
+    "ael-select":                    { "type": "formField" },
+    "ael-select__label":             { "type": "label" },
+    "ael-select__field":             { "type": "select" },
+    "ael-select__helper":            { "type": "helperText" },
+    "ael-select__chevron":           { "type": "icon", "props": { "purpose": "expandIndicator" } },
+
+    "ael-checkbox":                  { "type": "toggle", "props": { "kind": "checkbox" } },
+    "ael-checkbox__label":           { "type": "label" },
+    "ael-checkbox__mark":            { "type": "icon", "props": { "purpose": "indicator" } },
+    "ael-checkbox__input":           { "type": "toggle", "props": { "kind": "checkbox" } },
+    "ael-radio":                     { "type": "toggle", "props": { "kind": "radio" } },
+    "ael-switch":                    { "type": "toggle", "props": { "kind": "switch" } },
+
+    "ael-card":                      { "type": "container", "props": { "kind": "card" } },
+    "ael-card__header":              { "type": "header" },
+    "ael-card__body":                { "type": "body" },
+    "ael-card__footer":              { "type": "footer" },
+    "ael-card__media":               { "type": "media" },
+
+    "ael-link":                      { "type": "link" },
+    "ael-icon":                      { "type": "icon" },
+    "ael-label":                     { "type": "label" },
+
+    "ael-table":                     { "type": "dataTable" },
+    "ael-list":                      { "type": "list" },
+    "ael-badge":                     { "type": "badge" },
+    "ael-tag":                       { "type": "tag" },
+    "ael-avatar":                    { "type": "avatar" },
+    "ael-progress":                  { "type": "progress" },
+    "ael-skeleton":                  { "type": "skeleton" },
+    "ael-timeline":                  { "type": "timeline" },
+    "ael-timeline__item":            { "type": "element", "props": { "tag": "div" } },
+    "ael-timeline__dot":             { "type": "icon", "props": { "purpose": "indicator" } },
+    "ael-timeline__content":         { "type": "content" },
+    "ael-timeline__time":            { "type": "element", "props": { "tag": "time" } },
+    "ael-statistic":                 { "type": "statistic" },
+
+    "ael-navbar":                    { "type": "navigation", "props": { "kind": "navbar" } },
+    "ael-sidebar":                   { "type": "navigation", "props": { "kind": "sidebar" } },
+    "ael-breadcrumb":                { "type": "breadcrumb" },
+    "ael-pagination":                { "type": "pagination" },
+    "ael-stepper":                   { "type": "stepper" },
+    "ael-stepper__step":             { "type": "element", "props": { "tag": "div" } },
+    "ael-stepper__indicator":        { "type": "icon", "props": { "purpose": "stepIndicator" } },
+    "ael-stepper__label":            { "type": "label" },
+    "ael-stepper__connector":        { "type": "element", "props": { "tag": "div" } }
+  }
+}

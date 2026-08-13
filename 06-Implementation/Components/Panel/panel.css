@@ -1,0 +1,28 @@
+/* AEL Panel Component — CMP-panel v1.0 — Zero hardcoded design values. */
+
+.ael-panel {
+  background-color: var(--ael-color-background);
+  border: var(--ael-border-width-sm) solid var(--ael-color-border);
+  border-radius: var(--ael-radius-md);
+  overflow: hidden;
+}
+
+.ael-panel__header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--ael-spacing-md) var(--ael-spacing-lg);
+  background-color: var(--ael-color-gray-50);
+  border-bottom: var(--ael-border-width-sm) solid var(--ael-color-border);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  font-weight: var(--ael-typography-weight-semibold);
+  color: var(--ael-color-text-primary);
+}
+
+.ael-panel__body {
+  padding: var(--ael-spacing-lg);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  color: var(--ael-color-text-primary);
+}
+
+.ael-panel--elevated { box-shadow: var(--ael-shadow-sm); border: none; }

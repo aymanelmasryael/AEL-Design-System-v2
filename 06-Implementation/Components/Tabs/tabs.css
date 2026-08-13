@@ -1,0 +1,28 @@
+/* AEL Tabs Component — CMP-tabs v1.0 — Zero hardcoded design values. */
+
+.ael-tabs { display: flex; border-bottom: var(--ael-border-width-sm) solid var(--ael-color-border); gap: 0; }
+
+.ael-tabs__tab {
+  padding: var(--ael-spacing-sm) var(--ael-spacing-md);
+  font-family: var(--ael-typography-font-primary);
+  font-size: var(--ael-typography-size-body);
+  font-weight: var(--ael-typography-weight-medium);
+  color: var(--ael-color-text-secondary);
+  background: none;
+  border: none;
+  border-bottom: var(--ael-border-width-md) solid transparent;
+  cursor: pointer;
+  transition: color var(--ael-motion-duration-fast) var(--ael-motion-easing-default),
+              border-color var(--ael-motion-duration-fast) var(--ael-motion-easing-default);
+  margin-bottom: calc(var(--ael-border-width-sm) * -1);
+}
+
+.ael-tabs__tab:hover { color: var(--ael-color-text-primary); }
+.ael-tabs__tab:focus-visible { outline: var(--ael-border-width-md) solid var(--ael-color-border-focus); outline-offset: calc(var(--ael-border-width-md) * -1); }
+
+.ael-tabs__tab--active {
+  color: var(--ael-color-primary);
+  border-bottom-color: var(--ael-color-primary);
+}
+
+.ael-tabs__tab:disabled { opacity: var(--ael-opacity-disabled); cursor: not-allowed; }

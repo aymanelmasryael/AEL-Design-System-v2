@@ -1,0 +1,22 @@
+{
+  "id": "CMP-stepper",
+  "name": "stepper",
+  "version": "1.0",
+  "status": "Draft",
+  "governedBy": "S-Component v0.3",
+  "category": "navigation",
+  "lifecycleStage": "Implementation",
+  "description": "Step-by-step progress indicator for multi-step workflows.",
+  "states": ["Default", "Active", "Completed"],
+  "tokenDependencies": [
+    "TK-color-primary", "TK-color-success", "TK-color-border",
+    "TK-color-text-primary", "TK-color-text-secondary", "TK-color-text-inverse",
+    "TK-color-background",
+    "TK-typography-font-primary", "TK-typography-size-small", "TK-typography-weight-bold", "TK-typography-weight-medium",
+    "TK-icon-size-lg", "TK-spacing-sm", "TK-border-width-md",
+    "TK-motion-duration-fast"
+  ],
+  "platforms": [{ "name": "html-css", "status": "Supported" }],
+  "tags": ["navigation", "stepper", "wizard", "ui"],
+  "wcag": "AA", "weight": 2, "complexity": "medium", "estimatedEffort": "S"
+}
